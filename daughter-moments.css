@@ -1,0 +1,49 @@
+/* Uses the same WeChat feed components as Lin Yan; scoped to the recovered phone. */
+.dp-moments-feed{background:white;overflow-x:hidden;overflow-y:auto;flex:1;min-height:0}
+.dp-moments-feed .moments-cover{margin-bottom:43px}
+.dp-moments-feed .moments-owner .dp-avatar{width:70px;height:70px;flex:0 0 70px}
+.dp-moments-feed .moments-owner .dpm-owner-name{padding:0;background:none;align-self:center;color:white}
+.dp-moments-feed .moments-owner .dpm-owner-name strong{display:block}
+.dp-moments-feed .moment>.dpm-avatar{width:39px;height:39px;flex:0 0 39px;padding:0}
+.dp-moments-feed .dpm-avatar img{width:100%;height:100%;object-fit:cover}
+.dpm-offline-status{margin:0 18px 4px;padding:0 0 13px;color:#a0a0a0;font-size:11px;line-height:1.6;border-bottom:1px solid #f1f1f1}
+.dp-moments-feed .moment-main>p{text-indent:0}
+.dp-moments-feed .moment-likes button{font:inherit;line-height:inherit;padding:0;background:none;color:inherit;text-align:left}
+.dp-moments-feed .moment-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;max-width:258px}
+.dp-moments-feed .moment-photo-grid .moment-picture{aspect-ratio:1;max-width:none;max-height:none;width:100%;height:auto;min-width:0}
+.dp-moments-feed .moment-photo-grid .moment-picture>img,.dp-moments-feed .moment-photo-grid .moment-picture>.album-frame{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;aspect-ratio:1}
+.dp-moments-feed .moment-photo-grid.count-1{grid-template-columns:1fr;max-width:200px}
+.dp-moments-feed .moment-photo-grid.count-1 .moment-picture{aspect-ratio:auto;max-height:255px}
+.dp-moments-feed .moment-photo-grid.count-1 .moment-picture>img{height:auto;max-height:255px;object-fit:cover}
+.dp-moments-feed .moment-photo-grid.count-1 .moment-picture>.album-frame{height:auto;aspect-ratio:1}
+.dp-moments-feed .dpm-pending-status{display:block;font-size:10px;color:#969696;line-height:1.6;margin:2px 0 0;padding:0}
+.dp-moments-feed .moment-social>p.dpm-pending-status{padding:2px 9px 5px}
+.dpm-local-comment>button{float:right;padding:0;color:#75819a;font-size:11px;line-height:1.6}
+.dpm-comment-compose{align-items:center;flex-shrink:0;background:#f6f6f6;gap:8px}
+.dpm-comment-compose>div{min-width:0;flex:1}
+.dpm-comment-compose input:not([type=hidden]){width:100%;box-sizing:border-box;min-width:0;margin:0}
+.dpm-comment-compose small{display:block;color:#949494;font-size:10px;line-height:1.5;margin-top:3px}
+.dpm-comment-compose>button[type=button]{background:none;min-width:25px;padding:0;color:#707070;font-size:24px}
+.dpm-profile .profile-header .dp-avatar{width:66px;height:66px;flex:0 0 66px}
+.dpm-profile .profile-header>div{min-width:0}.dpm-profile .profile-header p{overflow-wrap:anywhere}
+.dpm-profile .profile-album-previews>.album-frame{width:56px;height:56px;aspect-ratio:1;flex:0 0 56px}
+.dpm-compose{background:white;padding:16px}
+.dpm-draft-notice{font-size:12px;line-height:1.7;color:#999;background:#f7f7f7;border-radius:4px;padding:10px 12px;margin:0 0 14px;text-indent:0}
+.dpm-compose textarea{display:block;width:100%;min-height:130px;box-sizing:border-box;padding:6px 0;border:0;outline:none;background:white;font-size:16px;line-height:1.65;color:#222}
+.dpm-save-post{background:#07c160!important;color:white!important;border-radius:5px;min-height:30px!important;height:30px!important;padding:0 12px!important;font-size:13px!important}
+.dpm-compose h3{font-size:13px;font-weight:400;color:#777;margin:22px 0 12px}.dpm-compose h3>span{float:right;color:#aaa}
+.dpm-compose .post-photos{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.dpm-compose .post-photos>button{position:relative;width:70px;height:70px;padding:0;overflow:hidden;flex:0 0 70px}
+.dpm-compose .post-photos>button>img,.dpm-compose .post-photos>button>.album-frame{width:100%;height:100%;object-fit:cover}.dpm-compose .post-photos>button>span:not(.album-frame){position:absolute;right:0;top:0;background:#0009;color:white;width:18px;height:18px;font-size:16px;line-height:18px;text-align:center}
+.dpm-photo-picker{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding-bottom:20px}.dpm-photo-picker>button{position:relative;min-width:0;aspect-ratio:1;padding:0;overflow:hidden;background:#eee}.dpm-photo-picker>button>img,.dpm-photo-picker>button>.album-frame{width:100%;height:100%;object-fit:cover}
+.dpm-photo-picker>button>span:not(.album-frame){position:absolute;right:6px;top:6px;width:19px;height:19px;border:1px solid white;border-radius:50%;background:#0004;color:white;line-height:19px;font-size:13px;text-align:center}.dpm-photo-picker>button[aria-pressed=true]>span:not(.album-frame){background:#07c160;border-color:#07c160}
+.dpm-compose-error{font-size:12px;color:#bc5757;text-indent:0}
+.dpm-photo-view{display:flex;flex-direction:column;height:100%;min-height:0;background:#080a0b;color:white}
+.dpm-photo-view .lightbox-bar{position:static;min-height:48px;flex-shrink:0;color:white;background:#080a0b;padding-inline:12px;display:flex;align-items:center;justify-content:space-between}
+.dpm-photo-view .lightbox-bar>span:last-child{width:25px}.dpm-photo-view .lightbox-bar .raster-icon,.dpm-photo-view .native-photo-tools .raster-icon{filter:brightness(0) invert(1)}
+.dpm-photo-stage{position:relative;display:flex;align-items:center;justify-content:center;flex:1;min-height:0;min-width:0;overflow:auto;width:100%;padding:0;background:#080a0b}
+.dpm-photo-stage>img,.dpm-photo-stage>.album-frame{display:block;width:100%;height:100%;object-fit:contain;flex-shrink:0}
+.dpm-photo-stage.zoomed>img,.dpm-photo-stage.zoomed>.album-frame{width:160%;height:160%;max-width:none}
+.dpm-photo-caption{font-size:12px;color:#c0c4c5;padding:10px;text-align:center;flex-shrink:0}
+.dpm-photo-view .native-photo-tools{position:static;min-height:48px;display:flex;align-items:center;justify-content:space-around;flex-shrink:0;background:#080a0b;color:#ddd;font-size:12px}
+.dpm-photo-view .native-photo-tools>button{width:44px;min-height:44px}.dpm-photo-view .native-photo-tools>button:disabled{opacity:.25}
+@media(max-width:360px){.dp-moments-feed .moments-cover{height:218px}.dp-moments-feed .moment{padding:16px 13px;gap:10px}.dp-moments-feed .moments-owner .dp-avatar{width:65px;height:65px;flex-basis:65px}.dpm-profile .profile-album-previews>.album-frame{width:45px;height:45px;flex-basis:45px}.dpm-comment-compose{padding:7px}.dpm-comment-compose small{font-size:9px}}

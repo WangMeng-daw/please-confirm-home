@@ -1,0 +1,15 @@
+/* Full-bleed bitmap artwork receives only the launcher's native corner mask. */
+.app-raster-image{display:block;width:100%;height:100%;max-width:none;object-fit:cover;border:0;border-radius:inherit;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.app-icon .iconbox.raster-app,.launch-mini,.app-row-art,.sms-notice-icon{position:relative;overflow:hidden;border-radius:22%;isolation:isolate}
+.app-icon .iconbox.raster-app,.launch-mini{container-type:inline-size;background:none}
+.app-icon .iconbox.raster-app{box-shadow:0 2px 6px #06182926}
+.dp-launch-icon{background-image:none;background-size:auto;border-radius:26%}
+.dp-launch-icon .app-raster-image,.app-row-art[data-icon-frame="android"]{border-radius:26%}
+.app-calendar-caption{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1%;padding-top:5%;color:#161616;text-shadow:none;pointer-events:none;font-family:"Home Plain Digits",-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1;font-style:normal;font-variant-numeric:lining-nums tabular-nums}
+.app-calendar-caption>span{color:#e64340;font-size:19cqw;font-weight:500;line-height:1.15}
+.app-calendar-caption>b{font-size:58cqw;font-weight:350;line-height:1;letter-spacing:-.05em;transform:translateX(-.025em)}
+.app-row-art{display:inline-block;width:30px;height:30px;flex:0 0 30px;vertical-align:middle;container-type:inline-size}
+.action-sheet>button.app-art-row{display:flex;align-items:center;gap:12px;min-height:54px;text-align:left}
+.app-art-row .launcher-current{float:none;margin-left:auto}
+.sms-notice-icon .app-raster-image{width:100%;height:100%}
+.launch-drag-ghost .app-raster-image{border-radius:22%}

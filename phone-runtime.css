@@ -1,0 +1,5 @@
+.phone-battery{display:inline-block;box-sizing:border-box;position:relative;width:24px;height:12px;padding:1.5px;border:1.3px solid currentColor;border-radius:2.5px;margin-right:2px;vertical-align:middle}
+.phone-battery:after{content:"";position:absolute;right:-3px;top:3px;width:2px;height:4px;border-radius:0 1px 1px 0;background:currentColor}
+.phone-battery>span{display:block;height:100%;background:currentColor;border-radius:.5px}
+.phone-battery.low>span{background:#e94b48}
+.wx-header h2.is-typing{font-size:16px;font-weight:500;letter-spacing:.2px}

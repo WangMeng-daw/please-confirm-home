@@ -1,0 +1,194 @@
+/* The private worship site only. Phone chrome and the public agency stay native. */
+.internal-app.cult-site {
+  --cult-ash: #d0d5c2;
+  --cult-muted: #758473;
+  --cult-stain: #b799bb;
+  --cult-line: #343d37;
+  --cult-archive-font: "Home Plain Digits","Cascadia Mono", Consolas, "Courier New", "Microsoft YaHei", monospace;
+  --cult-rite-font: "Home Plain Digits","KaiTi", "Kaiti SC", "STKaiti", cursive;
+  --cult-hand-font: "Home Plain Digits","STXingkai", "KaiTi", "Kaiti SC", cursive;
+  min-height: 100%;
+  color: var(--cult-ash);
+  background: #111615;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.cult-site button, .cult-site a { font-family: inherit; }
+.cult-site button:focus-visible, .cult-site a:focus-visible { outline: 1px solid #b799bb; outline-offset: 4px; }
+.cult-site .cult-masthead {
+  display: block;
+  padding: 22px 22px 17px;
+  text-align: center;
+  color: var(--cult-ash);
+  background: #090e0d;
+  border-top: 5px solid #493b4e;
+  border-bottom: 1px solid #465149;
+}
+.cult-site .cult-dateline {
+  display: block;
+  color: #919c86;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+.cult-site .cult-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+.cult-site .cult-title-row .cult-title-art { min-width: 0; flex: 1; max-width: 280px; }
+.cult-site .cult-title-image { display: block; width: 100%; height: auto; min-height: 56px; object-fit: contain; }
+.cult-site .cult-title-row .cult-side-verse {
+  writing-mode: vertical-rl;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 3px;
+  color: #b6c0a8;
+  font-family: var(--cult-rite-font);
+}
+.cult-site .cult-masthead > p { font-size: 11px; color: #82718b; letter-spacing: 4px; margin: 20px 0 0; }
+.cult-site .internal-body {
+  border: 0;
+  border-left: 1px solid #343d37;
+  border-right: 1px solid #343d37;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 12px;
+  padding: 22px 18px 30px;
+  background: #181e1b;
+}
+.cult-site .internal-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  border-bottom: 1px solid var(--cult-line);
+  padding-bottom: 13px;
+  font-size: 9px;
+  letter-spacing: .6px;
+  color: var(--cult-muted);
+}
+.cult-site .internal-meta span { color: var(--cult-muted); font-size: inherit; }
+.cult-site .internal-body .cult-overline { color: #919c86; font-size: 10px; letter-spacing: 3px; margin: 29px 0 8px; }
+.cult-site .internal-body h1 {
+  margin: 0 0 24px;
+  font-size: 25px;
+  color: #d0d5c2;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1.65;
+}
+.cult-site .internal-body h2 {
+  color: #b6c0a8;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 0 0 9px;
+  margin: 29px 0 14px;
+  border-left: 0;
+  border-bottom: 1px solid #465149;
+}
+.cult-site .internal-body p { color: #b6c0a8; font-size: 13px; line-height: 2.05; margin: 14px 0; }
+.cult-site .internal-body table { width: 100%; table-layout: fixed; font-size: 12px; border-collapse: collapse; }
+.cult-site .internal-body th, .cult-site .internal-body td { padding: 11px 9px; border: 1px solid #343d37; line-height: 1.85; }
+.cult-site .internal-body th { width: 33%; background: #262e29; color: #b6c0a8; font-weight: 400; }
+.cult-site .internal-body td { background: #181e1b; color: #d0d5c2; overflow-wrap: anywhere; }
+.cult-site .cult-case-ribbon { display: flex; align-items: center; justify-content: space-between; gap: 8px; background: #d2d6c8; color: #485549; border-top: 3px double #493b4e; border-bottom: 3px double #493b4e; padding: 8px 10px; font-size: 10px; letter-spacing: 1px; }
+.cult-site .cult-case-ribbon b { font-size: 13px; font-weight: 400; }
+.cult-site .calibration-log { background: #101512; border: 1px solid #343d37; border-radius: 0; padding: 15px 14px; }
+.cult-site .calibration-log time { display: block; font-size: 10px; letter-spacing: .8px; color: #919c86; }
+.cult-site .calibration-log p { font-size: 12px; margin: 10px 0; }
+.cult-site .calibration-log blockquote { color: #d0d5c2; border-left: 1px solid #494152; margin: 14px 0; padding-left: 12px; font-size: 13px; line-height: 2.1; }
+.cult-site .calibration-log b { color: #b799bb; font-size: 11px; font-weight: 400; }
+.cult-site .internal-body .internal-warning { color: #b799bb; }
+.cult-site .internal-body .cult-prohibition { padding: 16px 13px; background: #24222c; border-top: 1px solid #493b4e; border-bottom: 1px solid #493b4e; margin-top: 27px; font-size: 13px; line-height: 2.2; }
+.cult-site .internal-body .cult-scripture { border-left: 2px solid #494152; padding: 4px 0 4px 17px; margin: 25px 0; color: #d0d5c2; font-size: 17px; letter-spacing: 3px; line-height: 2.2; }
+.cult-site .internal-body .cult-handwritten { color: #b5a2bd; font-size: 16px; line-height: 2; letter-spacing: 1px; }
+.cult-site .cult-name-register { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 18px 13px; background: #bbc4b5; color: #303a35; border: 3px double #485549; margin: 0 0 17px; }
+.cult-site .cult-name-register span { writing-mode: vertical-rl; font-size: 10px; letter-spacing: 1px; }
+.cult-site .cult-name-register strong { font-size: 27px; font-weight: 400; letter-spacing: 7px; }
+.cult-site .cult-name-register em { color: #51445a; font-size: 14px; font-style: normal; border: 1px solid #82718b; padding: 3px 5px; writing-mode: vertical-rl; }
+.cult-site .internal-download { display: block; width: 100%; border: 1px solid #82718b; border-radius: 0; color: #d0d5c2; background: #493b4e; min-height: 45px; font-size: 13px; letter-spacing: 2px; padding: 12px; margin-top: 24px; }
+.cult-site .cult-inline-link { color: #b6c0a8; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; cursor: pointer; padding: 6px 0; line-height: 2; }
+.cult-site .cult-inline-link:hover, .cult-site .cult-inline-link:focus { color: #b799bb; }
+.cult-site footer { background: #090e0d; color: #758473; text-align: center; padding: 26px 18px 30px; font-size: 10px; border-top: 1px solid #343d37; letter-spacing: 2px; }
+.cult-site footer p { margin: 8px 0; font-size: 12px; color: #919c86; letter-spacing: 4px; }
+.cult-site footer small { font-size: 9px; color: #758473; letter-spacing: 1px; }
+.cult-site .cult-shrine { text-align: center; }
+.cult-site .cult-shrine .cult-deity-name { padding: 0; margin: 5px auto 13px; max-width: 270px; }
+.cult-site .cult-deity-title-image { display: block; width: 100%; height: auto; min-height: 60px; object-fit: contain; }
+.cult-site .internal-body .cult-devotion { color: #919c86; font-size: 11px; letter-spacing: 2px; margin: 0 0 23px; }
+.cult-site .cult-altar { display: grid; grid-template-columns: 20px minmax(0, 1fr) 20px; gap: 8px; align-items: stretch; margin: 0 -6px; }
+.cult-site .internal-body .cult-altar-verse { margin: 0; padding: 11px 0; writing-mode: vertical-rl; align-self: center; color: #b6c0a8; font-size: 12px; letter-spacing: 4px; line-height: 1.5; }
+.cult-site .cult-idol { width: 100%; display: block; padding: 0; background: #060a08; border: 1px solid #465149; border-radius: 0; box-shadow: 0 0 0 4px #060a08, 0 0 0 5px #343d37; overflow: hidden; }
+.cult-site .cult-idol img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; object-position: center; }
+.cult-site .internal-body .cult-image-caption { color: #758473; font-size: 9px; letter-spacing: 4px; margin: 16px 0 18px; }
+.cult-site .cult-peel { display: block; margin: 0 auto 30px; min-height: 42px; padding: 9px 21px; color: #d0d5c2; background: #24222c; border: 1px solid #493b4e; font-size: 13px; letter-spacing: 4px; }
+.cult-site .cult-prayer { padding: 0 5px 14px; }
+.cult-site .internal-body .cult-prayer p { color: #b6c0a8; font-size: 14px; line-height: 2.3; margin: 23px 0; letter-spacing: 1px; }
+.cult-site .cult-offering-record { padding: 23px 14px 19px; margin: 16px 0 26px; background: #bbc4b5; color: #303a35; border: 4px double #485549; }
+.cult-site .cult-offering-record > span { display: block; font-size: 10px; letter-spacing: 5px; color: #758473; }
+.cult-site .cult-offering-record strong { display: block; font-weight: 400; font-size: 30px; line-height: 1.5; letter-spacing: 9px; padding-left: 9px; margin: 13px 0; }
+.cult-site .internal-body .cult-offering-record p { color: #485549; font-size: 12px; line-height: 2; }
+.cult-site .internal-body .cult-offering-record .internal-warning { border-top: 1px solid #98a090; margin: 17px 0 0; padding-top: 14px; color: #51445a; }
+.cult-site .internal-body .cult-vow { color: #919c86; font-size: 14px; line-height: 2.5; letter-spacing: 2px; }
+.cult-site[data-cult-part="archive"] .internal-body { background: #d2d6c8; color: #303a35; margin: 15px 13px 0; border: 1px solid #758473; box-shadow: inset 0 0 0 4px #bbc4b5; padding: 22px 19px 30px; }
+.cult-site[data-cult-part="archive"] .internal-meta { border-bottom-color: #98a090; }
+.cult-site[data-cult-part="archive"] .internal-meta span { color: #758473; }
+.cult-site[data-cult-part="archive"] .internal-body .cult-overline { color: #758473; }
+.cult-site[data-cult-part="archive"] .internal-body h1 { color: #303a35; }
+.cult-site[data-cult-part="archive"] .internal-body h2 { color: #485549; border-bottom-color: #98a090; }
+.cult-site[data-cult-part="archive"] .internal-body p { color: #485549; }
+.cult-site[data-cult-part="archive"] .internal-body th { background: #bbc4b5; color: #485549; border-color: #98a090; }
+.cult-site[data-cult-part="archive"] .internal-body td { background: #d5d8ca; color: #303a35; border-color: #98a090; }
+.cult-site[data-cult-part="archive"] .calibration-log { border-color: #98a090; background: #d5d8ca; }
+.cult-site[data-cult-part="archive"] .calibration-log time { color: #919c86; }
+.cult-site[data-cult-part="archive"] .calibration-log blockquote { color: #51445a; border-left-color: #82718b; }
+.cult-site[data-cult-part="archive"] .calibration-log b { color: #51445a; }
+.cult-site[data-cult-part="archive"] .internal-body .cult-prohibition { background: #bbc4b5; border-color: #82718b; color: #51445a; }
+.cult-site[data-cult-part="archive"] .cult-inline-link { color: #485549; }
+.cult-site[data-cult-part="archive"] .cult-inline-link:hover, .cult-site[data-cult-part="archive"] .cult-inline-link:focus { color: #51445a; }
+.cult-site[data-cult-part="archive"] .internal-body,
+.cult-site[data-cult-part="status"] .internal-body,
+.cult-site .internal-meta,
+.cult-site .calibration-log,
+.cult-site .cult-case-ribbon { font-family: var(--cult-archive-font); }
+.cult-site[data-cult-part="archive"] .internal-body h1,
+.cult-site[data-cult-part="status"] .internal-body h1 { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 1px; }
+.cult-site[data-cult-part="archive"] .internal-body h2,
+.cult-site[data-cult-part="status"] .internal-body h2 { font-family: var(--cult-archive-font); font-size: 14px; font-weight: 600; letter-spacing: 1px; }
+.cult-site[data-cult-part="protocol"] .internal-body,
+.cult-site[data-cult-part="shrine"] .cult-prayer,
+.cult-site .cult-scripture,
+.cult-site .cult-altar-verse,
+.cult-site .cult-vow { font-family: var(--cult-rite-font); }
+.cult-site[data-cult-part="protocol"] .internal-body h1 { font-size: 26px; letter-spacing: 2px; }
+.cult-site[data-cult-part="protocol"] .internal-body h2 { font-size: 22px; letter-spacing: 3px; }
+.cult-site[data-cult-part="protocol"] .internal-body p { font-size: 17px; line-height: 2.1; }
+.cult-site[data-cult-part="protocol"] .internal-body .cult-overline { font-size: 12px; }
+.cult-site[data-cult-part="protocol"] .internal-body .cult-scripture { font-size: 23px; }
+.cult-site .internal-body .cult-handwritten,
+.cult-site .internal-body .cult-margin-note { font-family: var(--cult-hand-font); font-weight: 400; color: #b5a2bd; font-size: 21px; line-height: 1.8; letter-spacing: 1px; }
+.cult-site .internal-body .cult-margin-note p { font-family: inherit; color: inherit; font-size: inherit; line-height: inherit; }
+.cult-site .cult-margin-note .cult-inline-link { color: #b5a2bd; }
+.cult-site .cult-unfiled-note { padding: 7px 8px 7px 17px; margin: 22px 0; border-left: 1px solid #494152; }
+.cult-site .internal-body .cult-cross-reference { font-size: 12px; margin: 22px 0 14px; }
+.cult-site .internal-body [data-cult-live="reader"] { min-height: 4.1em; font-size: 12px; color: #51445a; }
+.cult-site .internal-body [data-cult-live="margin"] { min-height: 3.6em; }
+.cult-site .cult-live-echo { display: block; min-height: 1.85em; font-size: 12px; color: #b5a2bd; }
+.cult-site [data-cult-live="response"] { color: #d0d7a4; font-weight: 600; font-size: 16px; font-variant-numeric: tabular-nums; }
+.cult-site .internal-body [data-cult-live="response"] + .cult-live-echo { color: #d0d7a4; }
+.cult-site .internal-body [data-cult-live="offering"] { min-height: 2em; }
+.cult-site .internal-body .cult-prayer p { font-size: 18px; line-height: 2.2; }
+.cult-site .internal-body .cult-altar-verse { font-size: 15px; }
+.cult-site .internal-body .cult-vow { font-size: 18px; }
+@media (max-width: 350px) {
+  .cult-site .cult-title-row { gap: 12px; }
+  .cult-site .internal-body { margin: 0 8px; padding: 19px 13px 25px; }
+  .cult-site .cult-altar { grid-template-columns: 18px minmax(0, 1fr) 18px; gap: 6px; }
+  .cult-site .cult-case-ribbon { font-size: 9px; letter-spacing: 0; }
+  .cult-site .cult-name-register strong { font-size: 25px; }
+}

@@ -1,0 +1,17 @@
+.dy-root .dy-message-photo,.dy-root .dy-message-card{border:0;border-radius:10px;background:#f2f3f5;color:#202126;text-align:left;overflow:hidden;max-width:min(270px,100%);cursor:pointer}
+.dy-message-photo{display:block;padding:0;position:relative}
+.dy-message-photo img{display:block;width:210px;max-width:100%;height:235px;object-fit:cover}
+.dy-message-photo>span{position:absolute;right:7px;bottom:7px;border-radius:4px;background:#0009;color:#fff;padding:3px 6px;font-size:11px}
+.dy-root .dy-message-card{display:flex;gap:10px;padding:10px;width:265px;min-width:0;align-items:center}
+.dy-message-card>img{width:66px;height:84px;flex:0 0 66px;object-fit:cover;border-radius:5px}
+.dy-message-card>span:not(.dy-message-link-icon){min-width:0;display:flex;flex:1;flex-direction:column;gap:6px}
+.dy-message-card small{color:#777;font-size:10px!important;line-height:1.4}
+.dy-message-card strong{font-size:14px;line-height:1.45;overflow-wrap:anywhere;font-weight:600}
+.dy-message-card em{color:#777;font-size:11px;font-style:normal}
+.dy-message-link-icon{width:42px;height:42px;display:grid;place-items:center;flex:0 0 42px;color:#586b5b;background:#e0e9e2;border-radius:8px;font-size:24px}
+.dy-message-card:focus-visible,.dy-message-photo:focus-visible{outline:2px solid #fe2c55;outline-offset:2px}
+.dy-message-card+p,.dy-message-photo+p{margin-top:7px}
+.dy-message-unavailable{color:#777}
+.dy-inbox-image-view{margin:0;display:flex;flex-direction:column;gap:12px}
+.dy-inbox-image-view img{display:block;max-width:100%;width:100%;max-height:58vh;object-fit:contain;border-radius:6px;background:#161616}
+.dy-inbox-image-view figcaption{font-size:13px;line-height:1.6;color:#696b70;overflow-wrap:anywhere}

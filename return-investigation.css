@@ -1,0 +1,29 @@
+/* Supplemental in-world records, not a task journal. */
+.ri-site .cult-masthead { padding-top: 21px; padding-bottom: 22px; }
+.ri-site .cult-title-art { width: min(270px,88%); margin: 17px auto 0; }
+.ri-site .internal-body { font-family: var(--cult-archive-font); }
+.ri-site .internal-body h1 { margin-top: 25px; font-family: "Microsoft YaHei","PingFang SC",sans-serif; font-size: 22px; letter-spacing: 1px; }
+.ri-site .internal-body h2 { font-family: var(--cult-archive-font); }
+.ri-site .ri-form { margin: 25px 0 3px; }
+.ri-site .ri-form label { display: block; font-size: 12px; line-height: 1.8; color: #bac3ad; margin: 20px 0; }
+.ri-site .ri-form input, .ri-site .ri-form textarea, .ri-site .ri-form select { display: block; width: 100%; min-width: 0; min-height: 44px; margin-top: 9px; border: 1px solid #627062; border-radius: 0; padding: 10px 11px; background: #d2d6c8; color: #303a35; font: 14px/1.7 "Microsoft YaHei","PingFang SC",sans-serif; }
+.ri-site .ri-form textarea { min-height: 125px; resize: vertical; }
+.ri-site .ri-form input:focus, .ri-site .ri-form textarea:focus, .ri-site .ri-form select:focus { outline: 2px solid #a0ad8c; outline-offset: 2px; }
+.ri-site .ri-source-record { border-top: 1px solid #52624f; border-bottom: 1px solid #52624f; background: #202922; padding: 15px 13px; margin: 23px 0; }
+.ri-site .ri-source-record span { display: block; font-size: 10px; color: #8c9c81; }
+.ri-site .ri-source-record strong { display: block; font-weight: 500; color: #d2d9c4; margin-top: 9px; font-size: 15px; line-height: 1.7; }
+.ri-site .internal-body .ri-source-record p { font-size: 12px; margin-bottom: 0; }
+.ri-site .ri-record-link { display: inline-block; padding: 10px 0; margin: 8px 0; border: 0; color: #c6ceb7; background: transparent; text-decoration: underline; text-underline-offset: 4px; font-family: inherit; font-size: 12px; line-height: 1.8; text-align: left; }
+.ri-site .ri-originals { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 13px; margin: 6px 0 2px; }
+.ri-site .ri-originals button { display: block; min-width: 0; border: 1px solid #56624f; padding: 5px; background: #141c17; color: #bdc5b0; text-align: left; }
+.ri-site .ri-originals img { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.ri-site .ri-originals span { padding: 7px 3px 3px; overflow-wrap: anywhere; line-height: 1.8; color: #bdc5b0; }
+.ri-site .ri-record-types { padding: 8px 0 12px; border-top: 1px solid #52624f; border-bottom: 1px solid #52624f; }
+.ri-site .ri-record-types dt { margin-top: 15px; font-size: 13px; color: #c4cdb5; }
+.ri-site .ri-record-types dd { margin: 6px 0 0; font-size: 12px; line-height: 1.9; color: #97a08c; }
+.ri-site .internal-body .ri-error { color: #d3b9ce; padding: 12px; border-left: 2px solid #a18aa6; background: #2a232e; font-size: 12px; line-height: 1.9; }
+.ri-site .internal-body .ri-stamp { padding: 10px 0; color: #b6c2a1; border-bottom: 1px solid #566650; font-size: 12px; letter-spacing: 1px; margin-bottom: 22px; }
+.ri-site .internal-body .ri-official-receipt { border-left: 1px solid #819078; padding-left: 12px; color: #c0cbb2; }
+.cult-site .ri-reference { margin-top: 27px; }
+.ri-preserved h1 { color: #365544; }
+.ri-preserved .record-table th { width: 35%; }

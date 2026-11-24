@@ -1,0 +1,36 @@
+/* Chinese prose: indent the first line only, without indenting its container. */
+.rw-news-article > p:not([class]),
+.oa-article > p:not([class]),
+.cipher-official-article > p:not([class]),
+.forum-thread:has(> .forum-author) > p:not([class]),
+article.web-pad:not(.dy-web) > p:not([class]),
+.rw-public-article > .rw-help-section > p:not([class]),
+.rw-inquiry > article:has(> .inquiry-byline) > p:not([class]),
+.rw-inquiry > article:has(> .inquiry-kicker):not(.rw-civic-index) > p:not([class]),
+.rw-inquiry > article:has(> table) > p:not([class]),
+.rw-street > article:has(> p + p) > p:not([class]),
+.pk-site > main:has(> time) > p:not([class]),
+.pk-site > main > .pk-hero + p,
+.pk-destination > article > p:not([class]),
+.pk-paper > p:not([class]),
+.pk-attached-slip > p:first-of-type,
+.pk-attached-slip > .pk-mail-date + p,
+.pz-old-site > p:first-of-type,
+.pz-admin > main:has(> [data-url$="/manage/restored"]) > p:not(:last-of-type),
+.cult-site[data-cult-part="protocol"] > .internal-body > p:not([class]),
+.cult-site[data-cult-part="archive"] > .internal-body > p:not([class]):has(+ .cult-prohibition) {
+  text-indent: 2em;
+}
+
+/* Abstracts, bylines, signatures, captions, comments and controls keep their alignment. */
+:is(.rw-news-article, .oa-article, .cipher-official-article, .forum-thread,
+    .rw-inquiry, .rw-public-article, .pk-site, .pk-destination, .pk-paper,
+    .pz-old-site, .pz-admin, .cult-site)
+  :is(time, figcaption, table, ul, ol, dl, form, label, input, textarea, select, button,
+      .rw-news-deck, .rw-news-byline, .rw-news-credit, .oa-byline,
+      .inquiry-byline, .inquiry-sign, .inquiry-stamp, .rw-civic-meta,
+      .rw-reader-comment, .inquiry-comment, .forum-reply, .forum-author,
+      .rw-comment-status, .forum-closed, .web-date, .web-error, .pk-error,
+      .pk-document-type, .pk-mail-date, .pk-paper-stamp, .pk-empty) {
+  text-indent: 0;
+}

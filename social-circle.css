@@ -1,0 +1,6 @@
+/* The new covers use people-free raster cells. Reuse native profile and chat layouts. */
+.personal-cover .cover-picture>.album-frame{width:100%;height:100%;aspect-ratio:auto}
+.personal-cover-view>.album-frame{width:100%;height:auto;aspect-ratio:1;max-height:75%}
+.profile-album-previews>.album-frame{width:48px;height:48px;aspect-ratio:1;flex:0 0 48px}
+.moments-feed[data-owner="cousin"] .moments-sign,.moments-feed[data-owner="colleague"] .moments-sign,.moments-feed[data-owner="manager"] .moments-sign,.moments-feed[data-owner="neighbor"] .moments-sign,.moments-feed[data-owner="bookfriend"] .moments-sign,.moments-feed[data-owner="runner"] .moments-sign,.moments-feed[data-owner="parentfriend"] .moments-sign,.moments-feed[data-owner="repairfriend"] .moments-sign{overflow-wrap:anywhere}
+@media(max-width:340px){.profile-album-previews>.album-frame{width:42px;height:42px;flex-basis:42px}}

@@ -1,0 +1,135 @@
+/* Final phone shell and raster asset treatment. */
+:root{--ui-font:"Home Plain Digits",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;--phone-radius:46px;--icon-size:56px}
+html{background:#111818}
+body{background:radial-gradient(ellipse at 50% 38%,#263835 0%,#182321 46%,#111818 85%);font-family:var(--ui-font);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button,input,textarea,select{font-family:var(--ui-font);letter-spacing:0}
+button{touch-action:manipulation;transition:opacity 140ms ease,background-color 140ms ease,transform 140ms ease}
+button:active{opacity:.7}
+button:focus-visible{outline:2px solid #429cdd;outline-offset:3px}
+button:disabled{opacity:.32}
+.phone{border:7px solid #080e0e;border-radius:var(--phone-radius);box-shadow:0 0 0 1px #3f4d49,0 24px 70px #0007;width:402px;height:min(852px,calc(100svh - 40px))}
+.phone.on-home{background:linear-gradient(180deg,#18334748 0%,#14242b18 38%,#10212c82 100%),url('assets/sea.png') 50% 50%/cover}
+.phone.on-lock{background:linear-gradient(180deg,#14232220 0%,#12272008 36%,#102524b0 100%),var(--recognition-lock-photo,url('assets/before.png')) 50% 38%/cover}
+.phone.on-home #screen,.phone.on-home .real-home,.phone.on-home .statusbar,.phone.on-home #home-key{background:transparent}
+.statusbar{height:49px;padding:8px 22px 2px;flex:none;color:#121415;background:#f6f6f6;font-variant-numeric:tabular-nums}
+.statusbar #clock{font-size:14px;font-weight:650;letter-spacing:-.3px}
+.statusbar>button{display:flex;align-items:center;justify-content:center;min-height:33px;position:relative;z-index:2}
+.island{width:108px;height:28px;top:8px;background:#080c0c}
+.island:after{width:5px;height:5px;right:11px;top:11px;background:#112026}
+.signal{display:flex;align-items:center;gap:4px;line-height:1;font-size:10px}
+.status-symbol{display:block;height:19px;width:19px;position:relative;overflow:hidden;mix-blend-mode:multiply}
+.status-symbol:before{content:"";position:absolute;inset:-5%;background-image:var(--status-art);background-size:300% 100%;background-position:var(--status-pos);background-repeat:no-repeat}
+.status-symbol.battery-symbol{width:25px}
+.status-symbol.battery-symbol:before{inset:-18% -4%;background-size:300% 100%}
+.statusbar .airplane-symbol{font-size:16px}
+.on-home .status-symbol{filter:invert(1);mix-blend-mode:screen}
+#home-key{height:29px;padding:0;background:#f6f6f6}
+#home-key span{width:126px;height:4px;opacity:.95}
+.real-home{padding:22px 23px 10px;overflow:auto;scrollbar-width:none;overscroll-behavior:contain}
+.real-home .widgets{gap:18px;margin:0 0 30px}
+.real-home .widget{min-width:0;min-height:139px;border-radius:22px;padding:16px 15px;display:flex;flex-direction:column;align-items:flex-start;background:#c7dce027;box-shadow:inset 0 1px 0 #ffffff12,0 2px 8px #112b3020;backdrop-filter:blur(22px) saturate(1.2);-webkit-backdrop-filter:blur(22px) saturate(1.2)}
+.real-home .widget>span{font-size:14px;font-weight:550;line-height:1.4;color:#fff}
+.real-home .widget .temp{font-size:42px;font-weight:300;letter-spacing:-1.8px;line-height:1.15;margin:7px 0 auto;color:#fff}
+.real-home .widget small{font-size:10px;line-height:1.4;font-weight:400;white-space:nowrap;color:#eef3f5;margin-top:8px}
+.real-home .calendar-top{font-size:12px;line-height:1.5;color:#ffe0ce}
+.real-home .calendar-num{font-size:42px;line-height:1.1;font-weight:300;letter-spacing:-1px;margin:5px 0 auto;color:#fff}
+.real-home .app-grid{gap:25px 16px;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start}
+.app-icon{min-width:0;position:relative;gap:7px;font-size:11px;line-height:1.25;font-weight:450;text-shadow:0 1px 3px #081922a0}
+.app-icon:active{transform:scale(.94);opacity:.82}
+.app-icon .iconbox.raster-app{width:var(--icon-size);height:var(--icon-size);border-radius:24%;background:none;box-shadow:0 3px 9px #0a152927;border:0;isolation:isolate;overflow:hidden;flex:none}
+.app-sprite{position:absolute;inset:-1%;width:102%;height:102%;background-repeat:no-repeat;display:block;border:0;box-shadow:none;transform:none}
+.calendar-date{left:0;right:0;top:30.5%;bottom:0;border-radius:0;background:#fff;color:#101112;font:400 34px/.95 var(--ui-font);letter-spacing:-1.8px;text-shadow:none;display:grid;place-items:center;padding:1px 0 0}
+.badge{height:18px;min-width:18px;padding:0 4px;right:1px;top:-5px;border-radius:12px;background:#fa3c35;box-shadow:0 1px 3px #0a152920;font-size:11px;line-height:18px;font-weight:500;text-shadow:none;border:0;color:#fff;z-index:2}
+.real-home .home-bottom{padding-top:22px;margin-top:auto}
+.home-search{display:flex;align-items:center;justify-content:center;gap:3px;background:#c5d6df30;backdrop-filter:blur(20px);border-radius:18px;padding:6px 12px;min-height:27px;color:#f3f6f8;font-size:11px;margin:0 auto 10px;text-shadow:none}
+.home-search .raster-icon{width:13px;height:13px;margin:0}
+.page-dots{height:7px;font-size:5px;line-height:7px;margin:0 0 12px;color:#f7fafb;opacity:.88}
+.real-home .dock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:12px 7px;border-radius:27px;background:#bdcdd634;backdrop-filter:blur(24px) saturate(1.3);-webkit-backdrop-filter:blur(24px) saturate(1.3);box-shadow:inset 0 1px 0 #fff1,0 5px 18px #0f252522}
+.dock .badge{right:-1px}
+.dock .app-icon{gap:0}
+.real-lock{padding:49px 19px 13px;background:none}
+.real-lock:before{display:none}
+.lock-date{font-size:18px;font-weight:500;letter-spacing:.1px;text-shadow:0 1px 8px #16262330}
+.lock-clock{font-size:80px;line-height:1.23;font-weight:650;letter-spacing:-4px;font-variant-numeric:tabular-nums;text-shadow:0 1px 12px #17292420}
+.lock-widgets{font-size:13px;gap:6px;margin-top:7px;color:#f1f4ee}
+.lock-widgets .raster-icon{width:18px;height:18px}
+.lock-notifications{padding-top:70px}
+.lock-notifications>button{background:#e8ece7d9;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:20px;box-shadow:0 3px 14px #10231e18;padding:14px;gap:10px}
+.lock-notifications strong{font-size:13px;font-weight:600}
+.lock-notifications small{font-size:10px;color:#727a74}
+.lock-notifications p{font-size:12px;line-height:1.6;color:#263128}
+.unlock-button{width:45px;height:45px;display:grid;place-items:center;background:#e1e8e02c;backdrop-filter:blur(18px);margin-top:20px}
+#notification{top:51px;left:10px;right:10px}
+.toast{border:0;background:#f4f5f2ed;backdrop-filter:blur(24px);box-shadow:0 8px 24px #14272022;padding:13px 14px;gap:10px}
+.toast>span:not(.avatar){flex:1;min-width:0}
+.toast>.avatar{width:40px;height:40px;min-width:40px;flex:0 0 40px;align-self:flex-start;overflow:hidden;border-radius:9px}
+.toast strong{font-size:10px;font-weight:500;color:#7a817c}
+.toast p{font-size:13px;line-height:1.5;font-weight:400;margin:4px 0 0;color:#1b221d}
+.raster-icon{border:0;box-shadow:none}
+@media(max-width:680px){
+ body{padding:0;background:#10191a}
+ .phone{border:0;box-shadow:none;border-radius:0;width:100%;max-width:470px;height:100dvh;min-height:0}
+ .statusbar{height:calc(49px + env(safe-area-inset-top));padding-top:calc(8px + env(safe-area-inset-top))}
+ .island{top:calc(8px + env(safe-area-inset-top))}
+ #home-key{height:calc(29px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom)}
+ #notification{top:calc(51px + env(safe-area-inset-top))}
+ .real-home{padding-top:25px;padding-left:25px;padding-right:25px}
+ .real-home .app-grid{column-gap:17px;row-gap:27px}
+ .real-home .widgets{margin-bottom:33px}
+}
+@media(min-width:681px) and (min-height:1000px){.phone{height:852px}}
+@media(max-height:760px){
+ :root{--icon-size:50px}
+ .real-home{padding-top:16px;padding-bottom:8px}
+ .real-home .widgets{margin-bottom:24px;gap:17px}
+ .real-home .widget{min-height:116px;padding:13px 14px;border-radius:20px}
+ .real-home .widget .temp,.real-home .calendar-num{font-size:36px}
+ .real-home .app-grid{row-gap:21px}
+ .real-home .home-bottom{padding-top:17px}
+ .real-home .dock{padding:11px 6px;border-radius:24px}
+ .calendar-date{font-size:31px}
+}
+@media(max-height:680px){
+ :root{--icon-size:47px}
+ .real-home{padding:12px 24px 7px}
+ .real-home .widgets{margin-bottom:21px}
+ .real-home .widget{min-height:100px;padding:11px 13px}
+ .real-home .widget .temp,.real-home .calendar-num{font-size:31px;line-height:1.05}
+ .real-home .widget small{font-size:9px;margin-top:6px}
+ .real-home .app-grid{row-gap:17px}
+ .app-icon{font-size:10px;gap:6px}
+ .real-home .home-bottom{padding-top:13px}
+ .home-search{padding:4px 10px;min-height:23px;margin-bottom:7px}
+ .page-dots{margin-bottom:8px}
+ .real-home .dock{padding:10px 5px}
+ .calendar-date{font-size:29px}
+ .real-lock{padding-top:30px}
+ .lock-clock{font-size:72px}
+ .lock-notifications{padding-top:30px}
+}
+@media(prefers-reduced-motion:reduce){button{transition:none}}
+
+/* Derive the glyph mask from the generated black-on-white PNG. */
+.phone .raster-icon,.phone .status-symbol{filter:none!important;mix-blend-mode:normal!important;background:none!important}
+.raster-icon:before{
+ background:currentColor!important;
+ mask-image:linear-gradient(#fff,#fff),var(--sprite);
+ mask-mode:luminance,luminance;
+ mask-size:100% 100%,600% 600%;
+ mask-position:0 0,var(--pos);
+ mask-repeat:no-repeat;
+ mask-composite:exclude;
+}
+.status-symbol:before{
+ background:currentColor;
+ mask-image:linear-gradient(#fff,#fff),var(--status-art);
+ mask-mode:luminance,luminance;
+ mask-size:100% 100%,300% 100%;
+ mask-position:0 0,var(--status-pos);
+ mask-repeat:no-repeat;
+ mask-composite:exclude;
+}
+.status-symbol.battery-symbol:before{inset:-42% -4%}
+.real-lock .raster-icon,.home-search .raster-icon,.moments-back .raster-icon,.moments-camera .raster-icon{color:#fff}
+.native-photo .raster-icon{color:#f3f3f3}
+@media(max-height:600px){.real-home .widgets{margin-bottom:16px}.real-home .home-bottom{padding-top:10px}}

@@ -1,0 +1,182 @@
+/* Diegetic documents and photograph details. Native app chrome stays unchanged. */
+.native-photo .native-photo-info {
+  padding: 17px 20px 18px;
+  border-top: 1px solid #ffffff0b;
+  border-radius: 19px 19px 0 0;
+  background: #1c1c1e;
+  line-height: 1.5;
+}
+
+.native-photo .native-photo-info time {
+  display: block;
+  color: #b6b6bb;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.native-photo .native-photo-info h3 {
+  margin: 7px 0 14px;
+  font-size: 19px;
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -.2px;
+  overflow-wrap: anywhere;
+}
+
+.native-photo .native-photo-info p {
+  margin: 5px 0;
+  color: #aaaab0;
+  font-size: 11px;
+  line-height: 1.65;
+  font-variant-numeric: tabular-nums;
+}
+
+.native-photo .lightbox-bar > span {
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .12px;
+}
+
+.native-photo .lightbox-bar small {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
+.native-photo:is([data-photo="door"], [data-photo="reflection"], [data-photo="threshold"]) .native-photo-info {
+  background: #181a1d;
+  border-top-color: #bbc2cf18;
+}
+
+.native-photo:is([data-photo="door"], [data-photo="reflection"], [data-photo="threshold"]) .native-photo-info h3 {
+  color: #f4f5f6;
+  letter-spacing: .25px;
+}
+
+/* A family-held PDF: a familiar photograph inside a cold administrative record. */
+.document:has(.case-photo) {
+  background: #f7f5ee;
+  color: #292c2b;
+  padding: 27px 24px 32px;
+  font-size: 12px;
+  line-height: 1.85;
+}
+
+.document:has(.case-photo) .stamp {
+  margin: 0 0 20px;
+  padding: 3px 8px;
+  border-color: #a97666;
+  color: #8f5a4c;
+  border-radius: 1px;
+  font-family: "Home Plain Digits","Songti SC", SimSun, serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  transform: rotate(-2deg);
+}
+
+.document:has(.case-photo) h2 {
+  margin: 0 0 24px;
+  color: #232625;
+  font-family: "Home Plain Digits","Songti SC", SimSun, serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+}
+
+.document:has(.case-photo) .case-photo {
+  display: block;
+  width: 100%;
+  max-height: 204px;
+  border: 5px solid #fffdf8;
+  box-shadow: 0 1px 5px #21272620;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.document:has(.case-photo) dl {
+  grid-template-columns: 78px minmax(0, 1fr);
+  margin: 27px 0 23px;
+  border-top: 1px solid #96988f;
+}
+
+.document:has(.case-photo) dt,
+.document:has(.case-photo) dd {
+  padding: 12px 0;
+  border-bottom-color: #dedfd7;
+  overflow-wrap: anywhere;
+}
+
+.document:has(.case-photo) dt { color: #7b7d76; }
+.document:has(.case-photo) dd { color: #292d2c; font-variant-numeric: tabular-nums; }
+.document:has(.case-photo) p { color: #7a7d75; font-size: 11px; line-height: 1.8; }
+.document:has(.case-photo) p:last-child { margin: 25px 0 0; color: #41463f; font-family: "Home Plain Digits","Songti SC", SimSun, serif; font-size: 13px; }
+
+/* Only the final family receipt receives this quiet, definitive layout. */
+.receipt[data-receipt="family"] {
+  min-height: 440px;
+  padding: 42px 25px 34px;
+  background: #fcfcf9;
+  color: #404c46;
+}
+
+.receipt[data-receipt="family"] .receipt-icon {
+  width: 47px;
+  height: 47px;
+  margin: 0 auto 25px;
+  background: #536f60;
+}
+
+.receipt[data-receipt="family"] h1 {
+  margin: 0 0 12px;
+  color: #26382e;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 2px;
+}
+
+.receipt[data-receipt="family"] > p {
+  margin-bottom: 36px;
+  color: #88928b;
+  font-size: 11px;
+  letter-spacing: .6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.receipt[data-receipt="family"] .record-table {
+  margin: 0 0 35px;
+  border: 0;
+  border-top: 1px solid #bec8bf;
+  border-bottom: 1px solid #dfe5dd;
+  border-radius: 0;
+  text-align: left;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.receipt[data-receipt="family"] .record-table th,
+.receipt[data-receipt="family"] .record-table td {
+  padding: 14px 6px;
+  border-right: 0;
+  border-bottom-color: #e7ebe4;
+  background: transparent;
+}
+
+.receipt[data-receipt="family"] .record-table th { width: 31%; color: #92998f; }
+.receipt[data-receipt="family"] .record-table td { color: #38473c; }
+.receipt[data-receipt="family"] .record-table tr:last-child td { color: #213629; font-weight: 600; letter-spacing: .7px; }
+.receipt[data-receipt="family"] .web-primary { font-size: 13px; font-weight: 400; }
+
+@media (max-width: 374px) {
+  .document:has(.case-photo) { padding-left: 20px; padding-right: 20px; }
+  .document:has(.case-photo) h2 { font-size: 21px; }
+  .receipt[data-receipt="family"] { padding-left: 20px; padding-right: 20px; }
+}
+
+@media (max-height: 720px) {
+  .native-photo .native-photo-info { padding: 12px 18px; }
+  .native-photo .native-photo-info h3 { margin-bottom: 9px; font-size: 17px; }
+  .native-photo .native-photo-info p { margin: 3px 0; }
+}

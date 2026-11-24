@@ -1,0 +1,6 @@
+.manual-source-reference{display:block;margin:12px 0;color:inherit;font:inherit;font-size:.94em;line-height:1.8;text-indent:0;overflow-wrap:anywhere;cursor:text;border:0;background:none;box-shadow:none;text-decoration:none}
+.manual-source-reference::before{content:none!important}.manual-source-reference::after{content:none!important}
+.bc-source-title{display:block;font-size:13px;line-height:1.8;color:#73654f;margin-top:10px;text-decoration:none;cursor:text}
+.dy-comment-copy .manual-source-reference{color:#777;font-size:12px;margin:7px 0}
+.dy-thread .manual-source-reference{white-space:pre-wrap}
+p .manual-source-reference{display:inline;margin:0;font-size:inherit;line-height:inherit}

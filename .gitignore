@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+private.env
+node_modules/
+work/
+*.log
+请确认回家.html

@@ -1,0 +1,36 @@
+.pz-ending.ec-ending{display:block;padding:18px 16px 24px;background-position:center top;background-attachment:local;overflow:visible}
+.ec-ending>.ec-layout{width:100%;max-width:560px;min-width:0;margin:auto;padding:0}
+.ec-card{position:relative;min-height:560px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--end-rule);background:linear-gradient(180deg,#070b100d 12%,#070b1066 40%,#070b10df 70%,#070b10f7);box-shadow:0 14px 45px #0004;overflow:hidden}
+.ec-card-top{display:flex;justify-content:space-between;gap:12px;padding:18px 20px;color:var(--end-detail)}
+.ec-ending .ec-card-top>span{font:10px/1.8 "Microsoft YaHei",sans-serif;letter-spacing:.16em;color:inherit;white-space:nowrap}
+.ec-ending .ec-card-top time{font:9px/1.8 "Home Plain Digits","Consolas",monospace;letter-spacing:.02em;color:inherit;white-space:nowrap}
+.ec-card-body{padding:150px 24px 24px;text-align:center}
+.ec-ending h1.ec-award-title{font:600 40px/1.3 "Microsoft YaHei","PingFang SC",sans-serif;letter-spacing:.16em;text-indent:.16em;margin:0 0 13px;color:var(--end-ink)}
+.ec-ending .ec-kind{display:inline-block;border:1px solid var(--end-rule);padding:4px 12px;font:10px/1.7 "Microsoft YaHei",sans-serif;letter-spacing:.15em;color:var(--end-detail)}
+.ec-rule{width:36px;height:1px;background:var(--end-detail);opacity:.65;margin:24px auto 5px}
+.ec-story-title{position:relative;margin:0 -10px;font-size:0;line-height:0}
+.ec-story-title>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.ec-story-title img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:contain;filter:drop-shadow(0 2px 5px #0008);user-select:none}
+.ec-ending .ec-summary{font-size:13px;line-height:1.95;letter-spacing:.035em;text-indent:0;margin:8px auto 23px;max-width:30em}
+.ec-stamp{display:inline-block;padding:8px 14px;border:1px solid var(--end-detail);outline:1px solid var(--end-rule);outline-offset:3px;font:600 13px/1.4 "Microsoft YaHei",sans-serif;letter-spacing:.16em;text-indent:.16em;color:var(--end-detail);transform:rotate(-4deg)}
+.ec-ending .ec-coda{font-size:11px;line-height:1.9;letter-spacing:.07em;opacity:.8;margin:22px 0 0;text-indent:0}
+.ec-end-rescued .ec-card,.pz-end-rescued .ec-card{border-color:#879eae70}
+.pz-end-sealed .ec-card{background:linear-gradient(180deg,#241c0d00 5%,#241c0d33 35%,#181810d9 66%,#181810f5)}
+.pz-end-sealed h1.ec-award-title{font-family:"Home Plain Digits","FangSong","STFangsong",serif;font-weight:500;font-size:43px;letter-spacing:.2em}
+.pz-end-sealed .ec-stamp{font-family:"Home Plain Digits","KaiTi","STKaiti",serif;border-style:double;border-width:3px;padding:6px 12px;transform:rotate(3deg);color:#dbc69d}
+.pz-end-sealed .ec-summary{font-family:"Home Plain Digits","FangSong","STFangsong",serif;font-size:15px;letter-spacing:.065em}
+.pz-end-converted .ec-card{background:linear-gradient(180deg,#10071305 10%,#10071366 40%,#100713e8 70%,#100713fa)}
+.pz-end-converted h1.ec-award-title{font-family:"Home Plain Digits","LiSu","STLiti","KaiTi",serif;font-weight:400;font-size:44px;letter-spacing:.22em}
+.pz-end-converted .ec-kind{border-style:dashed}
+.pz-end-converted .ec-stamp{font-family:"Home Plain Digits","LiSu","STLiti","KaiTi",serif;color:#b3b878;border-color:#969c58;transform:rotate(-6deg)}
+.pz-end-converted .ec-coda{font-family:"Home Plain Digits","KaiTi","STKaiti",serif;font-size:13px;letter-spacing:.12em}
+.ec-collection{margin:25px 0 0}
+.ec-ending .ec-collection>p{display:flex;justify-content:space-between;font:10px/1.8 "Microsoft YaHei",sans-serif;letter-spacing:.1em;color:var(--end-detail);margin:0 0 10px;text-indent:0}
+.ec-ending .ec-collection>p>span{font:inherit;color:inherit;letter-spacing:0}
+.ec-collection>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.ec-ending .ec-collection>div>span{padding:9px 3px;text-align:center;border:1px solid #ffffff18;color:#93938b80;font:11px/1.7 "Microsoft YaHei",sans-serif;letter-spacing:.04em}
+.ec-ending .ec-collection>div>span.earned{border-color:var(--end-rule);color:var(--end-ink);background:#ffffff08}
+.ec-ending .pz-ending-actions{margin-top:20px;padding-top:17px}
+.ec-ending .pz-ending-actions button{min-height:44px;flex:1;text-align:center}
+.ec-ending .ec-footer{text-align:center;margin:18px 0 0;font:10px/1.8 "Microsoft YaHei",sans-serif;letter-spacing:.06em;opacity:.48;text-indent:0}
+@media(max-width:350px){.pz-ending.ec-ending{padding:12px 12px 20px}.ec-card{min-height:530px}.ec-card-top{padding:15px 13px;gap:5px}.ec-card-body{padding:135px 17px 22px}.ec-ending h1.ec-award-title{font-size:36px}.pz-end-sealed h1.ec-award-title,.pz-end-converted h1.ec-award-title{font-size:39px}.ec-ending .ec-summary{font-size:12px}.pz-end-sealed .ec-summary{font-size:14px}.ec-ending .ec-card-top>span{font-size:9px}.ec-ending .ec-card-top time{font-size:8px}}

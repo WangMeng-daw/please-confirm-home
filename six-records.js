@@ -1,0 +1,33 @@
+/* The cult's invented doctrine is recorded in documents, never performed by a player. */
+const SIX_RECORDS=[
+ {id:'household_wang',kind:'寿殉',birth:'1959年 / 农历正月十三',hour:'子时',source:'家谱添丁页',mark:'上龛 · 阴册'},
+ {id:'household_zhao',kind:'命殉',birth:'2018年 / 农历正月十三',hour:'午时',source:'家属留存的满月帖',mark:'上龛 · 阳册'},
+ {id:'household_zhou',kind:'寿殉',birth:'1964年 / 农历四月初四',hour:'卯时',source:'旧家谱出生条',mark:'中龛 · 阴册'},
+ {id:'household_liu',kind:'命殉',birth:'2013年 / 农历四月初四',hour:'酉时',source:'外婆记下的出生时辰',mark:'中龛 · 阳册'},
+ {id:'household_sun',kind:'寿殉',birth:'1954年 / 农历七月廿一',hour:'辰时',source:'家属提交的家谱夹页',mark:'下龛 · 阴册'},
+ {id:'household_he',kind:'命殉',birth:'2016年 / 农历七月廿一',hour:'戌时',source:'祖母留存的生辰红纸',mark:'下龛 · 阳册'}
+];
+function sixState(){const s=clueState();s.six??={archiveRead:false,unlocked:false,notice:''};return s.six}
+function sixArchive(){
+ if(!S.flags.found||!S.puzzle.adminFate||!clueState().known['dp-cloud-letter'])return clueUnavailable();
+ sixState().archiveRead=true;clueRead('six-selection');
+ const copied=[SIX_RECORDS[3],SIX_RECORDS[0],SIX_RECORDS[5],SIX_RECORDS[2],SIX_RECORDS[4],SIX_RECORDS[1]];
+ return cultHistoryShell('六殉奉母 · 双册抄件',`<article class="ch-prose ch-six-register">
+ <div class="ch-document-meta"><span>奉母派禁传抄本</span><time>沈闻附存 · 2026-09-06</time></div>
+ <div class="ch-double-register"><div><small>阴册</small><strong>三寿</strong><span>已过六十</span></div><div><small>阳册</small><strong>三命</strong><span>未成年</span></div></div>
+ <details class="ch-chapter"><summary><time>册首</time><h2>三寿压龛，三命养形</h2><span class="ch-chapter-toggle" aria-hidden="true">＋</span></summary><div class="ch-chapter-body"><p>光绪旧渡簿原记失散人口，奉母派在1926年另立“六殉奉母”的祭法：取已过六十的三人作寿殉，取未成年的三人作命殉。三寿留于阴册，三命留于阳册，一阴一阳合成一龛。受祭者不必已经死亡；他们被关在旧堂内，只要还活着，食名母便能借他们的名字不断吞食他们的性命。</p><blockquote>“三老献寿，不许善终；三童养形，不许长成。六人不得归家，母方得以出龛。”</blockquote><p class="ch-red-note">守灯派朱批：此条为奉母派私增。按生辰择人，再遣人诱取，皆有经手人，不得以“奉母”为由隐去遇害者姓名。</p></div></details>
+ <section class="ch-pairing"><div class="ch-section-label"><span>生辰如何配殉</span><small>抄本边注</small></div><p>配殉条文没有抄在名单旁。册首只钤了一条索引，所指的句子见另一部抄经本。</p>${cipherBookReference('six','配殉条文 · 查书签','字旁印记随抄经本原页保存。')}<p>装卷记：阴阳指本册的老幼位置，不按男女划分。配成三组以后，依农历生日从年初排到年末，每组先阴册、后阳册。不得照抄网页表格的先后。</p><details class="ch-preface"><summary>生辰原件从何而来<span>展开边注</span></summary><div class="ch-chapter-body"><p>本轮候祭名册没有按姓名排序。生辰来自平台过去征集的家谱、满月帖和生辰纸，以“寻找亲缘记录”为由收上来。公开寻人页没有这些时辰，奉母派却早已保存。</p></div></details></section>
+ <section class="ch-names"><div class="ch-section-label"><span>2026年候祭预选号</span><small>依抄件原序</small></div><p>下列是9月6日已经存在的内册预编号，当时六人还没有全部失踪。后来的公开寻人登记沿用了这些号码。</p><blockquote class="ch-margin-note">人还未到，号已编好。<br>后来若见同号启事，请保留登记日期。<cite>沈闻 · 页边另注</cite></blockquote><ol class="ch-person-list">${copied.map(r=>`<li class="ch-person-card"><div class="ch-person-heading"><h3>${E(CLUE_FAMILIES[r.id].subject)}</h3><span>${E(CLUE_FAMILIES[r.id].case)}</span></div><dl><div><dt>生年 · 农历</dt><dd>${E(r.birth)}</dd></div><div><dt>原件记时</dt><dd><strong>${E(r.hour)}</strong></dd></div></dl><p class="ch-person-source">${E(r.source)}</p></li>`).join('')}</ol></section>
+ <div class="ch-section-label"><span>册后附记</span><small>二则</small></div>
+ <details class="ch-chapter"><summary><time>归身栏</time><h2>第七个位置为何留给小禾</h2><span class="ch-chapter-toggle" aria-hidden="true">＋</span></summary><div class="ch-chapter-body"><p>第七位称“归身”，先带走一个有家人在寻找的孩子，照着她做出替身。小禾8月13日被带入，比另外六人更早。她的照片、称呼和家中往事被陆续送给替身，让它学会冒充小禾。</p><p>9月8日至14日，候祭册上的六个人陆续失踪；三龛在14日收齐。他们随后将替身送回各家，真正的失踪者被关在旧堂里。直到第七户家属亲口叫出女儿的名字，奉母册才把“归身”记为已经到家。</p><p>归身栏未录小禾生辰，只附照片、家中称呼及林砚历次回访。册尾小字：“六殉养其身，至亲认其名。二者俱备，方可出龛。”</p></div></details>
+ <details class="ch-chapter"><summary><time>守灯批注</time><h2>为什么还留着失踪人员的姓名</h2><span class="ch-chapter-toggle" aria-hidden="true">＋</span></summary><div class="ch-chapter-body"><p>奉母派只用“寿殉”“命殉”称呼失踪的人。只要家属认下送回去的替身，他们就销去寻人记录。守灯派保留真实姓名与家属来信，坚持办了接领手续也要查清是不是本人。旧案附注：六家若不再认那替身，重新寻找失踪的亲人，阴阳两册便不能合龛，食名母也难以继续现身。</p><p>守灯君力量微弱。旧案记载，要救出六人，守灯一派须将完整名册带入堂内，并附上六家继续寻找亲人的来信。另有一次只救出了用作“归身”的孩子，被当作六殉的人困在里面。</p></div></details>
+ </article><div class="ch-attached">同卷原件${clueLink('未删节原底卷',BASE+'/account/history/negative')}</div>`,'six-records');
+}
+function sixAttachment(){const x=sixState();return `<section class="clue-attachment"><h2>沈闻附存 · 失踪人员原始名册</h2><p>附件经过加密。沈闻没有把解锁说明放在站内，只在借出的备用机上留了一份“名册便签”。</p>${clueLink('同卷附页：六殉奉母 · 双册抄件',BASE+'/account/history/six')}${x.unlocked?'<p>失踪人员原始名册.pdf · 已解密</p><button class="web-primary" data-a="cs-register-save">存储到文件</button>':`<form class="web-form" data-form="six-archive-password"><label>附件密码<input name="password" type="password" autocomplete="off" maxlength="12" required></label><button class="web-primary">打开加密附件</button><p role="status">${E(x.notice||'')}</p></form>`}</section>`}
+const sixOldWeb=clueWeb;clueWeb=function(u){if(['guijia.example','www.guijia.example'].includes(u.hostname)&&u.pathname==='/account/history/six')return sixArchive();return sixOldWeb(u)};
+const sixOldSubmit=clueSubmit;clueSubmit=function(kind,d){if(kind!=='six-archive-password')return sixOldSubmit(kind,d);if(!cultHistoryState().negativeUnlocked)return true;const x=sixState(),password=SIX_RECORDS.map(r=>CLUE_FAMILIES[r.id].case.slice(-2)).join('');if(String(d.get('password')||'').normalize('NFKC')===password){x.unlocked=true;x.notice='';clueRead('six-original-open')}else x.notice='附件密码不正确。';persist();render();return true};
+const sixOldAction=clueAction;clueAction=function(a,b){if(a==='cs-register-save'&&!sixState().unlocked)return true;return sixOldAction(a,b)};
+const sixOldData=clueFileData;clueFileData=function(id){const f=sixOldData(id);if(id==='cs-register'&&f)f.body+='\n9月6日候祭内册与9月24日守册补记：王建国与赵明明同为正月十三，子午相对；周淑琴与刘若宁同为四月初四，卯酉相对；孙海生与何小安同为七月廿一，辰戌相对。三老作寿殉，三童作命殉。林小禾更早被带入，用作第七个“归身”，即照着她的模样制作替身。内册预编号早于这六人的公开失踪登记，说明人选事先拟定。';return f};
+// These are local records created before the spare phone left the building.
+if(!DAUGHTER_CONTENT.notes.some(n=>n.id==='six-voices'))DAUGHTER_CONTENT.notes.unshift({id:'six-voices',title:'他们又在念生日',date:'2026-09-14 22:18',clue:'dp-six-voices',body:'今天又有人来了。\n\n门里有人念正月十三，两个地方都应了一声。一边是爷爷，一边是小孩子。起初没听清。我还想，他们怎么叫同一个名字。后来又念了一遍，才知道是在念生日。\n\n他们还说子对午，卯对酉，辰对戌，阴册一个，阳册一个。\n\n一个叔叔说三龛齐了。我问我呢，他说我不算在那六个里面。他们把我叫作“归身”。\n\n归身是什么意思？我说我叫林小禾，他让我别说话。'});
+if(!DAUGHTER_CONTENT.files.some(f=>f.id==='filing-0906'))DAUGHTER_CONTENT.files.push({id:'filing-0906',title:'名册便签_0906.txt',date:'2026-09-06 22:54',size:'1 KB',clue:'dp-six-order',body:'小禾，把这张存好。\n\n我把失踪人员原始名册加密了，不能再让他们用我的账号，把没找到的人改成已经回家。口令随他们内册的装卷规则编。网页表格是抄件顺序，和装卷的顺序不一样。\n\n配对规则另存《归亲会抄经本》，索引：下·伍背·玄。借阅地址也存进手机了。查到那一行，再请字间校读帮着认字；别把索引里的字当成祈词。\n\n配好三组，依农历生日从年初到年末。每组先寿殉、后命殉，取各人预选号末两位连续写入，共十二位，不加空格。\n\n他们说的“归身”是指你，不算在这六个人里，也不编进口令。册子上有些人还没被带来。以后看见同号的寻人消息，把日期也存下来。\n\n沈闻\n2026年9月6日'});

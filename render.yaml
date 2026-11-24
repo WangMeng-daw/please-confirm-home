@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: please-confirm-home-npc
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NPC_API_KEY
+        sync: false
+      - key: NPC_BASE_URL
+        sync: false
+      - key: NPC_MODEL
+        sync: false
+      - key: NPC_ALLOWED_ORIGINS
+        value: https://wangmeng-daw.github.io

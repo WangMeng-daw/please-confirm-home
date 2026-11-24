@@ -1,0 +1,12 @@
+/* A single photographic interruption, confined to the simulated phone. */
+#dread-layer[hidden]{display:none!important}
+#dread-layer{position:absolute;inset:0;z-index:90;overflow:hidden;background:#020202;cursor:pointer;isolation:isolate;touch-action:none}
+#dread-layer img{display:block;width:100%;height:100%;max-width:none;object-fit:cover;object-position:50% 43%;transform:scale(1.08);animation:face-arrival 95ms cubic-bezier(.05,.7,.15,1) both;user-select:none;-webkit-user-drag:none}
+#dread-layer[data-kind="shrine"] img{filter:sepia(.28) saturate(.58);object-position:50% 41%;transform:scale(1.15)}
+#dread-layer[data-kind="accepted"] img{object-position:50% 38%;transform:scale(1.32);animation-name:face-final}
+.phone.dread-active #home-key{z-index:101;background:transparent!important}
+.phone.dread-active #home-key span{background:#e4e0d7;opacity:.45}
+@keyframes face-arrival{from{transform:scale(.93)}to{transform:scale(1.08)}}
+@keyframes face-final{from{transform:scale(1.06)}to{transform:scale(1.32)}}
+#dread-layer.still img{animation:none!important}
+@media(prefers-reduced-motion:reduce){#dread-layer img{animation:none!important}}

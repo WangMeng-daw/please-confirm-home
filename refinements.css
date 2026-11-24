@@ -1,0 +1,6 @@
+/* System navigation remains reachable while inspecting a photograph. */
+#home-key{z-index:25}
+.lightbox{inset:48px 0 27px}
+.dock .app-icon>span:not(.iconbox){display:none}
+.photo-details.highlight{outline:1px solid #879572;outline-offset:-8px}
+@media(max-width:680px){.lightbox{top:calc(48px + env(safe-area-inset-top));bottom:calc(27px + env(safe-area-inset-bottom))}}

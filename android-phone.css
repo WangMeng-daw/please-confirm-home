@@ -1,0 +1,95 @@
+/* Android shell belongs only to Xiaohe. iPhone app styles remain on the other device. */
+body.dp-available{height:100vh;height:100dvh;min-height:0;overflow:hidden;padding:12px;gap:10px;--device-switch-height:60px}
+body.dp-available .phone{height:min(852px,calc(100dvh - 94px));min-height:0;flex:0 1 auto}
+#dp-device-switch{box-sizing:border-box;height:60px;min-height:60px;max-width:calc(100vw - 24px);width:402px;padding:4px;gap:4px;border-radius:18px;background:#182321;border:1px solid #59665b;z-index:60}
+#dp-device-switch button{flex:1;min-width:0;min-height:50px;display:flex;flex-direction:column;gap:2px;padding:5px 8px;border-radius:13px;font-size:13px;white-space:normal;line-height:1.3}
+#dp-device-switch button>.dp-switch-name{width:auto;height:auto;display:block;font-weight:600}
+#dp-device-switch button>small{font-size:10px;letter-spacing:.35px;opacity:.68}
+#dp-device-switch button[aria-pressed=true]{background:#e5ebdd;color:#203129;box-shadow:0 1px 4px #0003}
+#dp-device-switch button{position:relative}#dp-device-switch .dp-switch-unread{position:absolute;right:6px;top:4px;min-width:17px;height:17px;padding:0 4px;box-sizing:border-box;border-radius:10px;background:#fa5151;color:#fff;font:500 10px/17px Arial,sans-serif;text-align:center}
+#dp-device-switch button:focus-visible,.dp-device button:focus-visible{outline:3px solid #86bcd9;outline-offset:-3px}
+.phone.dp-device{border-radius:28px;border-color:#171a20;font-family:Arial,'Microsoft YaHei','Noto Sans SC',sans-serif;background:#f7f8fa;color:#25292f}
+.phone.dp-device .statusbar{height:35px;min-height:35px;padding:0 17px;background:#f7f8fa;color:#353941;font-family:Arial,'Microsoft YaHei',sans-serif}
+.phone.dp-device .statusbar>button{min-height:32px;padding:0;font-size:12px}
+.phone.dp-device .statusbar #clock{font-size:12px;font-weight:500;letter-spacing:.1px}
+.phone.dp-device .island{width:10px;height:10px;top:12px;border-radius:50%;background:#13161a;box-shadow:0 0 0 2px #292d3580}
+.phone.dp-device .island:after{width:3px;height:3px;left:3px;top:3px;background:#1b2b3b}
+.dp-device #status-controls .signal{display:flex;align-items:center;gap:5px;letter-spacing:0}
+.dp-device .dp-charge-label{font-size:10px}
+.dp-device .dp-no-sim{font-size:10px;margin:0 2px 0 0}
+.dp-device .dp-phone-battery{border-radius:1px;width:18px;height:10px;padding:1px}
+.dp-device .dp-phone-battery>span{border-radius:0;background:currentColor}
+.dp-device .dp-phone-battery:after{right:-3px;top:2px;width:1.5px;height:4px}
+.phone.dp-device #home-key{display:none}
+#dp-android-nav{position:relative;display:flex;align-items:center;justify-content:space-evenly;flex:0 0 48px;min-height:48px;z-index:80;background:#f7f8fa;border-top:1px solid #1d24250a}
+.phone.dp-device #overlay>.sheet-shade,.phone.dp-device #overlay>.modal-shade{bottom:48px}
+#dp-android-nav[hidden]{display:none!important}
+#dp-android-nav button{display:grid;place-items:center;min-width:64px;width:26%;height:48px;min-height:48px;border:0;padding:0;background:none;color:inherit}
+#dp-android-nav button>.dp-control{width:30px;height:30px;flex:0 0 30px;opacity:.8}
+.dp-device .dp-control{display:inline-block;background-size:400% 400%;background-repeat:no-repeat;width:30px;height:30px;flex:0 0 30px;object-fit:contain;vertical-align:middle;filter:none}
+.dp-device .raster-icon.dp-control::before,.dp-device .raster-icon.dp-control::after{content:none;display:none}
+.dp-device .wx-header{min-height:52px;padding:0 8px;gap:8px;background:#f7f8fa;color:#282c33;border-bottom:1px solid #e8eaec}
+.dp-device .wx-header>button{min-width:44px;min-height:44px;width:44px;height:44px}
+.dp-device .wx-header h2{font-weight:600;font-size:18px;text-align:left;line-height:1.4}
+.dp-device .wx-header>.header-gap{width:44px;flex:0 0 44px}
+.dp-device .native-toolbar{min-height:46px;flex:0 0 auto;background:#f7f8fa;color:#697384}
+.dp-device .native-toolbar button,.dp-device .native-photo-tools button{min-width:44px;min-height:44px}
+.dp-device .wx-tabs{min-height:54px;padding-block:5px;background:#f7f7f7;flex-shrink:0}
+.dp-device .wx-tabs button{min-height:44px;justify-content:center;align-items:center}
+.phone.dp-device.on-home,.phone.dp-device.on-lock{background:linear-gradient(180deg,#171a3470,#151c3338 45%,#172033b5),var(--dp-wallpaper) center/cover}
+.phone.dp-device.on-home .statusbar,.phone.dp-device.on-lock .statusbar,.phone.dp-device.on-home #dp-android-nav,.phone.dp-device.on-lock #dp-android-nav{background:transparent;color:white;border:0}
+.phone.dp-device.on-home #dp-android-nav .dp-control,.phone.dp-device.on-lock #dp-android-nav .dp-control{filter:brightness(0) invert(1)}
+.dp-device .dp-home{height:100%;min-height:0;overflow-y:auto;box-sizing:border-box;padding:20px 28px 5px;display:flex;flex-direction:column;background:none;color:white;scrollbar-width:none}
+.dp-home-clock{display:flex;flex-direction:column;align-items:flex-start;gap:3px;margin:8px 0 22px}
+.dp-home-clock time{font-size:65px;font-weight:300;letter-spacing:-2px;line-height:1.15;font-variant-numeric:tabular-nums}
+.dp-home-clock>span{font-size:13px;letter-spacing:.5px;color:#f2f2f8}
+.dp-device .dp-note-widget{width:100%;display:grid;grid-template-columns:1fr auto;gap:6px;padding:13px 16px;margin:0 0 30px;border-radius:10px;border:1px solid #ffffff26;background:#32394599;backdrop-filter:blur(12px);color:#fff;text-align:left;min-height:79px}
+.dp-note-widget>span{font-size:11px;color:#e8ce9d}.dp-note-widget strong{font-size:16px;font-weight:500;grid-column:1/2;line-height:1.4}.dp-note-widget small{grid-row:2;grid-column:2;font-size:11px;color:#ffffff9c;align-self:center}
+.dp-device .dp-home .app-grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:18px;row-gap:24px}
+.dp-device .dp-home .app-icon{font-size:12px;color:white;gap:8px;min-height:78px;text-shadow:0 1px 3px #0009;line-height:1.3}
+.dp-launch-icon{display:block;flex:0 0 56px;width:56px;height:56px;background-repeat:no-repeat;background-size:400% 266.667%;border-radius:26%;box-shadow:0 2px 5px #0b102433;overflow:hidden}
+.dp-device .dp-home .home-bottom{padding-top:24px;margin-top:auto;flex-shrink:0}
+.dp-device .dp-home .page-dots{display:flex;justify-content:center;gap:7px;margin:8px 0 15px;font-size:7px;color:#ffffffe0}
+.dp-device .dp-home .dock{padding:9px 0 0;background:transparent;border-radius:0;backdrop-filter:none;display:flex;justify-content:space-around}
+.dp-device .dp-home .dock .app-icon{min-height:58px}
+.dp-device .dp-home .dock .app-icon>span:last-child{display:none}
+.dp-device .dp-home .dock .app-icon>.dp-launch-icon{display:block}
+.dp-device .dp-lock{background:transparent;padding:24px 20px 10px!important;overflow:auto;min-height:0}
+.dp-lock:before{display:none!important}.dp-device .dp-lock .lock-date{font-size:14px;color:#fff}.dp-device .dp-lock .lock-clock{font:300 60px/1.25 Arial,sans-serif;letter-spacing:-2px;margin-top:5px}
+.dp-device .dp-pin-area{margin-top:16px}.dp-device .dp-pin-area h2{font-size:17px;font-weight:500}.dp-device .dp-pin-area>p{font-size:12px;color:#dadde6}
+.dp-device .dp-keypad{gap:8px 26px}.dp-device .dp-keypad>button{width:59px;height:55px;background:transparent;border-radius:8px;border:none;color:white;box-shadow:none;backdrop-filter:none}.dp-device .dp-keypad>button:active{background:#ffffff20}.dp-device .dp-keypad>button>span{font-size:28px;font-weight:400}.dp-device .dp-keypad>button>small{font-size:8px}.dp-device .dp-pin-delete{font-size:13px}
+.dp-device .dp-pin-dots{gap:17px;margin-top:18px}.dp-device .dp-pin-dots i{width:8px;height:8px;border-radius:2px}
+.dp-device .dp-recents{height:100%;padding:22px 22px 30px;box-sizing:border-box;overflow:auto;background:linear-gradient(155deg,#37455b,#252735);color:#fff}
+.dp-recents h1{font-size:19px;font-weight:500;margin:0 0 23px}.dp-recent-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dp-recent-list>button{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:12px;padding:19px 15px;border-radius:16px;background:#f5f7fa;color:#303b4f;min-height:162px}.dp-recent-list strong{font-size:15px}.dp-recent-list>button>span:last-child{font-size:12px;color:#8a919d;line-height:1.4;max-width:100%;overflow-wrap:anywhere}.dp-recent-list .dp-launch-icon{width:40px;height:40px;flex-basis:40px;border-radius:11px}
+.dp-device .native-search{border-radius:8px;min-height:44px}.dp-device .native-search button{min-height:44px}.dp-device .native-search .dp-control{width:27px;height:27px;flex-basis:27px}
+.dp-device .notes-real{background:#f7f6f1;padding:14px}.dp-device .note-list-row{margin:9px 0;padding:17px;border-radius:9px;background:white;box-shadow:0 1px 2px #00000008;border:0}.dp-device .note-list-row strong{font-size:16px;font-weight:500}.dp-device .note-list-row p{font-size:12px}.dp-device .dp-note{background:#fffcf4;padding:18px 22px 36px}
+.dp-device .files-real{background:white}.dp-device .files-real h1{font-size:21px;font-weight:500}.dp-device .file-row{min-height:75px}.dp-device .dp-share-sheet{border-radius:17px 17px 0 0}.dp-device .dp-share-sheet>p{line-height:1.6}.dp-device .sheet-cancel{min-height:48px}.dp-device .dp-airdrop-person{min-height:90px}
+.dp-device .safari-address{background:#f7f8fa;border:0;padding:8px 10px;gap:5px;min-height:62px}.dp-device .safari-address form{min-height:45px;padding:3px 8px;border-radius:24px;background:#e9ecf0}.dp-device .safari-address form>input{font-size:13px}.dp-device .safari-address button{min-width:44px;min-height:44px}.dp-device .safari-address form>.dp-control{width:25px;height:25px;flex:0 0 25px}.dp-device .safari-toolbar{background:#f7f8fa;min-height:48px}.dp-device .safari-toolbar button{min-width:44px;min-height:44px}.dp-device .dp-safari-start{background:#f5f7fa}.dp-device .dp-safari-start h1{font-size:24px;font-weight:500}
+.dp-device .system-settings{background:#f3f5f8}.dp-device .system-settings>h1{font-size:25px;font-weight:500}.dp-device .row-group{border-radius:8px}.dp-device .settings-person{border-radius:8px}.dp-device .dp-row{min-height:58px}.dp-device .row-chevron{font-family:Arial,sans-serif;font-size:22px;color:#9a9ea7;flex:0 0 auto}
+.dp-device .dp-photo-view .dp-control{filter:brightness(0) invert(1)}
+.dp-device .dpm-photo-view .dp-control,.dp-device .moments-cover .dp-control{filter:brightness(0) invert(1)}
+@media(min-width:900px){
+ body.dp-available{padding-inline:170px;position:relative}
+ #dp-device-switch{position:fixed;left:calc(50% + 230px);top:50%;transform:translateY(-50%);height:auto;min-height:0;width:146px;max-width:146px;padding:7px;gap:7px;flex-direction:column;border-radius:18px}
+ #dp-device-switch button{width:100%;min-height:76px;gap:6px;padding:10px 4px}
+ body.dp-available .phone{height:min(852px,calc(100dvh - 32px))}
+}
+@media(max-width:680px){
+ body.dp-available{padding:0;gap:0;justify-content:flex-start;--device-switch-height:calc(60px + env(safe-area-inset-bottom,0px))}
+ body.dp-available .phone{border:0;border-radius:0;box-shadow:none;width:100%;max-width:470px;height:calc(100dvh - var(--device-switch-height));min-height:0;max-height:none;flex:0 0 auto}
+ #dp-device-switch{width:100%;max-width:470px;height:var(--device-switch-height);min-height:var(--device-switch-height);border-radius:0;border-width:1px 0 0;padding:4px max(8px,env(safe-area-inset-right,0px)) calc(4px + env(safe-area-inset-bottom,0px)) max(8px,env(safe-area-inset-left,0px));gap:6px}
+ #dp-device-switch button{min-height:50px;height:50px}
+ .phone.dp-device .statusbar{height:calc(35px + env(safe-area-inset-top,0px));min-height:calc(35px + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px)}
+ .phone.dp-device .island{top:calc(12px + env(safe-area-inset-top,0px))}
+}
+@media(max-height:710px){
+ .dp-device .dp-home{padding-top:10px}.dp-home-clock{margin:3px 0 10px}.dp-home-clock time{font-size:48px}.dp-home-clock>span{font-size:12px}.dp-device .dp-note-widget{min-height:64px;padding:9px 13px;margin-bottom:17px;gap:3px}.dp-note-widget strong{font-size:14px}.dp-device .dp-home .app-grid{row-gap:15px}.dp-device .dp-home .app-icon{min-height:69px;gap:6px;font-size:11px}.dp-device .dp-launch-icon{width:49px;height:49px;flex-basis:49px}.dp-device .dp-home .home-bottom{padding-top:10px}.dp-device .dp-home .page-dots{margin:5px 0 6px}.dp-device .dp-home .dock{padding-top:5px}.dp-device .dp-home .dock .app-icon{min-height:49px}
+ .dp-device .dp-lock{padding-top:7px!important}.dp-device .dp-lock .lock-clock{font-size:42px}.dp-device .dp-pin-area{margin-top:3px}.dp-device .dp-pin-area h2{margin:4px 0}.dp-device .dp-pin-area>p{margin:3px 0}.dp-device .dp-keypad{gap:3px 25px}.dp-device .dp-keypad>button{height:45px;width:55px}.dp-device .dp-pin-dots{margin:11px 0 0}.dp-device .dp-pin-error{min-height:20px;margin:3px 0}
+}
+@media(orientation:landscape) and (max-height:560px){
+ body.dp-available{padding:0 154px 0 0;gap:0;justify-content:center;align-items:center}
+ body.dp-available .phone{height:100dvh;max-height:none;width:min(470px,calc(100vw - 160px));border:0;border-radius:0;box-shadow:none;min-height:0}
+ #dp-device-switch{position:fixed;right:max(6px,env(safe-area-inset-right,0px));left:auto;top:50%;transform:translateY(-50%);width:138px;max-width:138px;height:auto;min-height:0;padding:6px;flex-direction:column;gap:8px;border:1px solid #59665b;border-radius:14px}
+ #dp-device-switch button{min-height:64px;height:64px;width:100%}
+ .dp-device .dp-home{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:10px 20px;overflow:auto}.dp-home-clock{grid-column:1;grid-row:1;margin:0}.dp-home-clock time{font-size:40px}.dp-device .dp-note-widget{grid-column:1;grid-row:2;margin:0;min-height:62px;align-self:start}.dp-device .dp-home .app-grid{grid-column:2;grid-row:1/3;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.dp-device .dp-home .home-bottom{display:none}.dp-device .dp-home .app-icon{min-height:61px}.dp-device .dp-home .dp-launch-icon{width:44px;height:44px;flex-basis:44px}.dp-device .dp-lock{overflow:auto}
+}

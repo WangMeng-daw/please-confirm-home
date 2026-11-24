@@ -1,0 +1,181 @@
+/* Publisher-specific typography, image direction and document rhythm.
+   Digits are explicitly provided by the existing Latin-only sans-serif face. */
+#web-content{--ed-song:"Home Plain Digits","SimSun","STSong",serif;--ed-kai:"Home Plain Digits","KaiTi","STKaiti",serif;--ed-sans:"Home Plain Digits","Microsoft YaHei","PingFang SC",sans-serif}
+#web-content[data-publisher] :is(input,select,textarea,time){font-family:var(--ed-sans);font-variant-numeric:lining-nums tabular-nums}
+.manual-source-masthead{margin:0;font-size:inherit}.manual-source-masthead :is(small,strong){display:block}
+
+/* Street: a locally drawn masthead, vermilion navigation, dense forum rows. */
+#web-content[data-publisher="street"]{background:#fffdf8;--scene-edge:0px}
+#web-content[data-publisher="street"] .rw-street-header{background:#faf6ed;border:0;color:#423e35}
+#web-content[data-publisher="street"] .rw-street-header>div{padding:19px 18px 6px;min-height:0}
+#web-content[data-publisher="street"] .rw-civic-brand strong{font:700 33px/1.5 var(--ed-kai);color:#363e30;letter-spacing:4px}
+#web-content[data-publisher="street"] .rw-civic-eyebrow{font:9px Arial;color:#92836c;letter-spacing:2px}
+#web-content[data-publisher="street"] .rw-street-header small{color:#898471;font-size:11px}
+#web-content[data-publisher="street"] .rw-street-search{margin:8px 18px 0;border:0;border-bottom:1px solid #c6bea9;background:transparent;border-radius:0}
+#web-content[data-publisher="street"] .rw-street-search input{background:transparent;min-height:36px;font-size:12px}
+#web-content[data-publisher="street"] .rw-street-search button{background:transparent;color:#af4533;padding:0 9px}
+.publisher-street-art{display:block;width:100%;height:106px;object-fit:cover;object-position:50% 53%;mix-blend-mode:multiply}
+#web-content[data-publisher="street"] .rw-street-header nav{background:#b74a38;border:0;padding:0 8px}
+#web-content[data-publisher="street"] .rw-street-header nav button{background:transparent;color:#fff3e7;border:0;font-size:13px;min-height:42px}
+#web-content[data-publisher="street"] .rw-street-header nav .is-current{color:#fff;background:#923e30;box-shadow:none}
+#web-content[data-publisher="street"] .rw-street-list,#web-content[data-publisher="street"] .rw-street>article{background:#fffdf8;margin:0;padding-inline:18px;border:0}
+#web-content[data-publisher="street"] .rw-street-list-heading{background:#f4f0e6;margin-inline:-18px;border-bottom:1px solid #ddd6c7}
+#web-content[data-publisher="street"] .rw-street-list-heading h1{font:600 15px var(--ed-sans);color:#746552}
+#web-content[data-publisher="street"] .rw-street-topic{gap:3px;padding-block:16px;border-bottom:1px dashed #d8d1c3}
+#web-content[data-publisher="street"] .rw-street-topic h2{font:700 18px/1.65 var(--ed-song);color:#453e32}
+#web-content[data-publisher="street"] .rw-street-topic p{font:13px/1.7 var(--ed-sans);color:#827869}
+#web-content[data-publisher="street"] .rw-street-list-meta>span:first-child{background:none;padding:0;color:#af543e}
+#web-content[data-publisher="street"] .rw-street>article h1{font:700 25px/1.55 var(--ed-song);color:#3b382d}
+#web-content[data-publisher="street"] .inquiry-comment{padding:18px 0;background:none;border:0;border-top:1px solid #e2dbce;border-radius:0}
+#web-content[data-publisher="street"] .inquiry-comment p{font:15px/1.95 var(--ed-sans)}
+#web-content[data-publisher="street"] .rw-comments-title{background:none;border:0;border-bottom:2px solid #b74a38;padding:10px 0;margin-inline:0}
+#web-content[data-publisher="street"] .rw-street-footer{background:#f2ecdf!important;border-color:#ddd1bb}
+
+/* Parking: municipal operator, broad photography and a compact data terminal. */
+#web-content[data-publisher="parking"],#web-content[data-publisher="parking"] .pk-site{background:#fff;font-family:var(--ed-sans)}
+#web-content[data-publisher="parking"] .pk-site>header{background:#143447;padding:23px 18px 20px;min-height:108px;border-bottom:4px solid #e3b94e}
+#web-content[data-publisher="parking"] .pk-brand{font:700 24px/1.4 var(--ed-sans);letter-spacing:-.6px;text-align:left}
+#web-content[data-publisher="parking"] .pk-brand::before{content:"P";display:inline-grid;place-items:center;margin-right:9px;width:29px;height:31px;border:1px solid #87a7b8;border-radius:4px;color:#e8c457;font:bold 24px Arial}
+#web-content[data-publisher="parking"] .pk-site>header>span{font:9px Arial;letter-spacing:1.1px;color:#a4bdc9}
+#web-content[data-publisher="parking"] .pk-site>nav{background:#edf3f6;border:0;padding:0 9px}
+#web-content[data-publisher="parking"] .pk-site>nav button{font-size:12px;border:0;min-height:43px}
+#web-content[data-publisher="parking"] .pk-site>main{margin:0;background:#fff;padding:25px 18px 30px;border:0;box-shadow:none}
+#web-content[data-publisher="parking"] .pk-site h1{font:700 25px/1.5 var(--ed-sans);letter-spacing:-.4px;color:#173b50;margin:0 0 18px}
+.publisher-parking-photo{margin:0 -18px 21px;position:relative}
+.publisher-parking-photo img{display:block;width:100%;height:192px;object-fit:cover;object-position:center 58%}
+.publisher-parking-photo figcaption{position:absolute;left:0;bottom:0;padding:18px;color:#fff;background:linear-gradient(transparent,#142732bd);width:100%;font:12px var(--ed-sans)}
+#web-content[data-publisher="parking"] :is(.pk-news,.pk-roster,.pk-form){background:none;border:0;border-radius:0;padding:20px 0 0;box-shadow:none;border-top:1px solid #cbd8df}
+#web-content[data-publisher="parking"] .pk-news h2{font:700 16px var(--ed-sans);color:#173b50;margin:0 0 8px}
+#web-content[data-publisher="parking"] .pk-link{padding-block:14px;color:#3e5b6b;border-bottom:1px solid #e1e7e9}
+#web-content[data-publisher="parking"] .pk-session{border:0;background:transparent;padding:8px 0;color:#6a808a}
+#web-content[data-publisher="parking"] .pk-table-wrap{border:0;border-top:2px solid #234e62}
+#web-content[data-publisher="parking"] .pk-site>footer{background:#143447;color:#bfd0d9;border:0;padding:22px 18px}.pk-footer-link{color:inherit}
+
+/* Laundry: quiet mint, tactile photography, roomy business forms. */
+#web-content[data-publisher="linen"] .linen-site-v2{background:#fff;color:#274c47;font-family:var(--ed-sans)}
+#web-content[data-publisher="linen"] .linen-location{background:#eaf2ef;color:#6e8880;border:0;font-size:10px;letter-spacing:1px}
+#web-content[data-publisher="linen"] .linen-mast{background:#fff;box-shadow:none;border:0}
+#web-content[data-publisher="linen"] .linen-wordmark{padding:18px 20px;min-height:93px;gap:11px}
+#web-content[data-publisher="linen"] .linen-wordmark strong{font:500 28px/1.45 var(--ed-kai);letter-spacing:3px;color:#28685c}
+#web-content[data-publisher="linen"] .linen-wordmark small{color:#82938d;letter-spacing:2px;font-size:10px}
+#web-content[data-publisher="linen"] .linen-logo-word{border:1px solid #93b7a9;color:#2c7162;background:none;border-radius:50%;width:44px;height:44px;font:18px/42px var(--ed-kai);box-shadow:none}
+#web-content[data-publisher="linen"] .linen-mast nav{background:#fff;border-top:1px solid #edf0ed;border-bottom:1px solid #d9e4de;padding:0 9px}
+#web-content[data-publisher="linen"] .linen-mast nav a{background:transparent;color:#62776c;font-size:12px;border:0;box-shadow:none}
+#web-content[data-publisher="linen"] .linen-mast nav a[aria-current]{color:#24715e;box-shadow:inset 0 -2px #24715e}
+#web-content[data-publisher="linen"] .linen-homepage>article{padding:0!important;margin:0!important}
+#web-content[data-publisher="linen"] .linen-brand-hero{display:flex;flex-direction:column;background:#edf4ef;padding:0;height:auto;min-height:0;border:0}
+.publisher-linen-photo{display:block;width:100%;height:210px;object-fit:cover}
+#web-content[data-publisher="linen"] .linen-brand-hero>div{padding:23px 22px 26px;background:none;max-width:none}
+#web-content[data-publisher="linen"] .linen-brand-hero h1{font:500 32px/1.55 var(--ed-song);letter-spacing:2px;color:#2b5b4f;margin:10px 0}
+#web-content[data-publisher="linen"] .linen-brand-hero p{color:#789086;font-size:12px;letter-spacing:1px}
+#web-content[data-publisher="linen"] .linen-brand-hero .clue-link{background:none;border:0;border-bottom:1px solid #629f87;color:#39715e;padding:9px 0;display:inline-block}
+#web-content[data-publisher="linen"] .linen-quick-query{margin:0;padding:28px 22px;border:0;border-bottom:1px solid #d8e5dd;background:#fff;border-radius:0;box-shadow:none}
+#web-content[data-publisher="linen"] .linen-quick-query h2{font:600 21px/1.5 var(--ed-song);color:#2d5f50}
+#web-content[data-publisher="linen"] .linen-services-overview{margin:0;padding:22px;gap:16px;background:#fff;border:0}
+#web-content[data-publisher="linen"] .linen-services-overview a{border:0;border-radius:0;background:none;padding:0;box-shadow:none}
+#web-content[data-publisher="linen"] .linen-services-overview a>span{font:28px Arial;color:#a4bcb0;background:none;width:auto;height:auto}
+#web-content[data-publisher="linen"] .linen-updates{padding:25px 22px;background:#f5f7f3;margin:0;border:0}
+#web-content[data-publisher="linen"] .linen-page-heading h1{font:600 27px/1.5 var(--ed-song);color:#335d50}
+#web-content[data-publisher="linen"] .linen-query-form{border:0;border-radius:0;background:none;padding:20px 0;box-shadow:none}
+#web-content[data-publisher="linen"] .linen-query-form button{background:#326f5d;border-radius:2px}
+#web-content[data-publisher="linen"] .linen-quick-query>.clue-link{background:#326f5d}
+#web-content[data-publisher="linen"] .linen-mast nav a[aria-current]::after{display:none}
+#web-content[data-publisher="linen"] .linen-site-v2>footer{background:#244e43;color:#c9ded4;border:0;padding:27px 22px}
+
+/* Six small publishers: different mastheads, crops and body rhythms, not six
+   colored copies of the same card. Record originals retain their paper UI. */
+.publisher-local-photo{display:block;width:100%;height:130px;object-fit:cover;margin-top:19px}
+#web-content[data-publisher] .fi-site main{margin:0;border:0;box-shadow:none;border-radius:0}
+#web-content[data-publisher] .fi-site .fi-link{background:none;border-radius:0}
+#web-content[data-publisher="market"] .fi-market{background:#fffbea;color:#594a2c}
+#web-content[data-publisher="market"] .fi-market header{background:#faf2d8;color:#624c27;padding:20px 18px 0;border-top:5px solid #d17835}
+#web-content[data-publisher="market"] .fi-market header small{font:700 29px var(--ed-kai);letter-spacing:2px;color:#635128}
+#web-content[data-publisher="market"] .fi-market header strong{font:13px/1.7 var(--ed-sans);margin-top:9px;color:#8c784e}
+#web-content[data-publisher="market"] .publisher-local-photo{height:156px;width:calc(100% + 36px);max-width:none;margin-left:-18px}
+#web-content[data-publisher="market"] .fi-market main{background:#fffbea;padding:25px 20px}.fi-market .fi-meta{color:#927c4d}
+#web-content[data-publisher="culture"] .fi-square header{background:#5c3c86;color:#fff;padding:24px 19px 0;border-bottom:5px solid #e5ad55}
+#web-content[data-publisher="culture"] .fi-square header small{font:700 25px/1.4 var(--ed-sans);letter-spacing:1px}
+#web-content[data-publisher="culture"] .fi-square header strong{font:13px/1.6 var(--ed-sans);color:#e4d5f4}
+#web-content[data-publisher="culture"] .publisher-local-photo{height:102px;filter:saturate(.65)}
+#web-content[data-publisher="culture"] .fi-square{--fi-accent:#7351a1;--fi-rule:#e1dbe8;background:#fff}
+#web-content[data-publisher="culture"] .fi-square main{padding-top:26px}
+#web-content[data-publisher="photo"] .fi-photo{background:#f8f6ef;color:#39342b}
+#web-content[data-publisher="photo"] .fi-photo header{background:#1d211e;padding:25px 22px 0;color:#f3ecdc;border:0}
+#web-content[data-publisher="photo"] .fi-photo header small{font:27px/1.5 var(--ed-song);letter-spacing:5px}
+#web-content[data-publisher="photo"] .fi-photo header strong{font:12px/1.6 var(--ed-sans);color:#bdb9ac;letter-spacing:1px}
+#web-content[data-publisher="photo"] .publisher-local-photo{height:172px;filter:grayscale(1);width:calc(100% + 44px);max-width:none;margin-left:-22px}
+#web-content[data-publisher="photo"] .fi-photo main{background:#f8f6ef;padding:25px 22px}
+#web-content[data-publisher="photo"] .fi-photo p{font:16px/2 var(--ed-song)}
+#web-content[data-publisher="photo"] .fi-photo-sleeve{background:none;padding:9px 0;border-top:1px solid #d1caba;border-bottom:1px solid #d1caba}
+#web-content[data-publisher="handwork"] .fi-library{--fi-accent:#6b5a8b;--fi-rule:#e4ddea;background:#fffcf5;color:#524565}
+#web-content[data-publisher="handwork"] .fi-library header{background:#f7f0e8;color:#63517d;border:0;padding:22px 20px 0}
+#web-content[data-publisher="handwork"] .fi-library header small{font:27px/1.5 var(--ed-kai);letter-spacing:1px}
+#web-content[data-publisher="handwork"] .fi-library header strong{font:13px/1.6 var(--ed-sans);color:#988aa6}
+#web-content[data-publisher="handwork"] .publisher-local-photo{height:136px;mix-blend-mode:multiply}
+#web-content[data-publisher="handwork"] .fi-library main{background:#fffcf5;padding:26px 21px}
+#web-content[data-publisher="handwork"] .fi-editor-note{border:0;background:none;padding:0}.fi-editor-note>strong{font-family:var(--ed-song)}
+#web-content[data-publisher="handwork"] .fi-version-list li{border-bottom:1px dashed #d8cde0}
+#web-content[data-publisher="clock"] .fi-clock{--fi-accent:#806039;--fi-rule:#d9cdbb;background:#f4efe4;color:#524637}
+#web-content[data-publisher="clock"] .fi-clock header{background:#30291f;color:#e6cda0;padding:24px 20px 0;border-top:3px solid #ad8650}
+#web-content[data-publisher="clock"] .fi-clock header small{font:27px/1.6 var(--ed-song);letter-spacing:4px}
+#web-content[data-publisher="clock"] .fi-clock header strong{font:12px/1.8 var(--ed-kai);letter-spacing:1px;color:#b9a487}
+#web-content[data-publisher="clock"] .publisher-local-photo{height:148px;width:calc(100% + 40px);max-width:none;margin-left:-20px}
+#web-content[data-publisher="clock"] .fi-clock main{background:#f4efe4;padding:24px 20px}
+#web-content[data-publisher="clock"] .fi-clock p{font:16px/2 var(--ed-kai)}
+#web-content[data-publisher="clock"] .fi-clock table{background:#faf7ef;border-top:1px solid #9e845e}
+#web-content[data-publisher="pets"] .fi-pets header{background:#edf7f4;padding:23px 20px 0;color:#287d74;border:0}
+#web-content[data-publisher="pets"] .fi-pets header small{font:700 25px/1.4 var(--ed-sans);letter-spacing:-1px}
+#web-content[data-publisher="pets"] .fi-pets header strong{font:14px/1.6 var(--ed-sans);color:#71a69b}
+#web-content[data-publisher="pets"] .publisher-local-photo{height:142px;width:calc(100% + 40px);max-width:none;margin-left:-20px}
+#web-content[data-publisher="pets"] .fi-pets main{padding:27px 21px;background:#fff}
+#web-content[data-publisher="pets"] .fi-care-card{border:0;border-radius:0;background:#edf8f4;padding:20px 0}
+
+/* Public records: red official masthead, blue service notices, muted archive. */
+#web-content[data-publisher="archive"] .civic-site>.civic-mast{background:#f9f7f2!important;border-top:5px solid #8e342c}
+#web-content[data-publisher="archive"] .civic-brand strong{font:700 26px/1.5 var(--ed-song);color:#813e33;letter-spacing:2px}
+#web-content[data-publisher="archive"] .civic-brand small{color:#a08a76!important}
+#web-content[data-publisher="archive"] .civic-brand-mark{background:none;color:#97503f;box-shadow:none;border:1px solid #ac6e58;font-family:var(--ed-song)}
+#web-content[data-publisher="archive"] .civic-mast nav{background:#8f3930;border:0}
+#web-content[data-publisher="archive"] .civic-mast nav a{color:#fff5e8;background:transparent}
+#web-content[data-publisher="archive"] .civic-site{background:#fffefa}
+#web-content[data-publisher="archive"] .civic-site>article{background:#fffefa;margin:0;padding-top:25px}
+#web-content[data-publisher="archive"] .civic-document-title h1{font:700 26px/1.6 var(--ed-song)!important;color:#373128}
+#web-content[data-publisher="archive"] .la-catalogue-card{background:none;border:0;border-bottom:1px solid #ded7c8;border-radius:0;box-shadow:none;padding:20px 0}
+#web-content[data-publisher="archive"] .la-catalogue-year{background:none;border:0;color:#9b533e}
+#web-content[data-publisher="service"] :is(.pk-destination,.rw-inquiry){background:#fff}
+#web-content[data-publisher="service"] .pk-destination header,#web-content[data-publisher="service"] .rw-civic-header{background:#e9f0f5;border:0;border-top:4px solid #31769b}
+#web-content[data-publisher="service"] .pk-destination header{color:#264f67}
+#web-content[data-publisher="service"] .pk-destination header :is(b,strong,span,small){color:inherit;opacity:1}
+#web-content[data-publisher="service"] .pk-destination article{border:0;background:#fff;margin:0;padding:27px 20px;box-shadow:none}
+#web-content[data-publisher="service"] .pk-destination h1{font:700 24px/1.6 var(--ed-song);color:#244e6b}
+#web-content[data-publisher="service"] .rw-index-card{border:0;background:none;border-radius:0;border-bottom:1px solid #d8e0e6;box-shadow:none}
+#web-content[data-publisher="records"] :is(.pk-archive,.pk-folder-page,.fi-site){background:#f6f4ed;color:#42493f}
+#web-content[data-publisher="records"] .publisher-retained header{background:#e5e8df;color:#4e5c4c;border-top:4px solid #718269;padding:23px 20px}
+#web-content[data-publisher="records"] .publisher-retained header small{font:12px/1.8 var(--ed-sans);letter-spacing:0}
+#web-content[data-publisher="records"] .publisher-retained header strong{font:700 23px/1.6 var(--ed-song);margin-top:12px}
+#web-content[data-publisher="records"] .publisher-retained main{background:#fdfbf4;padding:25px 20px}
+#web-content[data-publisher="records"] .manual-source-masthead{color:inherit;line-height:inherit}
+
+/* Editorial and family sites have different reading voices and navigation. */
+#web-content[data-publisher="news"] .rw-news-article h1,#web-content[data-publisher="news"] .rw-news-card h2{font-family:var(--ed-song);font-weight:700}
+#web-content[data-publisher="news"] .rw-paper-head nav{background:#a02c32;border:0}
+#web-content[data-publisher="news"] .rw-paper-head nav button{background:none;color:#fff1e8}
+#web-content[data-publisher="news"] .rw-paper-head nav .is-current{background:#7f2026;color:#fff;box-shadow:none}
+#web-content[data-publisher="news"] .rw-news-deck{background:none;border:0;padding:0;color:#777}
+#web-content[data-publisher="parents"] .rw-forum-header{background:#fff4ec;border-top:0;border-bottom:2px solid #dca077;padding-top:24px}
+#web-content[data-publisher="parents"] .rw-forum-header strong{font:700 30px var(--ed-kai);color:#a86c4c;letter-spacing:2px}
+#web-content[data-publisher="parents"] .rw-forum-header nav{background:#fff4ec;border-top:0}
+#web-content[data-publisher="parents"] :is(.forum-thread,.rw-forum-index){background:#fffcf9;margin-top:0;padding-top:24px}
+#web-content[data-publisher="parents"] .forum-thread h1{font:700 24px/1.6 var(--ed-song)}
+#web-content[data-publisher="lamp"] .lamphouse-mast{border:0;box-shadow:none}
+#web-content[data-publisher="lamp"] .lamphouse-sign strong{font-family:var(--ed-kai);letter-spacing:5px}
+#web-content[data-publisher="lamp"] .lamphouse-site article{border:0;box-shadow:none;border-radius:0}
+#web-content[data-publisher="lamp"] .lamphouse-document-title h1{font-family:var(--ed-kai);font-size:32px}
+#web-content[data-publisher="zijian"] .bc-site-header{background:#f3ede0;border-bottom:1px solid #c6b99a;color:#675534;font-family:var(--ed-song)}
+#web-content[data-publisher="zijian"] .cipher-tool-site{background:#f8f5ed;color:#524a3c}
+#web-content[data-publisher="zijian"] .cipher-tool-site h1{font:700 28px/1.6 var(--ed-song)}
+#web-content[data-publisher="agency"]>.rw-public-head .site-brand strong{font-family:var(--ed-kai);font-size:27px;letter-spacing:2px}
+#web-content[data-publisher="agency"]>.site-hero h1{font-family:var(--ed-song);font-size:30px;letter-spacing:2px}
+#web-content[data-publisher="agency"] :is(.web-section,.web-pad,.rw-public-article){border-radius:0;box-shadow:none}
+@media(max-width:360px){.publisher-street-art{height:88px}.publisher-parking-photo img{height:170px}.publisher-linen-photo{height:180px}#web-content[data-publisher="parking"] .pk-brand{font-size:21px}#web-content[data-publisher] .fi-site header small{font-size:23px}#web-content[data-publisher="records"] .publisher-retained header small{font-size:11px}}
+@media(prefers-reduced-motion:no-preference){#web-content[data-publisher] :is(a,button){transition:color .15s ease,background-color .15s ease}#web-content[data-publisher] :is(a,button):active{filter:brightness(.93)}}

@@ -1,0 +1,33 @@
+/* Motion only touches the fictional inner site, never the phone chrome. */
+.cult-site { --cult-depth: 0; --cult-approach: 1; }
+.cult-site .cult-masthead { overflow: hidden; }
+.cult-site.cult-awake .cult-title-row img { animation: cult-print-drift 13s steps(1,end) infinite; }
+.cult-site.cult-awake .cult-deity-name img { animation: cult-name-breathe 7s ease-in-out infinite; }
+.cult-site .cult-idol img { transform: scale(var(--cult-approach)); transform-origin: 50% 32%; transition: transform 1.7s linear,filter 3s ease; }
+.cult-site.cult-observed .cult-idol img { filter: contrast(1.16) brightness(.84); }
+.cult-site .cult-altar-verse { transition: color 4s; }
+.cult-site.cult-observed .cult-altar-verse { color: #c4cb94; }
+.cult-site .cult-live-note { min-height: 3.7em; }
+.cult-site [data-cult-live="response"] { display: inline-block; min-width: 2.3em; font-family: "Home Plain Digits",Consolas,monospace; font-size: 22px; line-height: 1.5; vertical-align: middle; }
+.cult-site [data-cult-live="echo"] { display: block; min-height: 1.9em; font-size: 12px; }
+.cult-site .cult-ink-changed { animation: cult-ink-arrives 1.2s ease-out both; }
+.cult-site [data-cult-live].cult-ink-changed { color: #c2c98a; }
+.cult-site[data-cult-part="archive"] [data-cult-live].cult-ink-changed { color: #48364b; }
+.cult-site [data-cult-live="margin"].cult-ink-changed { font-size: 20px; letter-spacing: 2px; transform: rotate(-1deg); }
+.cult-site .cult-inline-link:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@keyframes cult-print-drift {
+ 0%,57%,60%,100% { transform: translateX(0); filter: none; }
+ 58% { transform: translateX(2px); filter: saturate(1.4); }
+ 59% { transform: translateX(-1px); filter: contrast(1.12); }
+}
+@keyframes cult-name-breathe {
+ 0%,100% { opacity: .86; transform: scale(.987); }
+ 50% { opacity: 1; transform: scale(1.015); }
+}
+@keyframes cult-ink-arrives { from { opacity:.4; filter:blur(1px); } to { opacity:1; filter:blur(0); } }
+.cult-site.cult-still *, .reduce-motion .cult-site * { animation: none!important; transition: none!important; }
+.cult-site.cult-still .cult-idol img, .reduce-motion .cult-site .cult-idol img { transform: none; }
+@media(prefers-reduced-motion: reduce) {
+ .cult-site * { animation: none!important; transition: none!important; }
+ .cult-site .cult-idol img { transform: none; }
+}

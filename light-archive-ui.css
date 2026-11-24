@@ -1,0 +1,154 @@
+/* Source documents stay readable; colour and photographs identify their publishers. */
+.clue-page.light-archive{--la-ink:#24353c;--la-muted:#6f7d80;--la-rule:#dce3e2;--la-accent:#456f72;background:#f7f8f6;color:var(--la-ink);font-size:15px;overflow-wrap:break-word}
+.clue-page.light-archive>header{padding:27px 22px 23px;background:#eef2ef;border-bottom:1px solid var(--la-rule);position:relative}
+.clue-page.light-archive>header:before{content:"";display:block;width:25px;height:3px;background:var(--la-accent);margin-bottom:16px}
+.clue-page.light-archive>header small{font-size:10px;letter-spacing:.12em;color:var(--la-muted)}
+.clue-page.light-archive h1{margin:10px 0 0;font-size:25px;font-weight:650;line-height:1.4;letter-spacing:-.04em;overflow-wrap:break-word}
+.clue-page.light-archive>article{padding:21px 20px 28px}
+.clue-page.light-archive article p{font-size:14px;line-height:1.9;text-indent:2em;margin:16px 0}
+.clue-page.light-archive h2{font-size:17px;font-weight:650;line-height:1.55;letter-spacing:-.02em;margin:0 0 11px}
+.clue-page.light-archive article .clue-meta{font-size:10px;line-height:1.7;color:var(--la-muted);text-indent:0;margin:16px 0}
+.clue-page.light-archive>footer{padding:20px;font-size:10px;letter-spacing:.04em;line-height:1.9;color:#82908d;border-color:var(--la-rule);background:#f0f3ef}
+.light-archive .la-photo{margin:0;position:relative;overflow:hidden;border-radius:2px;background:#d9dfda}
+.light-archive .la-photo img{display:block;width:100%;height:184px;object-fit:cover}
+.light-archive .la-photo figcaption{position:absolute;inset:auto 0 0;display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:27px 13px 11px;color:#fff;background:linear-gradient(transparent,#172526b5);font-size:11px;letter-spacing:.08em;line-height:1.5}
+.light-archive .la-photo figcaption span{font-size:9px;letter-spacing:.02em;opacity:.85;text-align:right}
+.light-archive .la-device-photo img{height:186px;object-position:center 57%}
+.light-archive .la-record-cards{display:grid;gap:10px;margin:17px 0 22px}
+.light-archive .la-record-card{display:grid;grid-template-columns:33px minmax(0,1fr);gap:12px;border:1px solid var(--la-rule);padding:15px 14px;background:#fff;position:relative;border-radius:3px;overflow:hidden}
+.light-archive .la-card-mark{font-family:"Home Plain Digits",Arial,Helvetica,sans-serif;font-size:22px;line-height:1;color:#789091;border-top:1px solid currentColor;padding-top:7px;align-self:start}
+.light-archive .la-record-card small{font-size:9px;letter-spacing:.12em;color:#7c9190;display:block;margin-bottom:4px}
+.light-archive .la-record-card h2{font-size:15px;margin:0;font-weight:600;line-height:1.6}
+.light-archive article .la-record-card p{font-size:12px;line-height:1.75;margin:7px 0 0;text-indent:0;color:#617374}
+.light-archive .la-device-card{background:#273e43;border-color:#273e43;color:#f6faf7}
+.light-archive .la-device-card small,.light-archive .la-device-card .la-card-mark{color:#b5cac7}
+.light-archive article .la-device-card p{color:#d5dfda}
+.light-archive .la-relay-card{background:#edf3ed;border-left:3px solid #839985}
+.light-archive .la-family-card{background:#edf2f7;border-left:3px solid #8397ad}
+.light-archive .la-original{margin:22px 0;border-top:1px solid #cdd6d3;border-bottom:1px solid #cdd6d3;background:#fff}
+.light-archive .la-original summary{padding:17px 13px;display:flex;align-items:center;justify-content:space-between;list-style:none;cursor:pointer;gap:12px;font-size:14px;font-weight:600;line-height:1.5}
+.light-archive .la-original summary::-webkit-details-marker{display:none}
+.light-archive .la-original summary:after{content:"+";font-size:23px;font-weight:300;line-height:1;flex:0 0 auto;color:#6c8885}
+.light-archive .la-original[open] summary:after{content:"−"}
+.light-archive .la-original summary small{display:block;font-size:10px;font-weight:400;color:var(--la-muted);margin-top:4px}
+.light-archive .la-original-body{padding:0 16px 7px;border-top:1px solid #e4e8e4}
+.light-archive article .la-original-body p{font-size:13px;line-height:1.95;margin:18px 0}
+.light-archive .clue-attachment.la-transfer{margin:26px 0 0;padding:20px 16px 16px;background:#fff;border:1px solid #d8e0dc;border-top:3px solid #81928a;box-shadow:0 3px 12px #1b3f3610}
+.light-archive .la-section-label,.light-archive .la-saved-memory>small{font-size:9px;letter-spacing:.17em;color:#869188;margin-bottom:7px}
+.light-archive .la-transfer h2{font-size:19px}
+.light-archive article .la-transfer>p{font-size:12px;margin:12px 0;line-height:1.85}
+.light-archive .la-record-fields{margin:15px 0;display:grid}
+.light-archive .la-record-fields>div{display:grid;grid-template-columns:75px minmax(0,1fr);gap:9px;border-top:1px solid #e3e9e5;padding:10px 0;font-size:11px;line-height:1.7}
+.light-archive .la-record-fields dt{color:#7b8985;font-weight:400}
+.light-archive .la-record-fields dd{margin:0;overflow-wrap:anywhere;color:#334844;font-weight:500}
+.light-archive article .la-document-note{font-size:11px;line-height:1.85;color:#78867e;text-indent:0;margin:18px 0;padding-top:12px;border-top:1px solid #dce4de}
+.light-archive .la-related{border-top:1px solid #d6e0dc;margin-top:24px;padding:15px 0 0}
+.light-archive .la-related .clue-link{display:block;font-size:12px;font-weight:600;text-decoration:none;line-height:1.75;position:relative;padding-right:24px;color:#426f70}
+.light-archive .la-related .clue-link:after{content:"↗";position:absolute;right:1px;top:0;font-size:16px;font-weight:400;color:#769391}
+.light-archive .la-office-photo img{height:207px;object-position:center 42%;filter:saturate(.8)}
+.light-archive .la-name-entry{padding:20px 0 2px}
+.light-archive .la-name-entry small{font-size:10px;letter-spacing:.13em;color:#849188}
+.light-archive .la-name-entry h2{font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:24px;letter-spacing:.03em;font-weight:500;margin:7px 0 10px}
+.light-archive article .la-name-entry p{font-size:13px}
+.light-archive blockquote{font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:15px;line-height:1.85;background:#e9eeea;color:#43554c;border-left:2px solid #839589;padding:18px 17px;margin:20px 0}
+.light-archive article .la-related-detail>p{font-size:13px;margin:0 0 13px}
+.light-archive .la-care-photo img{height:157px;object-position:center 48%}
+.light-archive .la-care-message{background:#eef4ee;border:1px solid #dce7dc;margin:20px 0;padding:14px 15px;border-radius:3px 13px 13px}
+.light-archive .la-care-message small{font-size:10px;color:#738979;letter-spacing:.04em}
+.light-archive article .la-care-message p{margin:8px 0 0;font-size:13px}
+.light-archive .la-care-form{margin:23px 0 0;padding:0;background:transparent;border:0;box-shadow:none;display:block}
+.light-archive .la-care-form label{display:block;font-size:14px;font-weight:600;line-height:1.7;color:#344c41}
+.light-archive .la-care-form textarea{display:block;box-sizing:border-box;width:100%;min-width:0;max-width:100%;min-height:140px;margin-top:10px;padding:12px;font-size:13px;font-weight:400;line-height:1.8;border:1px solid #d4ded5;border-radius:4px;background:#fff;color:#35443b;resize:vertical}
+.light-archive article .la-care-form p{text-indent:0;font-size:11px;line-height:1.7;color:#7a8c80;margin:9px 0 14px}
+.light-archive .la-care-form .web-primary{display:block;width:100%;border:0;border-radius:4px;background:#436c58;font-size:13px;padding:13px 15px;color:#fff;line-height:1.4}
+.light-archive .la-care-form [role=status]:empty{display:none}
+.light-archive .la-saved-memory{background:#fff;padding:17px;border:1px solid #d9e3db;margin:20px 0 0}
+.clue-page.light-archive.clue-service{--la-accent:#5c8066;background:#f7faf6}
+.clue-page.light-archive.clue-service>header{background:#eaf1e9}
+.clue-page.light-archive.clue-archive{--la-ink:#2b3d43;--la-muted:#829397;--la-rule:#dce6e7;--la-accent:#406e78;background:#f7fafa}
+.clue-page.light-archive.clue-archive>header{background:#eaf0f0}
+.clue-page.light-archive.clue-archive>footer{background:#edf2f2}
+.light-archive .la-yard-photo img{height:185px;filter:saturate(.8)}
+.light-archive article .la-catalogue>p{font-size:12px;line-height:1.9;margin:18px 0 24px;color:#6f8184}
+.light-archive .la-catalogue-label{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:12px}
+.light-archive .la-catalogue-label>span{font-size:14px;font-weight:600;color:#3e5b62}
+.light-archive .la-catalogue-label small{font-size:9px;color:#97a6a8}
+.light-archive .la-catalogue-list{margin:0;padding:0;list-style:none}
+.light-archive .la-catalogue-list li{padding:0;border:0;margin:0 0 11px}
+.light-archive .la-catalogue-card{display:flex;position:relative;align-items:stretch;min-width:0;color:inherit;text-decoration:none;border:1px solid #dde6e5;border-radius:3px;background:#fff;overflow:hidden;box-shadow:0 3px 9px #254e5810}
+.light-archive .la-catalogue-thumb{width:77px;min-height:109px;flex:0 0 77px;overflow:hidden;background:#d7e2e0}
+.light-archive .la-catalogue-thumb img{width:100%;height:100%;min-height:109px;display:block;object-fit:cover;filter:saturate(.65)}
+.light-archive .la-thumb-east img{object-position:27% center}
+.light-archive .la-thumb-access img{object-position:70% 90%}
+.light-archive .la-thumb-west img{object-position:93% center}
+.light-archive .la-catalogue-copy{padding:14px 24px 14px 13px;display:flex;flex-direction:column;justify-content:center;min-width:0;gap:6px}
+.light-archive .la-catalogue-copy>small{font-size:9px;line-height:1.4;letter-spacing:.08em;color:#879a9e}
+.light-archive .la-catalogue-copy>strong{font-size:14px;font-weight:600;line-height:1.45;color:#355962}
+.light-archive .la-catalogue-copy>span{font-size:9px;color:#98a6a7;line-height:1.5}
+.light-archive .la-card-arrow{position:absolute;right:11px;top:13px;font-size:14px;color:#8a9da0}
+.light-archive .la-document-heading{display:flex;align-items:center;gap:16px;padding:0 0 18px;border-bottom:1px solid #dce6e7}
+.light-archive .la-document-year{font-family:"Home Plain Digits",Arial,Helvetica,sans-serif;font-size:39px;letter-spacing:-.07em;color:#61808a;font-weight:400;line-height:1}
+.light-archive article .la-document-heading .clue-meta{margin:0;font-size:10px;line-height:1.85;border-left:1px solid #c9d6d9;padding-left:15px}
+.light-archive .la-archive-intro{margin:20px 0}
+.light-archive .la-archive-intro h2{font-size:12px;color:#58747b;font-weight:600;margin:0 0 7px}
+.light-archive article .la-archive-intro p{font-size:12px;line-height:1.9;margin:0}
+.light-archive .la-table-wrap{overflow:hidden;border:1px solid #dce5e7;border-radius:3px;background:#fff}
+.light-archive .la-table-wrap table{table-layout:fixed;width:100%;border-collapse:collapse;font-size:12px;line-height:1.7;margin:0;background:#fff}
+.light-archive .la-table-wrap caption{font-size:10px;letter-spacing:.08em;text-align:left;padding:12px 10px;background:#f1f5f5;color:#758d93;border-bottom:1px solid #e0e7e8}
+.light-archive .la-table-wrap th{font-size:10px;font-weight:500;color:#748c93;background:#f7f9f9;white-space:nowrap}
+.light-archive .la-table-wrap th,.light-archive .la-table-wrap td{padding:12px 8px;border:0;border-bottom:1px solid #e3e9ea;text-align:left;overflow-wrap:break-word;vertical-align:top}
+.light-archive .la-table-wrap td+td,.light-archive .la-table-wrap th+th{border-left:1px solid #edf1f1}
+.light-archive .la-table-wrap tbody tr:last-child td{border-bottom:0}
+.light-archive .la-numbering-table col:nth-child(1){width:26%}
+.light-archive .la-numbering-table col:nth-child(2){width:24%}
+.light-archive .la-numbering-table col:nth-child(3){width:50%}
+.light-archive .la-access-table col:nth-child(1){width:19%}
+.light-archive .la-access-table col:nth-child(2){width:32%}
+.light-archive .la-access-table col:nth-child(3){width:49%}
+.clue-page.light-archive.clue-lamp{--la-ink:#4b483b;--la-muted:#999080;--la-rule:#e0dacf;--la-accent:#9a8967;background:#f9f7ef}
+.clue-page.light-archive.clue-lamp>header{background:#edeadd}
+.clue-page.light-archive.clue-lamp>header h1{font-family:"Home Plain Digits","Songti SC","SimSun",serif;letter-spacing:.02em;font-weight:500}
+.clue-page.light-archive.clue-lamp>footer{background:#efede3;color:#a09b8a}
+.light-archive .la-lamp-portrait{margin:0;position:relative;height:272px;overflow:hidden;background:#30342b;border-radius:2px}
+.light-archive .la-lamp-portrait .clue-god{width:100%;height:100%;max-height:none;object-fit:cover;object-position:center 26%;filter:saturate(.72)}
+.light-archive .la-lamp-portrait figcaption{position:absolute;inset:auto 0 0;background:linear-gradient(transparent,#192319df);padding:40px 18px 17px;display:flex;align-items:end;justify-content:space-between;gap:12px;color:#f5eed6}
+.light-archive .la-lamp-portrait figcaption>span{font-family:"Home Plain Digits","Songti SC","SimSun",serif;writing-mode:vertical-rl;letter-spacing:.18em;font-size:23px;line-height:1.5}
+.light-archive .la-lamp-portrait figcaption>small{font-size:9px;line-height:1.9;letter-spacing:.05em;color:#c9cbb9;text-align:right}
+.light-archive .la-lamp-section{padding-top:24px}
+.light-archive .la-lamp-section h2{font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:18px;font-weight:500;letter-spacing:.11em;margin:0 0 15px}
+.light-archive article .la-lamp-section p{font-size:13px;line-height:1.95;margin:15px 0}
+.light-archive .la-lamp-original{background:#f3f0e6;border-color:#d9d3c5}
+.light-archive .la-lamp-original summary{font-family:"Home Plain Digits","Songti SC","SimSun",serif;color:#72694e}
+.light-archive .la-lamp-original summary small{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;color:#9c9483}
+.light-archive .la-lamp-original summary:after{color:#9f9578}
+.light-archive .la-lamp-original .la-original-body{border-color:#e1dccc}
+.light-archive .la-lamp-issue .la-related{border-color:#dcd6c6}
+.light-archive .la-lamp-issue .la-related .clue-link{color:#84744b}
+.light-archive article .la-lamp-message{text-indent:0;text-align:center;margin:22px 0 0}
+.light-archive .la-lamp-message .clue-text-button{color:#9a8b65;font-size:11px}
+.light-archive .la-contact-monogram{display:inline-grid;place-items:center;width:52px;height:60px;background:#e4e1d1;border:1px solid #d6d0ba;font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:30px;color:#867a58;vertical-align:middle}
+.light-archive .la-contact-title{display:inline-block;vertical-align:middle;padding-left:15px}
+.light-archive .la-contact-title h2{font-size:20px;margin:0 0 3px;font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-weight:500}
+.light-archive .la-contact-title small{font-size:10px;color:#a0957d;letter-spacing:.1em}
+.light-archive .la-lamp-contact .la-record-fields>div{grid-template-columns:104px minmax(0,1fr);border-color:#ddd9cc}
+.light-archive .la-lamp-contact .la-record-fields dd{color:#847452}
+.light-archive .la-lamp-contact blockquote{background:#efecdf;border-color:#b1a37c;color:#847758}
+.light-archive :is(summary,a,button,textarea):focus-visible{outline:2px solid #86aba8;outline-offset:4px}
+@media(max-width:350px){
+ .clue-page.light-archive>header{padding:23px 18px 20px}
+ .clue-page.light-archive>article{padding:18px 15px 24px}
+ .clue-page.light-archive h1{font-size:22px}
+ .light-archive .la-photo img{height:169px}
+ .light-archive .la-care-photo img{height:141px}
+ .light-archive .la-record-card{grid-template-columns:28px minmax(0,1fr);padding:13px 11px;gap:10px}
+ .light-archive .la-record-card h2{font-size:14px}
+ .light-archive .la-catalogue-thumb{width:64px;flex-basis:64px}
+ .light-archive .la-catalogue-copy{padding-left:11px;padding-right:21px}
+ .light-archive .la-catalogue-copy>strong{font-size:13px}
+ .light-archive .la-catalogue-copy>span{font-size:8px}
+ .light-archive .la-table-wrap th,.light-archive .la-table-wrap td{padding:11px 6px;font-size:11px}
+ .light-archive .la-table-wrap th{font-size:9px}
+ .light-archive .la-document-year{font-size:35px}
+ .light-archive .la-document-heading{gap:13px}
+ .light-archive .la-lamp-portrait{height:247px}
+}

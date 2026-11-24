@@ -1,0 +1,198 @@
+/* Site-specific visual systems. No selector reaches phone apps, icons or images outside a website. */
+
+/* 槐城街坊 — a compact neighbourhood BBS on old-town stone and timber. */
+#web-content[data-site-scene="street"]{--scene-paper:#fffdf8;--scene-edge:10px;background-color:#c7bbaa;background-image:linear-gradient(#473b2c20,#483b2a59),var(--site-scene);background-size:100% auto;background-repeat:repeat-y;background-position:center top}
+#web-content[data-site-scene="street"] .rw-street-header{background-image:linear-gradient(100deg,#2f251cec,#4a321757 75%),var(--site-scene);background-position:center 54%;box-shadow:none;border-top:4px solid #bc6c33}
+#web-content[data-site-scene="street"] .rw-street-header>div{padding:24px 21px 18px;min-height:139px}
+#web-content[data-site-scene="street"] .rw-civic-eyebrow{font-size:9px;letter-spacing:2.5px;color:#e9d0ac}
+#web-content[data-site-scene="street"] .rw-civic-brand strong{font-family:"Home Plain Digits","KaiTi","STKaiti",serif;font-size:33px;letter-spacing:3px;line-height:1.45;font-weight:700;color:#fff5dd}
+#web-content[data-site-scene="street"] .rw-street-header small{font-size:12px;color:#e1c9af}
+#web-content[data-site-scene="street"] .rw-street-search{margin:0 19px 18px;border-radius:2px;border:1px solid #cfb899;box-shadow:none;background:#fffaf0}
+#web-content[data-site-scene="street"] .rw-street-search input{font-size:13px;color:#5b4834;min-height:42px}
+#web-content[data-site-scene="street"] .rw-street-search button{background:#b2602d;color:#fff9ed;border-radius:0;font-size:13px}
+#web-content[data-site-scene="street"] .rw-street-header nav{margin:0;background:#ede3d4;border-top:1px solid #bfa589;border-bottom:3px solid #a5592a;gap:0;padding:0 8px}
+#web-content[data-site-scene="street"] .rw-street-header nav button{color:#654a35;flex:1;font-size:12px;padding:12px 2px;min-height:43px;border-right:1px solid #d4c3ae}
+#web-content[data-site-scene="street"] .rw-street-header nav button:last-child{border-right:0}
+#web-content[data-site-scene="street"] .rw-street-header nav .is-current{background:#b3602e;color:#fff9ee;font-weight:600}
+#web-content[data-site-scene="street"] .rw-street-list,#web-content[data-site-scene="street"] .rw-street>article{margin:12px 10px 16px;padding:0 15px 18px;border:1px solid #cbb99e;border-radius:0;box-shadow:0 3px 9px #3c2b1c18;background:#fffdf8}
+#web-content[data-site-scene="street"] .rw-street>article{padding-top:22px}
+#web-content[data-site-scene="street"] .rw-street-list-heading{margin:0 -15px;padding:12px 15px;border-bottom:1px solid #ccbca7;background:#f0e8db;align-items:center}
+#web-content[data-site-scene="street"] .rw-street-list-heading h1{margin:0;color:#6d472d;font-size:16px;font-weight:700;letter-spacing:.5px}
+#web-content[data-site-scene="street"] .rw-street-list-heading>span{font-size:11px;color:#927e67}
+#web-content[data-site-scene="street"] .rw-street-topic{display:grid;grid-template-columns:minmax(0,1fr);gap:5px;padding:17px 0 15px;border-bottom:1px dashed #d8cbb7;border-radius:0;color:#433c33;box-shadow:none}
+#web-content[data-site-scene="street"] .rw-street-topic:last-child{border-bottom:0}
+#web-content[data-site-scene="street"] .rw-street-list-meta{gap:8px;font-size:11px;color:#97836d}
+#web-content[data-site-scene="street"] .rw-street-list-meta>span:first-child{background:#efe4d2;color:#9b562f;padding:1px 5px;border-radius:0}
+#web-content[data-site-scene="street"] .rw-street-topic h2{font-size:17px;line-height:1.6;margin:1px 0;color:#47372a;font-weight:600}
+#web-content[data-site-scene="street"] .rw-street-topic p{font-size:13px;line-height:1.75;margin:1px 0 4px;color:#85745f}
+#web-content[data-site-scene="street"] .rw-street-list-byline{font-size:11px;color:#a38d73;margin-top:0}
+#web-content[data-site-scene="street"] .rw-street-list-byline>span:last-child{color:#8e592e;font-variant-numeric:tabular-nums}
+#web-content[data-site-scene="street"] .rw-street-topic:active{background:#f6ecdc}
+#web-content[data-site-scene="street"] .rw-street .inquiry-kicker{color:#9e7f5e;font-size:12px;border-bottom:1px solid #e6dccb;padding-bottom:14px}
+#web-content[data-site-scene="street"] .rw-street>article h1{font-size:24px;color:#41382d;line-height:1.55}
+#web-content[data-site-scene="street"] .rw-street-comment{border-bottom:1px solid #e8ddca}
+#web-content[data-site-scene="street"] .rw-street .rw-inline-link{color:#9a522d}
+#web-content[data-site-scene="street"] .rw-comments-title{background:#f0e8dc;padding:12px 10px;border-top:2px solid #b56a39;font-size:16px;margin-inline:-5px;color:#735034}
+#web-content[data-site-scene="street"] .rw-street-footer{background:#e4d7c4!important;color:#8d775d!important;border-top:1px solid #b7a080}
+#web-content[data-site-scene="street"] .rw-street-footer button{color:#7b583b}
+
+/* 槐城日报 — masthead, ruled columns and paper; photographs remain editorial. */
+#web-content[data-site-scene="news"]{--scene-edge:0px;background:#d7d6d0 var(--site-scene) center 20%/cover no-repeat}
+#web-content[data-site-scene="news"] .rw-paper-head{border-top:6px solid #901c27;background-image:linear-gradient(180deg,#fff 0%,#fffffff2 29%,#ffffffc9 54%,#eee8da38 100%),var(--site-scene);background-position:50% 56%;box-shadow:none}
+#web-content[data-site-scene="news"] .rw-paper-mast{min-height:180px;padding:25px 22px 52px;align-items:flex-start}
+#web-content[data-site-scene="news"] .rw-paper-brand strong{font-family:"Home Plain Digits","SimSun","STSong",serif;font-size:37px;font-weight:900;letter-spacing:4px;color:#971e2b;line-height:1.3}
+#web-content[data-site-scene="news"] .rw-paper-brand span{font-size:11px;letter-spacing:1px;color:#806d6c}
+#web-content[data-site-scene="news"] .rw-paper-search{border:1px solid #cbbbbb;border-radius:0;font-size:12px;padding:5px 10px;box-shadow:none;color:#7f3c43;margin-top:8px}
+#web-content[data-site-scene="news"] .rw-paper-head nav{background:#951f2b;padding:0 7px;border:0}
+#web-content[data-site-scene="news"] .rw-paper-head nav button{color:#fff0ee;min-height:43px;font-size:14px;border-right:1px solid #bb647066}
+#web-content[data-site-scene="news"] .rw-paper-head nav button:last-child{border:0}
+#web-content[data-site-scene="news"] .rw-paper-head nav .is-current{background:#73121d;color:#fff}
+#web-content[data-site-scene="news"] .rw-paper-head nav .is-current:after{display:none}
+#web-content[data-site-scene="news"] .rw-paper-date{background:#faf8f4;padding:11px 20px;color:#91847b;border-bottom:3px double #bab2a7;font-size:11px}
+#web-content[data-site-scene="news"] .rw-news-home,#web-content[data-site-scene="news"] .rw-news-article{margin:0;padding-left:20px;padding-right:20px;background:#fffefb;border:0;border-radius:0;box-shadow:none}
+#web-content[data-site-scene="news"] .rw-news-card{border-bottom:1px solid #d9d3ca;padding:18px 0;color:#302b27}
+#web-content[data-site-scene="news"] .rw-news-card h2{font-family:"Home Plain Digits","SimSun","STSong",serif;font-size:19px;line-height:1.6;font-weight:700;color:#292626}
+#web-content[data-site-scene="news"] .rw-news-card.is-lead h2{font-size:24px;line-height:1.6;letter-spacing:.4px}
+#web-content[data-site-scene="news"] .rw-news-category{color:#982331;font-size:11px;letter-spacing:.5px}
+#web-content[data-site-scene="news"] .rw-news-card small{color:#9d8f82;font-size:11px}
+#web-content[data-site-scene="news"] .rw-news-card.is-lead>img{border-radius:0;aspect-ratio:1.65;margin-bottom:17px}
+#web-content[data-site-scene="news"] .rw-news-article h1{font-family:"Home Plain Digits","SimSun","STSong",serif;font-size:25px;font-weight:700;color:#262626;line-height:1.6}
+#web-content[data-site-scene="news"] .rw-news-breadcrumb{padding-bottom:13px;border-bottom:1px solid #dcd4c8;color:#8e665f}
+#web-content[data-site-scene="news"] .rw-news-article p.rw-news-deck{background:#f5f1ea;border-left:3px solid #a7726b;padding:13px 15px;color:#7e6b61}
+#web-content[data-site-scene="news"] .rw-news-comments,#web-content[data-site-scene="news"] .rw-news-related{margin:0;padding:22px 20px;background:#fffefb;border-top:6px solid #e8e2d9;border-radius:0}
+#web-content[data-site-scene="news"] .rw-paper-footer{margin-top:0;border-top:3px double #b4a493;background:#e8e0d4;padding:25px 20px;color:#8d7d6e}
+#web-content[data-site-scene="news"] .rw-paper-footer>b{color:#8e4c4c}
+
+/* 归家寻亲 — a welcoming service organisation, with its own garden and warm colours. */
+#web-content[data-site-scene="agency"]{--scene-edge:12px;background-image:linear-gradient(#e9dbc634,#cfb89866),var(--site-scene);background-color:#e1d7c6;background-position:center top;background-size:100% auto;background-repeat:repeat-y}
+#web-content[data-site-scene="agency"]>.rw-public-head{border-top:4px solid #b7774e;background-image:linear-gradient(110deg,#fff8eef7 8%,#fff5e0ca 64%,#fff2d84d),var(--site-scene);background-position:center 37%;background-size:cover}
+#web-content[data-site-scene="agency"] .rw-public-head .site-nav{min-height:145px;padding:29px 19px 27px;align-items:flex-start}
+#web-content[data-site-scene="agency"] .rw-public-head .rw-home-wordmark{width:43px;height:43px;border-radius:50%;background:#b3754e;box-shadow:none;color:#fff6e7;font-size:18px;letter-spacing:0}
+#web-content[data-site-scene="agency"] .rw-public-head .site-brand strong{color:#67462e;font-size:22px;letter-spacing:.5px}
+#web-content[data-site-scene="agency"] .rw-public-head .site-brand small{font-size:10px;color:#99816a;letter-spacing:0}
+#web-content[data-site-scene="agency"] .rw-public-head .rw-menu-button{border-color:#d8b99b;background:#fffaf2;color:#947150;border-radius:20px;min-height:35px;margin-top:4px}
+#web-content[data-site-scene="agency"] .rw-public-head .site-menubar{border:0;border-bottom:1px solid #e3d1bd;background:#fffaf1e8;padding:0 11px}
+#web-content[data-site-scene="agency"] .site-menubar button{color:#876342;font-size:13px;min-height:46px}
+#web-content[data-site-scene="agency"][data-world-page="home"] .rw-public-head .site-nav{min-height:92px;padding-top:21px;padding-bottom:20px;background:#fffcf6}
+#web-content[data-site-scene="agency"]>.site-hero{position:relative;min-height:268px;padding:25px 22px 23px;margin:0;border:0;border-bottom:4px solid #ddbb90;border-radius:0;background-image:linear-gradient(90deg,#fff4dee8 3%,#fff5e1d1 50%,#ffefd74a),var(--site-scene);background-size:cover;background-position:50% 40%;box-shadow:none}
+#web-content[data-site-scene="agency"]>.site-hero>span{font-size:11px;color:#a37c52;letter-spacing:1px}
+#web-content[data-site-scene="agency"]>.site-hero h1{font-family:"Home Plain Digits","KaiTi","STKaiti",serif;font-size:32px;line-height:1.6;letter-spacing:1px;color:#67462c;font-weight:500;margin:13px 0}
+#web-content[data-site-scene="agency"]>.site-hero>p{color:#8c6b4b;font-size:13px;margin:9px 0 20px}
+#web-content[data-site-scene="agency"] .site-search{border:1px solid #d8b18d;border-radius:5px;background:#fffdf9;box-shadow:0 3px 12px #79572a13}
+#web-content[data-site-scene="agency"] .site-search input{min-width:0;font-size:13px;background:transparent;color:#71583e}
+#web-content[data-site-scene="agency"] .site-search button{background:#b4764c;color:#fff8ec;font-size:13px;border-radius:0}
+#web-content[data-site-scene="agency"]>.site-services{margin:0;padding:21px 7px;border:0;border-bottom:1px solid #e9d9c4;border-radius:0;background:#fffaf2;box-shadow:none}
+#web-content[data-site-scene="agency"]>.site-services button{color:#9c7750;font-size:12px}
+#web-content[data-site-scene="agency"]>.web-section,#web-content[data-site-scene="agency"]>.web-pad,#web-content[data-site-scene="agency"]>.rw-public-article{margin:13px 12px 0;background:#fffcf7f5;border:1px solid #fff9;border-radius:4px;box-shadow:0 3px 14px #684c2f14}
+#web-content[data-site-scene="agency"] .web-section h2,#web-content[data-site-scene="agency"] .web-pad h1,#web-content[data-site-scene="agency"] .rw-public-article h1{color:#664f3b}
+#web-content[data-site-scene="agency"] .web-section h2{font-size:20px;border-left:3px solid #c48b5e;padding-left:10px}
+#web-content[data-site-scene="agency"] .web-primary{background:#a9714d;color:#fff9f0;border-radius:4px}
+#web-content[data-site-scene="agency"] .web-form input,#web-content[data-site-scene="agency"] .web-form select,#web-content[data-site-scene="agency"] .web-form textarea{border-color:#ded0bb;border-radius:4px;color:#665446}
+#web-content[data-site-scene="agency"] .missing-card{border-bottom-color:#e5d8c6}
+#web-content[data-site-scene="agency"] .missing-card h3{color:#68503d}
+#web-content[data-site-scene="agency"] .missing-card .missing-status,#web-content[data-site-scene="agency"] .missing-card small{color:#9c795a}
+#web-content[data-site-scene="agency"] .mp-categories button{color:#94795a;background:#f0e6d8;border-radius:3px}
+#web-content[data-site-scene="agency"] .mp-categories button.is-current{color:#fff7e9;background:#a9714d}
+#web-content[data-site-scene="agency"] .mp-card{border-bottom-color:#e4d7c5}
+#web-content[data-site-scene="agency"] .mp-card strong{color:#664d39}
+#web-content[data-site-scene="agency"] .mp-card small{color:#9c866e}
+#web-content[data-site-scene="agency"]>.rw-public-footer{margin-top:16px;border-top:1px solid #c3a98a;background:#e5d5beed;color:#998269}
+#web-content[data-site-scene="agency"] .rw-public-footer strong{color:#82613f}
+
+/* 榆树路便民停车 — a blue municipal service portal and rectangular data terminal. */
+#web-content[data-world-site="parking"]{background:#d1d9de var(--world-scene) center top/cover no-repeat}
+#web-content[data-world-site="parking"] .pk-site{background:linear-gradient(#e8eff455,#dbe4edaa),var(--world-scene) center top/100% auto repeat-y;color:#314350}
+#web-content[data-world-site="parking"] .pk-site>header{min-height:155px;justify-content:center;padding:24px 21px;background:linear-gradient(90deg,#12334bec,#17456aa8 60%,#1c4b6133),var(--world-scene) 50% 39%/cover;border-top:4px solid #3e88b4}
+#web-content[data-world-site="parking"] .pk-brand{color:#fff;line-height:1.55;font-size:23px;font-weight:650;letter-spacing:.8px}
+#web-content[data-world-site="parking"] .pk-site>header>span{color:#a6c8db;font-size:9px;opacity:1;letter-spacing:.9px;margin-top:10px}
+#web-content[data-world-site="parking"] .pk-site>nav{background:#174b71;border:0;box-shadow:0 2px 6px #09294116}
+#web-content[data-world-site="parking"] .pk-site>nav button{color:#e5f4fd;font-size:13px;min-height:44px;padding:9px 5px;border-right:1px solid #78a3c138;flex:1}
+#web-content[data-world-site="parking"] .pk-site>nav button:last-child{border:0}
+#web-content[data-world-site="parking"] .pk-site>main{padding:23px 16px 28px;margin:12px 9px 20px;background:#f8fbfdf5;border:1px solid #fff;border-top:3px solid #4c91b9;box-shadow:0 4px 16px #18394b1a}
+#web-content[data-world-site="parking"] .pk-site h1{font-size:23px;color:#244e6a;line-height:1.5;margin-bottom:19px;font-weight:700}
+#web-content[data-world-site="parking"] .pk-site h2{font-size:16px;color:#245b80}
+#web-content[data-world-site="parking"] .pk-site p{font-size:14px;line-height:1.9;color:#657783}
+#web-content[data-world-site="parking"] .pk-hero{margin:0 -16px 22px}
+#web-content[data-world-site="parking"] .pk-hero img{height:190px;object-fit:cover;object-position:60% 48%}
+#web-content[data-world-site="parking"] .pk-hero span{background:#17446abe;padding:10px 16px;font-size:12px}
+#web-content[data-world-site="parking"] .pk-site p.pk-area-label{display:inline-block;margin:0 0 7px;padding:5px 10px;border-left:3px solid #6394b5;background:#e6eff6;color:#597b93;font-size:12px;text-indent:0}
+#web-content[data-world-site="parking"] .pk-news,#web-content[data-world-site="parking"] .pk-roster{background:#fff;border:1px solid #cad9e2;border-top:3px solid #5e94b8;border-radius:0;padding:17px 14px}
+#web-content[data-world-site="parking"] .pk-link{border-bottom:1px solid #dce5ec;color:#35617f;padding:13px 0;font-size:14px}
+#web-content[data-world-site="parking"] .pk-link:last-child{border:0;padding-bottom:1px}
+#web-content[data-world-site="parking"] .pk-form{background:#fff;border:1px solid #c7d8e4;border-radius:0;padding:20px 16px;box-shadow:0 3px 8px #113c5a08}
+#web-content[data-world-site="parking"] .pk-form label{font-size:13px;color:#5b7284}
+#web-content[data-world-site="parking"] .pk-form input,#web-content[data-world-site="parking"] .pk-filter input{border:1px solid #b9cddb;border-radius:2px;color:#294b66;background:#fcfdff;min-height:42px}
+#web-content[data-world-site="parking"] .pk-form button,#web-content[data-world-site="parking"] .pk-filter button{background:#2c719c;color:#fff;border-radius:2px;min-height:43px}
+#web-content[data-world-site="parking"] .pk-session{color:#62819a;padding:10px 11px;background:#e2edf4;border:1px solid #c5d8e6;font-size:11px}
+#web-content[data-world-site="parking"] .pk-filter{grid-template-columns:minmax(0,1fr) 10px minmax(0,1fr) 47px;gap:6px;margin:21px 0}
+#web-content[data-world-site="parking"] .pk-filter label{font-size:11px;color:#708598}
+#web-content[data-world-site="parking"] .pk-filter>span{height:42px}
+#web-content[data-world-site="parking"] .pk-filter input{padding-inline:5px;font-size:12px}
+#web-content[data-world-site="parking"] .pk-table-wrap{border:1px solid #cad8e2}
+#web-content[data-world-site="parking"] .pk-table-wrap th{background:#dce9f1;color:#49677d;font-size:11px;font-weight:600;border-bottom:1px solid #bfcfdb}
+#web-content[data-world-site="parking"] .pk-table-wrap td{border-bottom:1px solid #dce5ed;color:#566d7f;font-size:12px;padding-top:14px;padding-bottom:14px}
+#web-content[data-world-site="parking"] .pk-table-wrap tr:nth-child(odd) td{background:#f0f5f9}
+#web-content[data-world-site="parking"] .pk-plate{color:#146096;background:#e7f1f8;border:1px solid #bdd1e0;padding:5px 4px;font:13px/1.4 "Microsoft YaHei",sans-serif;white-space:nowrap}
+#web-content[data-world-site="parking"] .pk-trip{border:1px solid #b8ccdc;border-top:4px solid #4387b0;border-radius:0;box-shadow:0 3px 10px #1d436116;background:#fff}
+#web-content[data-world-site="parking"] .pk-trip h2{font-family:"Home Plain Digits",Consolas,"Microsoft YaHei",sans-serif;color:#245978}
+#web-content[data-world-site="parking"] .pk-trip dt{color:#7490a5}
+#web-content[data-world-site="parking"] .pk-trip dd{color:#38596f}
+#web-content[data-world-site="parking"] .pk-site>footer{background:#d9e4edeb;color:#7790a3;border-top:1px solid #a6bdcd;padding:19px 16px;font-size:11px}
+#web-content[data-world-site="parking"] .pk-footer-link{color:#4a7190;font-size:11px}
+
+/* The old association archive remains a book laid on its own dark archive-room photograph. */
+#web-content[data-world-site="history"]{background:#2c291f var(--world-scene) center top/cover no-repeat;padding:12px 9px 17px}
+#web-content[data-world-site="history"] .ch-archive{min-height:calc(100% - 5px);box-shadow:0 6px 19px #16160e66;border:1px solid #93846a;background-color:#e8dfca}
+#web-content[data-world-site="history"] .ch-body{background-image:linear-gradient(90deg,#b4a58944,transparent 9%,transparent 94%,#b4a58938);padding-left:21px;padding-right:21px}
+#web-content .ch-archive .ch-chapter-toggle{right:6px}
+
+/* The station's private pages keep the same room around the working document. */
+#web-content[data-world-site="station"]{background:#676255 var(--world-scene) center top/cover no-repeat}
+#web-content[data-world-site="station"] .pz-admin,#web-content[data-world-site="station"] .clue-paper.light-archive{background:linear-gradient(#26372c30,#26372c60),var(--world-scene) center top/100% auto repeat-y;padding-bottom:13px}
+#web-content[data-world-site="station"] .pz-admin>header{background:#173a2eed;border-bottom:3px solid #969b79;box-shadow:0 2px 10px #16251d38}
+#web-content[data-world-site="station"] .pz-admin>main{margin:13px 10px 0;padding:22px 18px 28px;background:#fafbf5f5;border:1px solid #ffffffae;box-shadow:0 4px 16px #102a2030}
+#web-content[data-world-site="station"] .pz-admin .station-cover{margin:-22px -18px 24px}
+#web-content[data-world-site="station"] .clue-paper.light-archive>header{padding:23px 21px 26px;background:linear-gradient(90deg,#1a362bea,#294238c4 74%,#203a2b77),var(--world-scene) center 45%/cover;border-bottom:3px solid #959a77;color:#f7f5e7}
+#web-content[data-world-site="station"] .clue-paper.light-archive>header:before{background:#b3b291}
+#web-content[data-world-site="station"] .clue-paper.light-archive>header small{color:#bcc4ad}
+#web-content[data-world-site="station"] .clue-paper.light-archive>header h1{color:#f2f1e5;line-height:1.5;font-size:24px}
+#web-content[data-world-site="station"] .clue-paper.light-archive>article{margin:13px 10px 15px;padding:20px 18px 26px;background:#f9faf4f7;border:1px solid #eef0e2;box-shadow:0 4px 16px #14261b30}
+#web-content[data-world-site="station"] .clue-paper.light-archive>footer{background:#23382de8;color:#c0c5b4;border-color:#8a987b55}
+
+/* Family follow-up belongs to the public agency's garden identity. */
+#web-content[data-world-site="family-care"]{background:#e2d3bb var(--world-scene) center top/cover no-repeat}
+#web-content[data-world-site="family-care"] .clue-service.light-archive{--la-accent:#b4764c;background:linear-gradient(#ecdfc436,#e3d0ad5c),var(--world-scene) center top/100% auto repeat-y;padding-bottom:13px}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>header{background:linear-gradient(95deg,#fff7eae8,#fff5e1b5 62%,#fff5e155),var(--world-scene) center 35%/cover;border-top:4px solid #b47750;border-bottom:1px solid #d9c2a8;padding:24px 21px 27px}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>header:before{display:none}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>header small{color:#a17c54}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>header h1{color:#6c4e33;font-size:25px;line-height:1.55}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>article{margin:13px 10px 15px;padding:20px 18px 26px;background:#fffcf5f5;border:1px solid #fff9;border-radius:4px;box-shadow:0 4px 16px #76542f1d}
+#web-content[data-world-site="family-care"] .clue-service.light-archive>footer{background:#e5d3bde8;color:#a1886b;border-color:#c8af93}
+#web-content[data-world-site="family-care"] .la-care-message{background:#f5eddf;border-color:#e3d0b7;color:#75593e}
+#web-content[data-world-site="family-care"] .la-care-message small{color:#a7835d}
+#web-content[data-world-site="family-care"] .la-care-form .web-primary{background:#ad754d;color:#fff9ec}
+#web-content[data-world-site="family-care"] .la-care-form textarea{border-color:#dac4a8;background:#fffefa}
+
+@media(max-width:350px){
+ #web-content[data-site-scene="street"] .rw-street-header>div{padding-left:18px;padding-right:18px}
+ #web-content[data-site-scene="street"] .rw-street-search{margin-left:16px;margin-right:16px}
+ #web-content[data-site-scene="street"] .rw-street-list,#web-content[data-site-scene="street"] .rw-street>article{margin-inline:7px;padding-left:12px;padding-right:12px}
+ #web-content[data-site-scene="street"] .rw-street-list-heading{margin-inline:-12px;padding-inline:12px}
+ #web-content[data-site-scene="news"] .rw-paper-mast{padding-inline:17px;min-height:173px;gap:7px}
+ #web-content[data-site-scene="news"] .rw-paper-brand strong{font-size:31px;letter-spacing:3px}
+ #web-content[data-site-scene="news"] .rw-paper-brand span{font-size:10px}
+ #web-content[data-site-scene="news"] .rw-news-home,#web-content[data-site-scene="news"] .rw-news-article{padding-inline:17px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-nav{padding-inline:15px;gap:8px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-brand{gap:8px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-brand strong{font-size:20px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-brand small{font-size:9px}
+ #web-content[data-site-scene="agency"]>.site-hero{padding-inline:18px}
+ #web-content[data-world-site="parking"] .pk-site>main{margin-inline:6px;padding-inline:12px}
+ #web-content[data-world-site="parking"] .pk-hero{margin-inline:-12px}
+ #web-content[data-world-site="parking"] .pk-table-wrap th,#web-content[data-world-site="parking"] .pk-table-wrap td{padding-inline:4px}
+ #web-content[data-world-site="parking"] .pk-plate{font-size:11px;padding-inline:3px}
+ #web-content[data-world-site="history"]{padding-inline:6px}
+ #web-content[data-world-site="history"] .ch-body{padding-inline:17px}
+ #web-content[data-world-site="station"] .pz-admin>main,#web-content[data-world-site="station"] .clue-paper.light-archive>article,#web-content[data-world-site="family-care"] .clue-service.light-archive>article{margin-inline:7px;padding-inline:15px}
+ #web-content[data-world-site="station"] .pz-admin .station-cover{margin-inline:-15px}
+}

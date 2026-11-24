@@ -1,0 +1,35 @@
+/* Personal photographs keep their framing; grids behave like the native albums. */
+.moment-main{min-width:0}
+.moment-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;width:min(100%,264px);margin:9px 0 2px}
+.moment-photo-grid .moment-picture{display:block;width:100%;height:auto;aspect-ratio:1;max-height:none;margin:0;padding:0;overflow:hidden;border:0;border-radius:1px;background:#e9e9e9;line-height:0}
+.moment-photo-grid .moment-picture img{display:block;width:100%;height:100%;max-height:none;object-fit:cover;object-position:center;transition:opacity .15s ease}
+.moment-photo-grid .moment-picture:active img{opacity:.8}
+.moment-photo-grid.count-1{display:block;width:min(100%,208px)}
+.moment-photo-grid.count-1 .moment-picture{aspect-ratio:auto;max-height:274px}
+.moment-photo-grid.count-1 .moment-picture img{width:100%;height:auto;max-height:274px;object-fit:contain;object-position:left center}
+.moment-photo-grid.count-2,.moment-photo-grid.count-4{grid-template-columns:repeat(2,minmax(0,1fr));width:min(100%,176px)}
+.moment-meta time{line-height:1.65}
+.photo-month{margin:0 0 20px}
+.photo-month-label{font-size:18px;font-weight:650;letter-spacing:-.4px;color:#202124;margin:0;padding:8px 17px 12px}
+.photos-real .photo-date{padding-bottom:9px}
+.photos-real .photo-grid{gap:2px;padding:0 2px}
+.photos-real .photo-thumb{border-radius:0;isolation:isolate}
+.photo-thumb .photo-favorite-mark{left:auto;right:7px;bottom:5px;font-size:15px;line-height:1;color:#fff;text-shadow:0 1px 4px #0008;pointer-events:none}
+.native-photo .lightbox-bar{gap:7px}
+.native-photo .lightbox-bar>span{min-width:0;text-align:center}
+.native-photo .photo-stage{touch-action:pan-y;-webkit-user-select:none;user-select:none;overscroll-behavior:contain}
+.native-photo .photo-stage img{-webkit-user-drag:none;user-select:none}
+.native-photo .photo-stage.zoomed{touch-action:auto}
+.native-photo .photo-pagination{flex:none;display:flex;align-items:center;justify-content:center;gap:31px;min-height:42px;background:#080808;color:#f4f4f4;border-top:1px solid #ffffff0a}
+.native-photo .photo-pagination button{display:grid;place-items:center;width:44px;height:40px;padding:10px;flex:none}
+.native-photo .photo-pagination button:disabled{opacity:.22}
+.native-photo .photo-pagination .raster-icon{width:17px;height:17px}
+.native-photo .photo-position{min-width:45px;text-align:center;font-size:12px;line-height:1;font-variant-numeric:tabular-nums;color:#afafaf;letter-spacing:.3px}
+.native-photo .native-photo-info{max-height:40%;overflow:auto;overscroll-behavior:contain}
+@media(max-height:680px){.native-photo .native-photo-info{max-height:34%;padding-top:12px;padding-bottom:12px}.native-photo .photo-pagination{min-height:35px}.native-photo .photo-pagination button{height:35px}.native-photo .photo-position{font-size:11px}}
+@media(max-width:370px){.moment-photo-grid{width:min(100%,243px)}.moment-photo-grid.count-2,.moment-photo-grid.count-4{width:min(100%,162px)}.moment-photo-grid.count-1{width:min(100%,196px)}}
+/* The photograph viewer occupies the same dark system surface as the image. */
+.phone:has(.native-photo){background:#000}
+.phone:has(.native-photo) .statusbar,.phone:has(.native-photo) #home-key{background:#000;color:#f7f7f7}
+.phone:has(.native-photo) .status-symbol{color:#f7f7f7}
+.phone:has(.native-photo) #home-key span{background:#f7f7f7}

@@ -1,0 +1,113 @@
+/* Independent publishers: construction archive portal and a private old-journal site. */
+.clue-page.light-archive.civic-site{--la-ink:#24374e;--la-muted:#66778b;--la-rule:#d8dfe8;--la-accent:#284866;background-color:#dce3eb;background-image:linear-gradient(180deg,#d1dce526,#dce3ebeb 780px),var(--site-photo);background-position:center top;background-size:auto 900px;background-repeat:no-repeat;padding-bottom:24px;font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif}
+.clue-page.light-archive.civic-site>.civic-mast{padding:0;background:linear-gradient(110deg,#102e49f0,#15395594),var(--site-photo) center 57%/cover;border:0;color:#fff}
+.civic-site>.civic-mast:before{display:none!important}
+.civic-brand{min-height:125px;padding:27px 20px 23px;display:flex;gap:12px;align-items:center}
+.civic-brand-mark{border:1px solid #d2b49a;display:grid;place-items:center;color:#efdbbd;font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:30px;width:45px;height:49px;flex:0 0 45px;box-shadow:inset 0 0 0 4px #17394f}
+.civic-brand>div{min-width:0}
+.civic-brand strong{display:block;font-family:"Home Plain Digits","Songti SC","SimSun",serif;letter-spacing:.08em;font-size:25px;line-height:1.4;font-weight:700}
+.clue-page.light-archive .civic-brand small{display:block;margin-top:8px;color:#d3dee5;font-size:11px;letter-spacing:.07em;line-height:1.5}
+.civic-mast nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#17364f;border-bottom:4px solid #a85141}
+.civic-mast nav .clue-link{display:grid;place-items:center;min-height:44px;text-align:center;text-decoration:none;font-size:13px;line-height:1.4;color:#eff3f6;border-right:1px solid #ffffff1c;padding:10px 5px;overflow-wrap:normal}
+.civic-mast nav .clue-link:last-child{border-right:0}
+.civic-mast nav .clue-link:hover{background:#294d69;color:#fff}
+.civic-breadcrumb{display:flex;align-items:center;gap:9px;min-height:45px;padding:10px 18px;font-size:11px;line-height:1.5;color:#334d63;background:#edf2f5e8;border-bottom:1px solid #bdcbd7}
+.civic-breadcrumb .clue-link{color:#334d63;text-decoration:none;font-size:inherit}
+.clue-page.light-archive.civic-site>article{margin:17px 12px 0;padding:23px 18px 25px;background:#fff;border:1px solid #c8d2df;box-shadow:0 8px 20px #172e4323;min-width:0}
+.civic-document-title{padding-bottom:19px;margin-bottom:20px;border-bottom:2px solid #9f5445}
+.civic-document-title>small{font-size:11px;letter-spacing:.1em;color:#768395}
+.clue-page.light-archive.civic-site .civic-document-title h1{font-size:23px;line-height:1.5;letter-spacing:0;font-weight:700;margin:9px 0 0;color:#193854;font-family:"Home Plain Digits","Songti SC","SimSun",serif;text-wrap:balance}
+.civic-site .la-photo{border-radius:0}
+.civic-site .la-catalogue-label{border-bottom:2px solid #294d69;padding-bottom:11px;margin:25px 0 0}
+.civic-site .la-catalogue-label>span{color:#294d69;font-size:15px}
+.civic-site .la-catalogue-label small{font-size:10px;color:#7a8793}
+.civic-site .la-catalogue-list li{margin:0}
+.civic-site .la-catalogue-card{border:0;border-bottom:1px solid #d8dfe7;box-shadow:none;border-radius:0;background:#fff;align-items:center;min-height:108px}
+.civic-site .la-catalogue-year{width:55px;flex:0 0 55px;align-self:center;text-align:center;padding:12px 0;background:#f0f3f7;border-top:2px solid #a25a4b;color:#25465e}
+.civic-site .la-catalogue-year b{font-family:"Home Plain Digits",Arial,Helvetica,sans-serif;font-size:19px;display:block;font-weight:400}
+.civic-site .la-catalogue-year small{font-size:10px;color:#7b8d9b;display:block;margin-top:5px}
+.civic-site .la-catalogue-copy{padding:15px 18px 15px 13px;gap:5px}
+.civic-site .la-catalogue-copy>strong{font-size:14px;color:#284b6c;line-height:1.6}
+.civic-site .la-catalogue-copy>small{font-size:10px;color:#906555}
+.civic-site .la-catalogue-copy>span{font-size:10px;color:#72808b}
+.civic-site .la-card-arrow{top:50%;transform:translateY(-50%);right:1px;color:#546e84;font-size:13px}
+.civic-site .la-document-year{color:#9b564a;font-family:"Home Plain Digits",Arial,Helvetica,sans-serif;font-size:37px;letter-spacing:-.03em}
+.civic-site .la-document-heading{border-color:#ced8e2}
+.clue-page.light-archive.civic-site article .la-document-heading .clue-meta{font-size:11px;color:#687889}
+.clue-page.light-archive.civic-site article .la-catalogue>p,.clue-page.light-archive.civic-site article .la-archive-intro p{font-size:14px;line-height:1.9;color:#3e5062}
+.civic-site .la-archive-intro h2{font-size:15px;color:#2e4e69;margin-bottom:10px}
+.civic-site .la-table-wrap{border-radius:0;border-color:#bccbd9}
+.civic-site .la-table-wrap table{font-size:13px;line-height:1.75}
+.civic-site .la-table-wrap caption{font-size:12px;color:#344f67;background:#e8eef4;padding:12px}
+.civic-site .la-table-wrap th{background:#294963;color:#fff;font-size:12px;font-weight:500}
+.civic-site .la-table-wrap td{font-size:13px;color:#263c51;padding:12px 7px}
+.civic-site .la-table-wrap tbody tr:nth-child(even){background:#f3f6f9}
+.clue-page.light-archive.civic-site article .la-document-note{font-size:12px;color:#657487}
+.civic-site .la-related .clue-link{color:#294d69;font-size:13px}
+.clue-page.light-archive.civic-site>footer{display:block;margin:0 12px;padding:21px 18px;border:1px solid #c8d2df;border-top:0;background:#edf2f7;color:#607287;text-align:center;line-height:1.8;letter-spacing:0}
+.civic-site>footer strong{display:block;font-size:12px;font-weight:500;color:#38536b}
+.civic-site>footer span{font-size:10px;display:block;margin-top:5px}
+
+.clue-page.light-archive.lamphouse-site{--la-ink:#443c2d;--la-muted:#887d66;--la-rule:#d9d0ba;--la-accent:#867451;background-color:#8b806a;background-image:linear-gradient(180deg,transparent 140px,#61503d44 550px,#887c67cf 1300px),var(--site-photo);background-position:center top;background-size:auto 1450px;background-repeat:no-repeat;padding-bottom:28px;font-family:"Home Plain Digits","Songti SC","SimSun","STSong",serif}
+.clue-page.light-archive.lamphouse-site>.lamphouse-mast{height:228px;padding:24px 22px;background:none;border:0;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.lamphouse-site>.lamphouse-mast:before{display:none!important}
+.lamphouse-sign{display:flex;align-items:center;flex-direction:row-reverse;gap:9px;background:#f8f1dfef;color:#494130;padding:16px 12px;box-shadow:1px 5px 13px #271b1a42;border:1px solid #e1d6bf;text-decoration:none;min-height:165px}
+.lamphouse-sign strong{writing-mode:vertical-rl;text-orientation:upright;font-size:28px;letter-spacing:.12em;line-height:1.15;font-weight:500}
+.clue-page.light-archive .lamphouse-sign small{writing-mode:vertical-rl;color:#8c795b;font-size:10px;letter-spacing:.13em;line-height:1.4}
+.lamphouse-caption{align-self:flex-end;text-align:right;color:#fff4df;text-shadow:0 2px 10px #1d140f;padding-bottom:4px}
+.lamphouse-caption>span{display:block;font-size:20px;letter-spacing:.14em;line-height:1.5}
+.clue-page.light-archive .lamphouse-caption small{display:block;font-size:11px;letter-spacing:.04em;line-height:1.7;color:#f1e7d3;margin-top:6px}
+.lamphouse-nav{display:flex;align-items:stretch;justify-content:center;margin:0 19px;border-top:1px solid #e8ddbd;border-bottom:1px solid #cdbf98;background:#f5edd8f2;padding:0 12px}
+.lamphouse-nav .clue-link{display:grid;place-items:center;flex:1;min-height:45px;color:#716342;font-size:13px;text-align:center;text-decoration:none;line-height:1.5;padding:10px 5px}
+.lamphouse-nav .clue-link+.clue-link{border-left:1px solid #dfd2b4}
+.lamphouse-nav .clue-link:hover{color:#372e20;background:#e9dec18a}
+.clue-page.light-archive.lamphouse-site>article{margin:0 19px;background:#faf5e7f5;border:1px solid #ddd1b2;border-top:0;padding:25px 20px 30px;box-shadow:0 8px 20px #2c251e36;min-width:0}
+.lamphouse-document-title{padding:0 0 21px;border-bottom:1px solid #cbbd9d;margin-bottom:24px}
+.lamphouse-document-title>small{font-size:11px;letter-spacing:.1em;color:#9a8760}
+.clue-page.light-archive.lamphouse-site .lamphouse-document-title h1{font-size:23px;line-height:1.65;letter-spacing:.08em;color:#51472f;font-weight:500;margin:8px 0 0}
+.lamphouse-site .la-lamp-portrait{height:auto;overflow:visible;border-radius:0;background:none;border:1px solid #c8b997;padding:7px;margin:0 auto 25px;max-width:260px}
+.lamphouse-site .la-lamp-portrait .clue-god{width:100%;height:230px;object-fit:cover;object-position:center 22%;filter:saturate(.75)}
+.lamphouse-site .la-lamp-portrait figcaption{position:static;background:none;color:#5d503a;padding:13px 5px 5px;align-items:center}
+.lamphouse-site .la-lamp-portrait figcaption>span{writing-mode:horizontal-tb;font-size:19px;letter-spacing:.17em;line-height:1.4}
+.lamphouse-site .la-lamp-portrait figcaption>small{font-size:10px;line-height:1.6;color:#97896c}
+.lamphouse-site .la-lamp-section{padding-top:0}
+.lamphouse-site .la-lamp-section h2{font-size:19px;color:#6b5833;border-left:2px solid #b5a174;padding-left:11px}
+.clue-page.light-archive.lamphouse-site article p,.clue-page.light-archive.lamphouse-site article .la-lamp-section p,.clue-page.light-archive.lamphouse-site article .la-original-body p{font-size:15px;line-height:2;text-align:justify;color:#4b4436}
+.lamphouse-site .la-lamp-original{background:#f0e8d4;border-color:#d7c9a9}
+.lamphouse-site .la-lamp-original summary{font-size:15px;color:#6e5c36}
+.lamphouse-site .la-original summary small{font-family:inherit;font-size:11px;color:#928363}
+.lamphouse-site .la-original-body{padding:0 14px 6px}
+.lamphouse-site .la-lamp-issue .la-related .clue-link{font-family:inherit;font-size:14px;letter-spacing:.03em;color:#806635}
+.lamphouse-site .la-lamp-message .clue-text-button{font-family:inherit;font-size:13px;color:#8d784c}
+.lamphouse-site .la-contact-monogram{border-color:#b9a579;background:#e9dfc5;color:#7e683b;box-shadow:inset 0 0 0 4px #f9f2df}
+.lamphouse-site .la-contact-title h2{font-size:23px;color:#594a2e}
+.lamphouse-site .la-contact-title small{font-size:11px}
+.lamphouse-site .la-record-fields>div{display:block;padding:13px 0;font-size:13px}
+.lamphouse-site .la-record-fields dt{font-size:12px;color:#988769;margin-bottom:5px}
+.lamphouse-site .la-record-fields dd{font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;font-size:14px}
+.lamphouse-site .la-lamp-contact blockquote{background:#eee5cf;border-color:#ae9969;font-size:15px;color:#6b5e42}
+.clue-page.light-archive.lamphouse-site>footer{margin:0 19px;background:#f0e7ceeb;border:1px solid #d7c8a2;border-top:0;text-align:center;line-height:1.8;padding:23px 20px 25px}
+.lamphouse-site>footer>span{display:block;font-family:"Home Plain Digits","Songti SC","SimSun",serif;font-size:17px;letter-spacing:.2em;color:#796642}
+.lamphouse-site>footer>small{display:block;font-size:10px;letter-spacing:.12em;color:#9b8a66;margin-top:6px}
+.civic-site :is(a,button,summary):focus-visible{outline:2px solid #a35440;outline-offset:3px}
+.lamphouse-site :is(a,button,summary):focus-visible{outline:2px solid #a18751;outline-offset:3px}
+@media(max-width:350px){
+ .civic-brand{padding:24px 15px 22px;gap:10px;min-height:116px}
+ .civic-brand strong{font-size:22px;letter-spacing:.05em}
+ .civic-brand-mark{width:39px;flex-basis:39px;height:45px;font-size:28px}
+ .clue-page.light-archive .civic-brand small{font-size:10px}
+ .clue-page.light-archive.civic-site>article{margin:13px 8px 0;padding:20px 13px 24px}
+ .clue-page.light-archive.civic-site .civic-document-title h1{font-size:21px}
+ .civic-site .la-catalogue-copy{padding-left:10px}
+ .civic-site .la-catalogue-copy>strong{font-size:13px}
+ .civic-site .la-table-wrap th,.civic-site .la-table-wrap td{padding:11px 5px;font-size:12px}
+ .clue-page.light-archive.civic-site>footer{margin:0 8px}
+ .clue-page.light-archive.lamphouse-site>.lamphouse-mast{height:214px;padding:20px 17px}
+ .lamphouse-sign{padding:14px 10px;min-height:161px}
+ .lamphouse-sign strong{font-size:26px}
+ .lamphouse-caption>span{font-size:18px}
+ .clue-page.light-archive.lamphouse-site>article{margin:0 12px;padding:23px 16px 26px}
+ .lamphouse-nav,.clue-page.light-archive.lamphouse-site>footer{margin:0 12px}
+ .clue-page.light-archive.lamphouse-site .lamphouse-document-title h1{font-size:21px}
+ .lamphouse-site .la-lamp-portrait .clue-god{height:218px}
+}

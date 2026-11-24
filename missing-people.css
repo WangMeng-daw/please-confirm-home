@@ -1,0 +1,89 @@
+.mp-heading>span{color:#85957f;font-size:9px;letter-spacing:2px}
+.mp-inner{min-height:100%;padding:24px 14px 40px;color:#c6c9b9;background:linear-gradient(#101916d9,#111916f2),var(--mp-inner-scene) center top/cover;font:14px/1.9 "Microsoft YaHei",sans-serif;overflow-wrap:anywhere}
+.mp-inner *{box-sizing:border-box}
+.mp-inner-head{text-align:center;padding:8px 12px 25px;border-bottom:1px solid #55625466}
+.mp-inner-head>span{font:11px/1.7 "Home Plain Digits",Consolas,"Microsoft YaHei",monospace;letter-spacing:2px;color:#929d86}
+.mp-inner-head img{display:block;width:200px;max-width:90%;height:86px;object-fit:contain;margin:13px auto 9px;filter:brightness(.85)}
+.mp-inner-head p{margin:0;color:#858a78;font:15px/1.8 "Home Plain Digits","KaiTi",serif;letter-spacing:5px}
+.mp-inner>article{background:#141d18e8;border:1px solid #4b59444d;margin:20px 0 0;padding:19px 17px 25px}
+.mp-inner-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px;padding-bottom:14px;border-bottom:1px solid #45503c;font:10px/1.9 "Home Plain Digits",Consolas,"Microsoft YaHei",monospace;color:#818f77}
+.mp-inner h1{font:28px/1.5 "Home Plain Digits","KaiTi","STKaiti",serif;letter-spacing:2px;color:#d2d5bf;margin:25px 0 20px}
+.mp-inner h2{font-size:14px;line-height:1.6;font-weight:500;letter-spacing:1px;color:#aab399;margin:22px 0 10px}
+.mp-inner p{margin:0 0 16px}
+.mp-inner .mp-inner-notice{border-left:2px solid #6c7960;padding:7px 0 7px 12px;color:#9aab90;font-size:12px}
+.mp-household-list{margin:25px 0 17px}
+.mp-household{display:flex;align-items:center;gap:12px;padding:17px 0;border-top:1px solid #49564088;text-decoration:none;color:inherit;position:relative}
+.mp-household:last-child{border-bottom:1px solid #49564088}
+.mp-household>img{flex:0 0 58px;width:58px;height:78px;object-fit:cover;object-position:center 30%;filter:saturate(.42) brightness(.8);border:1px solid #67715b66}
+.mp-household>div{flex:1;min-width:0}
+.mp-household code,.mp-inner-identity code{display:block;font:11px/1.6 "Home Plain Digits",Consolas,monospace;letter-spacing:1px;color:#8e9c7e}
+.mp-household strong{display:block;font:19px/1.7 "Home Plain Digits","KaiTi","STKaiti",serif;letter-spacing:2px;color:#d0d4bb;margin:3px 0}
+.mp-household strong small{font:10px/1.4 "Microsoft YaHei",sans-serif;letter-spacing:0;color:#88937a;margin-left:8px;white-space:nowrap}
+.mp-household span{font-size:11px;color:#92967f}
+.mp-household>b{position:absolute;right:0;top:17px;color:#9d869f;border:1px solid #78607980;padding:2px 4px;font-size:9px;font-weight:400;letter-spacing:1px}
+.mp-inner-identity{display:flex;gap:18px;align-items:center;margin:24px 0}
+.mp-inner-identity>img{width:104px;height:138px;flex:0 0 104px;object-fit:cover;object-position:center 30%;filter:saturate(.55) brightness(.88);border:1px solid #75806980}
+.mp-inner-identity>div{min-width:0}
+.mp-inner-identity h2{font:27px/1.6 "Home Plain Digits","KaiTi",serif;letter-spacing:2px;color:#d0d4bb;margin:7px 0}
+.mp-inner-identity span{display:block;font-size:11px;color:#89967b}
+.mp-inner-identity b{display:inline-block;margin-top:12px;font-size:11px;font-weight:400;letter-spacing:2px;padding:2px 8px;border:1px solid #826383aa;color:#baa0bb}
+.mp-inner-fields{margin:20px 0 25px;border-top:1px solid #4a563e}
+.mp-inner-fields>div{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid #42503980;font-size:12px}
+.mp-inner-fields dt{flex:0 0 65px;color:#829174}
+.mp-inner-fields dd{margin:0;color:#bac3a5;flex:1;min-width:0}
+.mp-inner blockquote{margin:0 0 18px;padding:13px 15px;border-left:2px solid #657454;background:#262e2180;color:#c0c6b0;font-size:14px;line-height:2}
+.mp-inner section>p{line-height:2;color:#adb59f}
+.mp-inner .mp-inner-margin{font:19px/1.85 "Home Plain Digits","KaiTi","STKaiti",serif;color:#b09caf;border-left:1px solid #725876;padding-left:14px;margin:27px 0}
+.mp-inner-return{display:flex;flex-direction:column;align-items:flex-start;gap:14px;border-top:1px solid #495741;padding-top:21px;margin-top:30px!important}
+.mp-inner-link{font-size:12px;color:#a6b895;text-decoration:underline;text-underline-offset:5px;line-height:1.9}
+.mp-inner>footer{text-align:center;font:14px/1.8 "Home Plain Digits","KaiTi",serif;letter-spacing:3px;color:#718067;padding:30px 10px 0}
+@media(max-width:350px){.mp-inner{padding-left:10px;padding-right:10px}.mp-inner>article{padding:16px 13px 22px}.mp-household{gap:10px}.mp-household>img{width:50px;flex-basis:50px;height:69px}.mp-household>b{font-size:8px;letter-spacing:0}.mp-inner-identity{gap:13px}.mp-inner-identity>img{width:92px;flex-basis:92px;height:122px}}
+.mp-heading h1{margin:5px 0 5px}
+.mp-heading>p{color:#7f8e7e;font-size:12px;margin-bottom:21px}
+.mp-categories{display:flex;gap:6px;flex-wrap:wrap;margin:19px 0 0;padding-bottom:15px;border-bottom:1px solid #dee5da}
+.mp-categories button{font-size:11px;color:#778771;padding:6px 10px;border-radius:4px;background:#f0f3eb}
+.mp-categories button.is-current{background:#456e50;color:#fff}
+.mp-results-count{display:flex;justify-content:space-between;color:#8c9787;font-size:10px;padding:14px 0 2px;letter-spacing:.3px}
+.mp-card{width:100%;text-align:left;padding:20px 0;gap:14px}
+.mp-card>img{width:90px;height:118px;flex:0 0 90px;object-fit:cover;object-position:center 32%;border-radius:7px;background:#e9eddf;box-shadow:0 2px 6px #29452f0e}
+.mp-card>div{flex:1;min-width:0}
+.mp-card strong{display:block;font-size:17px;line-height:1.5}
+.mp-card strong span{display:block;margin:2px 0 0;font-size:12px;color:#73826e;font-weight:400}
+.mp-card p.mp-card-id{font-size:11px;letter-spacing:.15px;color:#7c8876;margin:7px 0 2px;line-height:1.5}
+.mp-card p.mp-card-place{font-size:12px;line-height:1.7;margin:0 0 9px;color:#65735e;overflow-wrap:anywhere}
+.mp-card small,.mp-status{display:inline-block;background:#edf2e7;color:#4e7655;font-size:11px;padding:3px 7px;border-radius:3px;line-height:1.5}
+.mp-empty{padding-top:30px;padding-bottom:30px;text-align:center}
+.mp-empty>strong{display:block;font-size:15px;color:#687960;margin-bottom:10px}
+.mp-empty>p{color:#8b9685;font-size:12px;margin-bottom:9px}
+.mp-record-head{display:flex;gap:21px;align-items:center;margin:19px 0 24px}
+.mp-record-head .record-photo{margin:0;flex:0 0 125px;width:125px;height:166px;object-fit:cover;object-position:center 30%;box-shadow:0 3px 13px #34432c15;border-radius:7px}
+.mp-record-head>div{min-width:0}
+.mp-record-label{font-size:9px;color:#9aab8c;letter-spacing:1px}
+.mp-record-head h1{font-size:25px;line-height:1.5;margin:7px 0}
+.mp-record-head p{font-size:12px;color:#839079;margin-bottom:12px}
+.mp-record .record-table td{overflow-wrap:anywhere}
+.mp-record .case-timeline{margin-top:19px}
+.mp-record .case-timeline>div{padding-bottom:5px}
+.mp-record .case-timeline time{color:#8b9b80}
+.mp-record .case-timeline p{font-size:12px;line-height:1.9;margin:7px 0 16px}
+.mp-record-actions{border-top:1px solid #e1e7db;margin-top:22px;padding-top:2px}
+.mp-record-actions>.web-text-link{display:block;margin:15px auto 0;text-decoration:none;color:#718567}
+.mp-clue-person{display:flex;gap:13px;align-items:center;padding:14px;margin:0 0 20px;background:#f0f4e9;border:1px solid #e0e9d8;border-radius:6px}
+.mp-clue-person img{width:53px;height:68px;object-fit:cover;object-position:center 30%;border-radius:4px}
+.mp-clue-person strong{font-size:16px;color:#3e5538;display:block;margin-bottom:5px}
+.mp-clue-person span{font-size:11px;color:#7f9174}
+.mp-clue .web-form select{display:block;width:100%;border:1px solid #d9e2d3;border-radius:5px;font-size:13px;line-height:1.5;padding:12px 10px;margin-top:7px;background:#fff;color:#495d40}
+.mp-clue .web-form input[readonly]{background:#f4f6f0!important;color:#718166}
+.mp-receipt-mark{display:inline-block;padding:6px 15px;margin:9px 0 15px;color:#51784b;background:#eef5e9;border:1px solid #d8e7ce;border-radius:20px;font-size:11px}
+@media(max-width:350px){
+ .mp-card{gap:11px;padding:18px 0}
+ .mp-card>img{width:78px;height:108px;flex-basis:78px}
+ .mp-card strong{font-size:16px}
+ .mp-categories{gap:4px}
+ .mp-categories button{font-size:10px;padding:6px 8px}
+ .mp-record-head{gap:16px}
+ .mp-record-head .record-photo{width:106px;flex-basis:106px;height:148px}
+ .mp-record-head h1{font-size:23px}
+ .mp-record .record-table th{width:29%}
+ .mp-record .record-table td,.mp-record .record-table th{padding:9px}
+}

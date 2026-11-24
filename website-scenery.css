@@ -1,0 +1,253 @@
+/* Every scene is an image-generated PNG supplied through asset().
+   Header photographs are visible at phone widths; prose retains solid contrast. */
+#web-content[data-site-scene]{
+ --scene-paper:rgba(255,254,250,.96);
+ --scene-edge:8px;
+ background-color:#dce3dc;
+ background-image:linear-gradient(#e9eee335,#e1e9df75),var(--site-scene);
+ background-size:cover;
+ background-position:center top;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+}
+#web-content[data-site-scene]>.rw-paper,
+#web-content[data-site-scene]>.rw-forum,
+#web-content[data-site-scene]>.rw-inquiry{
+ background:transparent!important;
+ padding-bottom:1px;
+ min-height:100%;
+}
+
+/* The local forum opens onto the old streets where its neighbours live. */
+#web-content[data-site-scene="street"]{background-position:50% 43%;background-color:#777e6e}
+#web-content[data-site-scene="street"] .rw-street-header{
+ background-image:linear-gradient(110deg,#13261ecc,#18362c24 75%),var(--site-scene);
+ background-size:cover;
+ background-position:center 40%;
+ border-top:0;
+ color:#fff;
+ box-shadow:0 4px 16px #15342725;
+}
+#web-content[data-site-scene="street"] .rw-street-header>div{
+ min-height:143px;
+ padding:23px 23px 27px;
+}
+#web-content[data-site-scene="street"] .rw-civic-eyebrow{color:#e0e8d6;font-size:8px;letter-spacing:2.3px;text-shadow:0 1px 3px #0005}
+#web-content[data-site-scene="street"] .rw-civic-brand{color:#fffef5;text-shadow:0 2px 8px #0f241c66}
+#web-content[data-site-scene="street"] .rw-civic-brand strong{font-size:28px;letter-spacing:2px;line-height:1.5}
+#web-content[data-site-scene="street"] .rw-street-header small{color:#e3e9de;font-size:11px;text-shadow:0 1px 4px #0006;margin-top:5px}
+#web-content[data-site-scene="street"] .rw-street-search{
+ margin:0 20px 18px;
+ background:#fffef4f2;
+ border-color:#ffffffb3;
+ box-shadow:0 3px 14px #10251c26;
+ border-radius:7px;
+}
+#web-content[data-site-scene="street"] .rw-street-search button{background:#345f50;padding:0 16px}
+#web-content[data-site-scene="street"] .rw-street-header nav{background:#fffef7f2;border-top-color:#ffffff4d;border-bottom-color:#aebfa64d}
+#web-content[data-site-scene="street"] .rw-street-list,
+#web-content[data-site-scene="street"] .rw-street>article{
+ margin:11px var(--scene-edge) 14px;
+ padding-left:19px;
+ padding-right:19px;
+ background:var(--scene-paper);
+ border:1px solid #fff9;
+ border-radius:9px;
+ box-shadow:0 4px 18px #19342817;
+}
+#web-content[data-site-scene="street"] .rw-street-topic{background:transparent;border-bottom-color:#c6d2c64d}
+#web-content[data-site-scene="street"] .rw-street-topic:active{background:#dfe8d96b}
+#web-content[data-site-scene="street"] .rw-street-list-meta>span:first-child{background:#e4eddd80}
+#web-content[data-site-scene="street"] .rw-street-footer{background:#eaf0e5ed!important;color:#859385!important;border-top:1px solid #ffffff80}
+#web-content[data-site-scene="street"] .rw-street figure figcaption{background:transparent}
+
+/* A newspaper masthead looks out over the city; editorial content stays paper-white. */
+#web-content[data-site-scene="news"]{background-color:#c4cecd;background-position:55% 25%}
+#web-content[data-site-scene="news"] .rw-paper-head{
+ background-image:linear-gradient(100deg,#fffef5eb 5%,#faf7eb70 74%,#f3eadf30),var(--site-scene);
+ background-size:cover;
+ background-position:center 43%;
+ border-top-color:#973b3c;
+}
+#web-content[data-site-scene="news"] .rw-paper-mast{min-height:175px;align-items:flex-start;padding:25px 21px 42px}
+#web-content[data-site-scene="news"] .rw-paper-brand{color:#8d292f;text-shadow:0 1px 4px #fff9}
+#web-content[data-site-scene="news"] .rw-paper-brand strong{font-size:36px}
+#web-content[data-site-scene="news"] .rw-paper-brand span{color:#6d6e68;letter-spacing:2px}
+#web-content[data-site-scene="news"] .rw-paper-search{background:#fffffff0;border-color:#bdc5c280;box-shadow:0 2px 7px #243a3110}
+#web-content[data-site-scene="news"] .rw-paper-head nav{background:#fffef5ed;border-color:#dfded5a8}
+#web-content[data-site-scene="news"] .rw-paper-date{background:#fffffff0;color:#777f7c;border-bottom-color:#f2f0e9}
+#web-content[data-site-scene="news"] .rw-news-home,
+#web-content[data-site-scene="news"] .rw-news-article{
+ margin:10px var(--scene-edge) 0;
+ padding-left:19px;
+ padding-right:19px;
+ background:#fffffafa;
+ border:1px solid #fff9;
+ box-shadow:0 4px 20px #30453d1a;
+}
+#web-content[data-site-scene="news"] .rw-news-article{padding-top:25px;padding-bottom:23px}
+#web-content[data-site-scene="news"] .rw-news-card{background:transparent}
+#web-content[data-site-scene="news"] .rw-news-comments,
+#web-content[data-site-scene="news"] .rw-news-related{background:#fffffaf7;margin:11px var(--scene-edge) 0;border-top:0;padding-left:19px;padding-right:19px}
+#web-content[data-site-scene="news"] .rw-news-comments{padding-top:24px;padding-bottom:16px}
+#web-content[data-site-scene="news"] .rw-news-related{padding-bottom:6px}
+#web-content[data-site-scene="news"] .rw-paper-footer{background:#f6f6efef;margin-top:14px;border-top:1px solid #ffffff80}
+
+/* The public family agency remains calm and ordinary, including its sign-in forms. */
+#web-content[data-site-scene="agency"]{background-position:center 36%;background-color:#d9d8c3}
+#web-content[data-site-scene="agency"]>.rw-public-head{
+ background-image:linear-gradient(100deg,#fcfbefe8 10%,#faf9e575 72%,#f4efd830),var(--site-scene);
+ background-size:cover;
+ background-position:center 42%;
+ border-top:3px solid #597b58;
+}
+#web-content[data-site-scene="agency"] .rw-public-head .site-nav{min-height:164px;background:transparent;align-items:flex-start;padding:29px 21px 35px}
+#web-content[data-site-scene="agency"] .rw-public-head .site-brand{gap:10px}
+#web-content[data-site-scene="agency"] .rw-public-head .site-brand strong{color:#2f4b34;text-shadow:0 1px 5px #fff6}
+#web-content[data-site-scene="agency"] .rw-public-head .site-brand small{color:#576d57;text-shadow:0 1px 3px #fff8}
+#web-content[data-site-scene="agency"] .rw-public-head .rw-home-wordmark{background:#50704b;box-shadow:0 3px 9px #324a2826}
+#web-content[data-site-scene="agency"] .rw-public-head .rw-menu-button{background:#fffef3df;color:#4f6951;border-color:#9fb19699}
+#web-content[data-site-scene="agency"] .rw-public-head .site-menubar{background:#fffef4ed;border-color:#ffffff80}
+#web-content[data-site-scene="agency"]>.site-hero,
+#web-content[data-site-scene="agency"]>.site-services,
+#web-content[data-site-scene="agency"]>.web-section,
+#web-content[data-site-scene="agency"]>.web-pad,
+#web-content[data-site-scene="agency"]>.rw-public-article{
+ background:#fffef5f7;
+ margin:10px var(--scene-edge) 0;
+ border:1px solid #fff9;
+ border-radius:7px;
+ box-shadow:0 4px 17px #3d4c3214;
+}
+#web-content[data-site-scene="agency"]>.site-hero{padding:24px 20px;background-image:none}
+#web-content[data-site-scene="agency"]>.web-pad,
+#web-content[data-site-scene="agency"]>.rw-public-article{padding-left:20px;padding-right:20px}
+#web-content[data-site-scene="agency"]>.web-section{padding:20px 17px;border-bottom-width:1px}
+#web-content[data-site-scene="agency"]>.site-services{padding:19px 7px;border-bottom-width:1px}
+#web-content[data-site-scene="agency"] .missing-card{background:transparent}
+#web-content[data-site-scene="agency"] .web-form input,
+#web-content[data-site-scene="agency"] .web-form textarea,
+#web-content[data-site-scene="agency"] .web-form select{background:#fff}
+#web-content[data-site-scene="agency"]>.rw-public-footer{background:#edf1e5f0;margin-top:14px;border-top-color:#fff9}
+
+/* Public-service buildings and archival shelves have different visual identities. */
+#web-content[data-site-scene="civic"]{background-color:#cbd8d5;background-position:50% 35%}
+#web-content[data-site-scene="records"]{background-color:#797869;background-position:52% 44%}
+#web-content[data-site-scene="civic"] .rw-civic-header,
+#web-content[data-site-scene="records"] .rw-civic-header{
+ background-image:linear-gradient(100deg,#f9fcf1ed 4%,#e5edda80 75%,#e6edd42b),var(--site-scene);
+ background-size:cover;
+ background-position:center 40%;
+}
+#web-content[data-site-scene="civic"] .rw-civic-header>div,
+#web-content[data-site-scene="records"] .rw-civic-header>div{min-height:173px;padding:24px 21px 37px}
+#web-content[data-site-scene="civic"] .rw-civic-eyebrow{color:#65868b}
+#web-content[data-site-scene="civic"] .rw-civic-brand{color:#244e5a;text-shadow:0 1px 4px #fff9}
+#web-content[data-site-scene="civic"] .rw-civic-header small{color:#5e7981}
+#web-content[data-site-scene="civic"] .rw-civic-header nav{background:#f4faf9ee;border-color:#c9d8d880}
+#web-content[data-site-scene="records"] .rw-civic-header{background-image:linear-gradient(100deg,#eeeadaf0,#e7dec989 75%,#d5cbb43d),var(--site-scene);border-top-color:#726d50}
+#web-content[data-site-scene="records"] .rw-civic-eyebrow{color:#8c805f}
+#web-content[data-site-scene="records"] .rw-civic-brand{color:#514f3b;text-shadow:0 1px 3px #fff9}
+#web-content[data-site-scene="records"] .rw-civic-header small{color:#7b775e}
+#web-content[data-site-scene="records"] .rw-civic-header nav{background:#f8f4e9ee;border-color:#d6d0bd99}
+#web-content[data-site-scene="records"] .rw-civic-header nav button{color:#76735d}
+#web-content[data-site-scene="civic"] .rw-inquiry>article,
+#web-content[data-site-scene="records"] .rw-inquiry>article{
+ margin:11px var(--scene-edge) 14px;
+ background:#fefffbf5;
+ padding:25px 18px 30px;
+ border:1px solid #ffffffe0;
+ border-radius:5px;
+ box-shadow:0 4px 18px #1b393022;
+}
+#web-content[data-site-scene="records"] .rw-inquiry>article{background:#fffdf2f7;border-color:#f6f0ddbd}
+#web-content[data-site-scene="records"] .inquiry-intake{background:#f9f7eff0;border-color:#dedbcd}
+#web-content[data-site-scene="civic"] .rw-civic-footer{background:#eef5f1eb}
+#web-content[data-site-scene="records"] .rw-civic-footer{background:#ece9dfed}
+
+/* Parenting pages keep their familiar warmth even when the discussion becomes strange. */
+#web-content[data-site-scene="parents"]{background-color:#d4c5aa;background-position:52% 38%}
+#web-content[data-site-scene="parents"] .rw-forum-header{
+ min-height:223px;
+ padding:27px 22px 0;
+ background-image:linear-gradient(100deg,#fff8e8e8 4%,#faf0d989 76%,#f4e6c82e),var(--site-scene);
+ background-position:center 40%;
+ background-size:cover;
+ border-top-color:#9b8563;
+ border-bottom-color:#f2e9d3;
+ display:flex;
+ flex-direction:column;
+}
+#web-content[data-site-scene="parents"] .rw-forum-header strong{color:#615842;text-shadow:0 1px 4px #fff8}
+#web-content[data-site-scene="parents"] .rw-forum-header span{color:#8a7f68;letter-spacing:1px}
+#web-content[data-site-scene="parents"] .rw-forum-header nav{margin:45px -22px 0;padding:0 22px;background:#fffaf1ed;border-top:1px solid #ffffff6b}
+#web-content[data-site-scene="parents"] .rw-forum-header nav button{color:#796f59;padding:11px 0}
+#web-content[data-site-scene="parents"] .forum-thread,
+#web-content[data-site-scene="parents"] .rw-forum-index{margin:11px var(--scene-edge) 0;padding-left:19px;padding-right:19px;background:#fffdf7f7;border:1px solid #fff9;border-radius:7px;box-shadow:0 4px 18px #513e2814}
+#web-content[data-site-scene="parents"] .forum-reply{background:transparent}
+#web-content[data-site-scene="parents"] .rw-forum-footer{background:#f4eddeef;margin-top:13px}
+#web-content[data-site-scene="parents"] .rw-topic-card{background:#ffffffb3;border-color:#ded9cbd6}
+
+/* A quiet river leaves whitespace in the search engine instead of competing with results. */
+#web-content[data-site-scene="search"]{background-color:#dce6e9;background-position:52% 45%;background-image:linear-gradient(#f6fafb52,#e8f0ef86),var(--site-scene)}
+#web-content[data-site-scene="search"] .rw-search{background:transparent!important}
+#web-content[data-site-scene="search"] .rw-search>form{margin:17px 12px 0!important;padding:13px 12px!important;background:#fffffff0;border-radius:10px 10px 0 0;box-shadow:0 4px 20px #3e606914}
+#web-content[data-site-scene="search"] .rw-search>form>span{font-size:15px!important}
+#web-content[data-site-scene="search"] .rw-search>form>input{background:#f0f5f5!important}
+#web-content[data-site-scene="search"] .rw-search>nav{margin:0 12px!important;padding-left:14px!important;background:#fffffff0;border-radius:0 0 10px 10px;border-color:#ffffff80!important}
+#web-content[data-site-scene="search"] .rw-search-summary{color:#677a7e;padding:15px 17px 7px;text-shadow:0 1px 3px #fff9}
+#web-content[data-site-scene="search"] .rw-search .engine-result{background:#fffffff2;border:1px solid #ffffffc4!important;box-shadow:0 3px 14px #35515b0d;margin-top:10px!important}
+#web-content[data-site-scene="search"] .rw-search .search-blank{margin:85px 25px 35px;padding:23px 12px 25px;background:#f8fcfacf;border:1px solid #ffffff73;border-radius:13px;box-shadow:0 5px 21px #3f64640a}
+#web-content[data-site-scene="search"] .rw-search .search-blank>p{color:#82918c}
+#web-content[data-site-scene="search"] .rw-search-quick{flex-wrap:wrap;gap:9px;margin-top:20px}
+#web-content[data-site-scene="search"] .rw-search-quick button{background:#fffaf0e0;border-color:#dce5ddd9}
+#web-content[data-site-scene="search"] .rw-search>.native-empty{margin:72px 25px 30px;background:#f9fcfade;padding:25px 18px;border-radius:10px;color:#7c8d88}
+
+/* Only genuine private-site markup can acquire the abandoned-hall scene.
+   Existing title, idol, document colors and motion hooks are left intact. */
+#web-content[data-site-scene="cult"]{background-color:#101714;background-position:center 30%;background-image:linear-gradient(#07120a2b,#07130d75),var(--site-scene)}
+#web-content[data-site-scene="cult"]>.cult-site{background:transparent;padding-bottom:1px}
+#web-content[data-site-scene="cult"] .cult-masthead{
+ min-height:259px;
+ padding-top:27px;
+ padding-bottom:43px;
+ background-image:linear-gradient(#08140c94,#07150b24 46%,#09130c9e),var(--site-scene);
+ background-position:center 36%;
+ background-size:cover;
+ border-top-color:#4e5250;
+ border-bottom-color:#4b5e4759;
+}
+#web-content[data-site-scene="cult"] .cult-dateline{color:#b0b5a3;text-shadow:0 1px 5px #000}
+#web-content[data-site-scene="cult"] .cult-masthead>p{color:#b1a0b4;text-shadow:0 2px 5px #000}
+#web-content[data-site-scene="cult"] .cult-side-verse{color:#c3c9ac;text-shadow:0 2px 5px #000}
+#web-content[data-site-scene="cult"] .cult-site .internal-body{margin-top:13px;margin-bottom:15px;background:#151e18f2;border-color:#65775869;box-shadow:0 5px 24px #0003}
+#web-content[data-site-scene="cult"] .cult-site[data-cult-part="archive"] .internal-body{background:#d2d6c8f7;border-color:#8d977999;box-shadow:inset 0 0 0 4px #bbc4b5,0 6px 24px #0003}
+#web-content[data-site-scene="cult"] .cult-site footer{background:#09130bec;border-top-color:#51604c66}
+
+@media(max-width:370px){
+ #web-content[data-site-scene]{--scene-edge:6px}
+ #web-content[data-site-scene="street"] .rw-street-header>div{padding-left:20px;padding-right:20px;min-height:136px}
+ #web-content[data-site-scene="street"] .rw-street-search{margin-left:16px;margin-right:16px}
+ #web-content[data-site-scene="street"] .rw-street-list,
+ #web-content[data-site-scene="street"] .rw-street>article{padding-left:16px;padding-right:16px}
+ #web-content[data-site-scene="news"] .rw-paper-mast{padding-left:18px;padding-right:18px;min-height:166px}
+ #web-content[data-site-scene="news"] .rw-paper-brand strong{font-size:32px}
+ #web-content[data-site-scene="news"] .rw-news-home,
+ #web-content[data-site-scene="news"] .rw-news-article,
+ #web-content[data-site-scene="news"] .rw-news-comments,
+ #web-content[data-site-scene="news"] .rw-news-related{padding-left:16px;padding-right:16px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-nav{padding:25px 17px 34px;min-height:157px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-brand strong{font-size:18px}
+ #web-content[data-site-scene="agency"] .rw-public-head .site-brand small{font-size:8px;letter-spacing:.5px}
+ #web-content[data-site-scene="agency"] .rw-public-head .rw-menu-button{min-width:45px;padding-left:7px;padding-right:7px}
+ #web-content[data-site-scene="agency"]>.web-pad,
+ #web-content[data-site-scene="agency"]>.rw-public-article{padding-left:16px;padding-right:16px}
+ #web-content[data-site-scene="civic"] .rw-inquiry>article,
+ #web-content[data-site-scene="records"] .rw-inquiry>article{padding-left:15px;padding-right:15px}
+ #web-content[data-site-scene="parents"] .forum-thread,
+ #web-content[data-site-scene="parents"] .rw-forum-index{padding-left:16px;padding-right:16px}
+ #web-content[data-site-scene="search"] .rw-search>form{margin-left:9px!important;margin-right:9px!important;padding-left:10px!important;padding-right:10px!important;gap:7px!important}
+ #web-content[data-site-scene="search"] .rw-search>nav{margin-left:9px!important;margin-right:9px!important}
+ #web-content[data-site-scene="search"] .rw-search>form>input{font-size:12px!important;padding-left:9px!important;padding-right:9px!important}
+ #web-content[data-site-scene="cult"] .cult-masthead{min-height:238px;padding-bottom:36px}
+}

@@ -1,0 +1,50 @@
+/* WeChat unread counts belong to the avatar; muted conversations use a dot. */
+.wx-unread{display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#fa5151;color:#fff;border:0;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-style:normal;font-weight:400;letter-spacing:0;box-shadow:none}
+.wx-unread-count{min-width:18px;height:18px;padding:0 5px;font-size:11px;line-height:18px;white-space:nowrap}
+.wx-unread-dot{width:9px;height:9px;min-width:9px;padding:0}
+.wx-avatar-wrap{display:block;position:relative;width:48px;height:48px;flex:0 0 48px}
+.wx-avatar-wrap>.real-avatar{width:48px;height:48px;border-radius:6px}
+.wx-avatar-wrap>.wx-unread{position:absolute;left:auto;right:-6px;top:-5px;z-index:1}
+.wx-avatar-wrap>.wx-unread-dot{right:-3px;top:-3px;border:1px solid #fff;width:10px;height:10px}
+.wx-conversation.pinned .wx-unread-dot{border-color:#f5f5f5}
+.wx-conversation .unread-dot{display:none}
+.wx-tabs .wx-unread{position:absolute;right:-10px;top:-5px;border:1px solid #f7f7f7;min-width:17px;height:17px;line-height:15px;font-size:10px;padding:0 4px}
+.wx-tabs .wx-unread-dot{right:-5px;top:-2px;width:9px;height:9px;min-width:9px;padding:0}
+.app-icon>.wx-unread.badge{left:auto;right:calc(50% - 35px);top:-5px;min-width:19px;height:19px;font-size:12px;line-height:19px;padding:0 5px;font-weight:400;background:#fa5151}
+.wx-newfriends-entry .wx-unread{font-size:11px;line-height:18px;font-weight:400;color:#fff}
+.wx-newfriends-entry .row-icon{height:34px;width:34px;background:#fa9d3b;border-radius:4px;color:#fff}
+.wx-newfriends-entry .row-icon .raster-icon{width:25px;height:25px}
+.wx-newfriends-entry .row-chevron{margin-left:1px}
+.wx-system-message{max-width:calc(100% - 48px);margin:15px auto 22px;color:#999;text-align:center;font-size:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.wx-newfriends{background:#ededed}
+.wx-add-friend-search{display:flex;align-items:center;justify-content:center;gap:7px;width:calc(100% - 24px);height:36px;margin:12px;border-radius:7px;background:#fff;color:#a1a1a1;font-size:14px}
+.wx-add-friend-search .raster-icon{width:16px;height:16px}
+.wx-request-section{padding:8px 16px 7px;color:#888;font-size:12px;line-height:18px}
+.wx-request-list{background:#fff;padding-left:16px}
+.wx-request-row{display:flex;align-items:center;gap:10px;padding:13px 16px 13px 0;border-bottom:1px solid #ededed;min-height:80px}
+.wx-request-row:last-child{border-bottom:0}
+.wx-request-person{display:flex;align-items:center;gap:12px;flex:1;min-width:0;padding:0;text-align:left}
+.wx-request-person>.real-avatar{width:48px;height:48px;border-radius:5px}
+.wx-request-person>span:last-child{min-width:0;flex:1}
+.wx-request-person strong{display:block;font-size:16px;line-height:23px;font-weight:500;color:#171717}
+.wx-request-person p{margin:3px 0 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#999;font-size:12px;line-height:20px}
+.wx-request-view{flex-shrink:0;min-width:51px;padding:5px 11px;border-radius:4px;background:#07c160;color:#fff;font-size:13px;line-height:22px;font-weight:500}
+.wx-request-view:active,.wx-request-action>button:active{background:#06ad56}
+.wx-request-added{flex-shrink:0;color:#999;font-size:12px;line-height:24px;padding:0 5px}
+.wx-request-profile{display:flex;align-items:flex-start;gap:17px;background:#fff;padding:30px 22px 26px}
+.wx-request-profile>.real-avatar{width:65px;height:65px;border-radius:8px}
+.wx-request-profile>div{flex:1;min-width:0;padding-top:1px}
+.wx-request-profile h2{margin:0 0 10px;font-size:21px;line-height:27px;color:#171717;font-weight:600;overflow-wrap:anywhere}
+.wx-request-profile p{margin:0;font-size:12px;color:#888;line-height:20px;overflow-wrap:anywhere}
+.wx-request-details{background:#fff;margin-top:10px;padding:0 20px}
+.wx-request-source{display:flex;gap:22px;padding:17px 0;border-bottom:1px solid #ededed;font-size:14px;line-height:23px}
+.wx-request-source>span{flex-shrink:0;color:#181818}
+.wx-request-source p{margin:0;color:#888;font-size:13px}
+.wx-request-greeting{padding:17px 0 22px;font-size:14px;line-height:23px}
+.wx-request-greeting>span{display:block;margin-bottom:12px;color:#181818}
+.wx-request-greeting p{margin:0;padding:13px 15px;border-radius:4px;background:#f7f7f7;color:#666;font-size:14px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere}
+.wx-request-action{padding:35px 30px 30px;text-align:center}
+.wx-request-action>button{min-width:184px;max-width:100%;padding:11px 25px;border-radius:7px;background:#07c160;color:#fff;font-size:16px;line-height:24px;font-weight:500}
+@media(max-width:350px){.wx-request-profile{padding-left:17px;padding-right:17px;gap:14px}.wx-request-source{gap:18px}.wx-request-row{padding-right:14px}.wx-request-person{gap:10px}.wx-request-view{min-width:47px;padding-left:9px;padding-right:9px}}
+.npc-delivery-status{display:block;margin:12px auto;padding:6px 12px;border:0;background:transparent;color:#8a8a8a;font-size:12px;line-height:1.6;text-align:center;max-width:90%}
+button.npc-delivery-status{color:#576b95;cursor:pointer}

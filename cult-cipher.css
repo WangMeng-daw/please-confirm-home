@@ -1,0 +1,197 @@
+.cipher-official-article{padding:24px 22px 34px;color:#343b39;background:#fff;font-size:15px;line-height:1.95;overflow-wrap:anywhere}
+.cipher-official-article h1{font-size:25px;line-height:1.55;margin:7px 0 13px;color:#182420;letter-spacing:.1px}
+.cipher-official-article h2{font-size:18px;margin:29px 0 15px;color:#344a3f}
+.cipher-official-article p{margin:18px 0}
+.cipher-official-article .cipher-article-kicker{font-size:12px;color:#628173;letter-spacing:1px}
+.cipher-official-article .cipher-article-date{color:#929d96;font-size:11px;margin:0 0 25px}
+.cipher-official-article .cipher-article-foot{font-size:11px;color:#909b92;margin-top:30px;padding-top:18px;border-top:1px solid #ecefe9}
+.cipher-official-article blockquote{margin:23px 0;padding:15px 17px;border-left:3px solid #9ca78e;background:#f4f6ef;font-size:14px;line-height:2;color:#53604b}
+.cipher-alphabet{width:100%;border-collapse:collapse;text-align:left;margin:22px 0;background:#fafbf7;table-layout:fixed}
+.cipher-alphabet caption{text-align:left;color:#5d7466;font-size:12px;margin-bottom:9px}
+.cipher-alphabet th,.cipher-alphabet td{border:1px solid #e0e7da;padding:9px 17px;font-weight:400}
+.cipher-alphabet th{font-family:"Nirmala UI","Kohinoor Devanagari",sans-serif;width:40%;font-size:26px;color:#364c3c;line-height:1.3}
+.cipher-alphabet td{font-size:17px;letter-spacing:2px}
+.cipher-direction-table{margin:20px 0;padding:18px 20px;background:#f5f6f1;border:1px solid #e7eadf}
+.cipher-direction-table dt{font-size:14px;color:#455b48;margin:12px 0 4px;font-weight:600}
+.cipher-direction-table dt:first-child{margin-top:0}
+.cipher-direction-table dd{font-size:13px;color:#6f7a67;margin:0 0 12px}
+.cipher-direction-table dd:last-child{margin-bottom:0}
+.cipher-tool-button{display:block;width:100%;border:1px solid #c7d5c8;background:#edf3ed;color:#3c624d;padding:13px 12px;border-radius:4px;text-align:center;font-size:14px}
+.cipher-account-menu{display:flex;flex-direction:column;gap:1px;background:#e9eee7}
+.cipher-account-menu>button{font-size:14px;padding:18px 16px;text-align:left;background:#fff;color:#425a4b;line-height:1.65}
+.cipher-rubbing{display:flex;align-items:center;justify-content:space-around;gap:14px;background:#e7e5d7;color:#555849;border:1px solid #c6c8b8;padding:24px 17px;box-shadow:inset 0 0 28px #72786515;margin:22px 0}
+.cipher-rubbing>small{writing-mode:vertical-rl;font-size:10px;letter-spacing:2px;line-height:1.7;color:#747e6a}
+.cipher-seal-ring{writing-mode:vertical-rl;color:#8f6257;border:2px double #a68275;padding:8px 4px;letter-spacing:4px;font-size:11px}
+.cipher-vertical{display:flex;flex-direction:column;align-items:center;gap:6px;font-family:"Nirmala UI","Kohinoor Devanagari",sans-serif;font-size:35px;line-height:1.5;color:#374235}
+.cipher-old-sign{display:flex;gap:20px;align-items:center;justify-content:center;border:1px solid #dbdfd1;background:#f2f2e9;padding:22px 15px;margin:19px 0}
+.cipher-old-sign>span{font-size:12px;color:#78856d;writing-mode:vertical-rl;letter-spacing:3px}
+.cipher-old-sign>small{max-width:75px;color:#8d967f;font-size:11px;line-height:1.9}
+.cipher-chinese-vertical{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;font-size:26px;letter-spacing:3px;line-height:1.3}
+.cipher-imprint{border-top:1px solid #e0e5d7;border-bottom:1px solid #e0e5d7;padding:14px 0;margin:20px 0}
+.cipher-imprint>span,.cipher-imprint>small{display:block;color:#8b9680;font-size:11px}
+.cipher-signature{color:#697b5c;font-size:16px;margin:5px 0}
+.cipher-tool-site{min-height:100%;background:#f4f6f1;color:#33483a}
+.cipher-tool-site>header{padding:22px 19px;background:#fdfefb;border-bottom:1px solid #e0e7dd;font-weight:600;font-size:17px}
+.cipher-tool-site>header span{float:right;font-size:11px;color:#7b8f7f;font-weight:400;line-height:2.3}
+.cipher-translator{padding:24px 21px 30px;font-size:13px;line-height:1.85}
+.cipher-translator h1{font-size:24px;color:#314d3b;margin:0 0 14px}
+.cipher-translator>p{color:#7d8f7b;margin:0 0 24px}
+.cipher-form label{display:block;font-size:12px;margin:18px 0;color:inherit}
+.cipher-form input,.cipher-form textarea,.cipher-form select{display:block;width:100%;border:1px solid #ccd5c5;border-radius:3px;background:#fefffc;color:#334333;font-family:inherit;font-size:14px;line-height:1.6;padding:11px 12px;margin-top:7px;box-sizing:border-box;min-width:0}
+.cipher-form textarea[lang=sa]{font-family:"Nirmala UI",sans-serif;font-size:26px;letter-spacing:5px;line-height:1.8}
+.cipher-error{color:#ad574c!important;font-size:12px!important;line-height:1.8!important;padding:10px 0!important;margin:0!important}
+.cipher-translation-result{background:#fdfef9;border:1px solid #d5dfcc;padding:19px;margin-top:25px}
+.cipher-translation-result>span{display:block;color:#8b9d7e;font-size:11px}
+.cipher-translation-result>strong{display:block;font-size:22px;letter-spacing:4px;color:#3e603e;margin:13px 0}
+.cipher-translation-result>p{color:#8a9680;font-size:11px;line-height:1.9}
+.cipher-link{color:#708a55;text-decoration:underline;text-decoration-color:#a7b491;text-underline-offset:4px;overflow-wrap:anywhere;cursor:pointer}
+.cipher-link:focus-visible{outline:2px solid currentColor;outline-offset:5px}
+.cipher-article-reference{margin-top:22px;font-size:12px;color:#63845e;line-height:1.8;text-align:left;padding:0}
+.cipher-private{min-height:100%;background-color:#131915;background-image:linear-gradient(#101611e8,#151b15ef),var(--cipher-scene);background-position:center top;background-size:cover;color:#b4bf9c;font:13px/2 "Microsoft YaHei","PingFang SC",sans-serif;padding-bottom:1px}
+.cipher-private>header{padding:25px 18px 20px;text-align:center;background:#080e0baa;border-top:4px solid #78637c;border-bottom:1px solid #384936}
+.cipher-private>header>span{font-size:9px;letter-spacing:2px;color:#748569}
+.cipher-private>header>img{display:block;width:88%;max-width:310px;max-height:130px;object-fit:contain;margin:14px auto 10px}
+.cipher-private>header>p{font-size:11px;letter-spacing:5px;color:#82728b;margin:7px 0 0}
+.cipher-private>article{margin:0 9px;padding:24px 17px 28px;background:#172116dd;border-left:1px solid #34452d;border-right:1px solid #34452d}
+.cipher-fileline{font-family:"Home Plain Digits",Consolas,"Microsoft YaHei",monospace;font-size:10px;letter-spacing:1px;color:#697d5b;border-bottom:1px solid #34462c;padding-bottom:16px}
+.cipher-private h1{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;color:#c7cda0;font-size:27px;letter-spacing:3px;line-height:1.6;margin:24px 0}
+.cipher-private h2{font-size:17px;font-weight:500;color:#c0c992;margin:23px 0 12px}
+.cipher-private p{font-size:13px;line-height:2.1;margin:20px 0;color:#acbb95}
+.cipher-private .cipher-link{color:#b7c689;text-decoration-color:#72834f}
+.cipher-private>footer{text-align:center;padding:26px 18px;font-size:9px;letter-spacing:2px;color:#677958}
+.cipher-god{margin:20px 0 28px;padding:7px;border:1px solid #64764b;background:#11180e;box-shadow:0 0 22px #00100066}
+.cipher-god img{display:block;width:100%;height:auto;animation:cipher-god-breath 10s ease-in-out infinite;transform-origin:center 30%}
+.cipher-god figcaption{font-size:10px;text-align:center;color:#91a478;letter-spacing:3px;padding:13px 5px 7px}
+.cipher-private .cipher-creed{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;color:#cacba0;font-size:23px;line-height:1.9;text-align:center;letter-spacing:3px}
+.cipher-private-note{border-left:2px solid #708153;background:#111a103d;padding:0 15px 13px;margin:27px 0}
+.cipher-private .cipher-private-note h2{font-size:14px;padding-top:15px}
+.cipher-private .cipher-private-note p{font-size:12px}
+.cipher-dark-button{display:block;width:100%;text-align:center;background:#526944;color:#e5e8d3;border:1px solid #7f8e62;padding:13px 11px;font-size:13px;letter-spacing:1px;line-height:1.7}
+.cipher-private .cipher-form input,.cipher-private .cipher-form textarea,.cipher-private .cipher-form select{background:#101c12;color:#ccd4ad;border-color:#536646}
+.cipher-private .cipher-form label{color:#a7b88c}
+.cipher-private .cipher-error{color:#d4a590!important}
+.cipher-fragment{border:1px solid #67774b;padding:20px 16px;margin:25px 0;background:#e8e3c7;color:#4b5239;box-shadow:inset 0 0 30px #74745025}
+.cipher-fragment .cipher-stamp{display:flex;justify-content:space-between;color:#886d52;font-size:11px;letter-spacing:2px;border-bottom:1px solid #c3bea0;padding-bottom:6px}
+.cipher-fragment .cipher-stamp b{font-size:24px;line-height:1;letter-spacing:8px;color:#856048}
+.cipher-fragment>textarea{display:block;border:0;background:transparent;resize:none;width:100%;min-height:87px;margin:22px 0 5px;color:#38402b;font:34px/1.7 "Nirmala UI",sans-serif;letter-spacing:7px;padding:0;overflow:hidden;text-align:center;user-select:text}
+.cipher-fragment>small{display:block;font-size:10px;color:#8b8e71;letter-spacing:1px}
+.cipher-transcription{border-top:1px solid #415936;border-bottom:1px solid #415936;padding:21px 0;margin:27px 0}
+.cipher-transcription>span{font-size:10px;letter-spacing:2px;color:#7c9168}
+.cipher-transcription>strong{display:block;font-size:24px;letter-spacing:6px;color:#d1d6a1;margin:13px 0}
+.cipher-source-links{display:flex;flex-direction:column;gap:10px;margin:20px 0 28px}
+.cipher-source-links>button{text-align:left;border:1px solid #405833;background:#22321c;color:#b7c895;padding:14px 12px;font-size:12px;line-height:1.7}
+.cipher-facts{margin:20px 0}
+.cipher-facts dt{font-size:10px;letter-spacing:1px;color:#7d9268;padding-top:12px}
+.cipher-facts dd{margin:4px 0 0;padding-bottom:13px;border-bottom:1px solid #53604744;font-size:14px;overflow-wrap:anywhere}
+.cipher-witness{margin:30px 0 22px;padding:20px 18px;border:1px solid #5c6849;background:#1d291c}
+.cipher-witness>span{color:#889d70;font-size:10px;letter-spacing:2px}
+.cipher-witness h2{font-family:"Home Plain Digits",Consolas,"Microsoft YaHei",monospace;font-size:18px!important;color:#c7d096!important;letter-spacing:2px}
+.cipher-witness p{font-size:12px!important;line-height:2!important;color:#9dad8a!important}
+.cipher-witness>div{display:flex;gap:20px;align-items:center;margin:20px 0;border-top:1px solid #64734a66;border-bottom:1px solid #64734a66;padding:14px 0}
+.cipher-witness>div>small{font-size:11px;color:#87996c;letter-spacing:3px}
+.cipher-witness>div>strong{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;color:#d5d8ad;font-size:34px;font-weight:400;line-height:1.4}
+.cipher-witness .cipher-witness-foot{font-size:10px!important;color:#708563!important;margin-bottom:0}
+.cipher-lamp{min-height:100%;background-color:#dedbc4;background-image:linear-gradient(#ebe8d6df,#dedfc3ed),var(--lamp-scene);background-size:cover;background-position:center top;color:#596348;padding-bottom:1px;font:13px/2 "Microsoft YaHei","PingFang SC",sans-serif;transition:background-color 5s,color 5s}
+.cipher-lamp>header{padding:25px 20px 21px;text-align:center;background:#f4efdacc;border-top:3px solid #9a9765;border-bottom:1px solid #aaa77866}
+.cipher-lamp>header>span{font-size:9px;letter-spacing:2px;color:#949366}
+.cipher-lamp>header>img{display:block;max-width:300px;width:88%;height:auto;max-height:118px;object-fit:contain;margin:15px auto 10px}
+.cipher-lamp:not(.is-eroded)>header>img{filter:brightness(.57) sepia(.22)}
+.cipher-lamp>header>p{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;color:#8c9068;letter-spacing:3px;font-size:16px;margin:10px 0 0}
+.cipher-lamp>article{padding:26px 20px 31px;margin:12px 9px;background:#fbf8eae8;border:1px solid #fff5d59e;box-shadow:0 3px 17px #77775520;position:relative}
+.cipher-lamp h1{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;font-size:29px;line-height:1.6;letter-spacing:3px;color:#666d45;margin:1px 0 24px;font-weight:400}
+.cipher-lamp h2{font-size:18px;color:#6c7049;font-weight:500;margin:15px 0}
+.cipher-lamp p{font-size:13px;line-height:2.1;margin:20px 0}
+.cipher-lamp blockquote{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;border-top:1px solid #beb995;border-bottom:1px solid #beb995;color:#6e7853;text-align:center;padding:21px 7px;font-size:25px;letter-spacing:4px;margin:27px 0}
+.cipher-lamp-figure{padding:7px;background:#e5dfc5;border:1px solid #b4b083;margin:21px 0 26px}
+.cipher-lamp-figure>img{display:block;width:100%;height:auto}
+.cipher-lamp-figure figcaption{color:#8f926e;font-size:10px;padding:13px 5px 6px;text-align:center;letter-spacing:1px}
+.cipher-lamp-action{display:block;width:100%;border:1px solid #899166;background:#727e4e;color:#faf9dd!important;border-radius:2px;text-decoration:none!important;padding:14px 12px;text-align:center;box-sizing:border-box;font-size:14px;letter-spacing:2px;margin:16px 0;line-height:1.7}
+.cipher-lamp .cipher-form input,.cipher-lamp .cipher-form select{border-color:#c5caaa;background:#fffff6;color:#52643e}
+.cipher-lamp .cipher-form label{color:#7b845e}
+.cipher-lamp-reference{padding:15px;background:#e9ecd65e;border-left:2px solid #a3ae7f;font-size:12px!important}
+.cipher-lamp>footer{padding:20px;text-align:center;color:#8a9270;font-size:10px;letter-spacing:2px}
+.cipher-receipt{padding:20px 16px;border:1px solid #bdc5a0;background:#f2f4e1;color:#6d784d}
+.cipher-receipt>span{font-size:10px;color:#8f9b71;letter-spacing:2px}
+.cipher-receipt>h2{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;font-size:29px;letter-spacing:7px;margin:18px 0;color:#5d7042}
+.cipher-receipt .cipher-facts dd{font-family:"Home Plain Digits",Consolas,"Microsoft YaHei",monospace;font-size:13px}
+.cipher-verified{padding:19px 17px;border-left:3px solid #7d9860;background:#edf2dc;margin:25px 0}
+.cipher-verified>strong{font-size:16px;color:#536e3c}
+.cipher-verified>p{font-size:12px;margin-bottom:0}
+.cipher-lamp.is-eroded{background-color:#394132;background-image:linear-gradient(#404e31ed,#182817f5),var(--lamp-scene)}
+.cipher-lamp.is-eroded>header{background:#4c5930cc;border-color:#6f7b4a}
+.cipher-lamp.is-eroded>header>span,.cipher-lamp.is-eroded>header>p{color:#abb986}
+.cipher-lamp.is-eroded>article{background:#dfe7c7ed;border-color:#b3c393;box-shadow:0 0 35px #17280f55}
+.cipher-lamp.is-eroded .cipher-receipt{background:#cfdcab;border-color:#94aa73}
+.cipher-lamp .cipher-fraying-text{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;color:#6b7850;font-size:18px;letter-spacing:1px;border-top:1px solid #98ac762e;padding-top:22px}
+.cipher-lamp-intrusion{padding:20px 24px 5px;text-align:center;opacity:.72;animation:cipher-print-slip 12s steps(1,end) infinite}
+.cipher-lamp-intrusion>img{max-width:270px;width:86%;height:auto;filter:saturate(.6) brightness(.8)}
+.cipher-lamp-intrusion>p{font-family:"Home Plain Digits","KaiTi","Kaiti SC",serif;font-size:17px;letter-spacing:3px;color:#a8b67a}
+.cipher-final-gate{padding:17px 15px;background:#25331ddd;border:1px solid #566b3e;margin:26px 0;color:#b5c198}
+.cipher-final-gate p{font-size:12px!important;line-height:2!important;color:#b5c198!important;margin:0 0 12px!important}
+.cipher-final-gate a{font-size:12px;color:#cbd6a0;text-underline-offset:4px}
+@keyframes cipher-god-breath{0%,100%{filter:brightness(.94)}50%{filter:brightness(.79) contrast(1.05)}}
+@keyframes cipher-print-slip{0%,64%,68%,100%{opacity:.72;transform:none}65%{opacity:.9;transform:translateX(1px)}67%{opacity:.53;transform:translateX(-1px)}}
+.is-still .cipher-god img,.is-still .cipher-lamp-intrusion,.reduce-motion .cipher-god img,.reduce-motion .cipher-lamp-intrusion{animation:none!important;transition:none!important}
+@media(prefers-reduced-motion:reduce){.cipher-private *,.cipher-lamp *{animation:none!important;transition:none!important}}
+@media(max-width:350px){.cipher-official-article{padding:22px 17px 30px;font-size:14px}.cipher-official-article h1{font-size:23px}.cipher-private>article,.cipher-lamp>article{padding-left:14px;padding-right:14px}.cipher-fragment{padding:17px 11px}.cipher-fragment>textarea{font-size:28px;letter-spacing:5px}.cipher-lamp h1{font-size:26px}.cipher-receipt{padding:17px 12px}.cipher-translator{padding:22px 17px 28px}.cipher-witness{padding:18px 14px}}
+
+/* The shrine is operated directly; no casework or receipt forms. */
+.deity-entry{display:block;width:100%;text-align:center;box-sizing:border-box;cursor:pointer}
+.deity-entry>img{display:block;width:100%;height:auto}
+.deity-entry>span{display:block;padding:13px 5px 7px;font-size:12px;color:#a0b077;letter-spacing:3px}
+.cipher-ritual-notice{padding:16px 13px;border-left:2px solid #8d9d65;background:#e1e8cb;color:#647842!important;line-height:1.9!important;font-size:13px!important}
+.cipher-name-wick{font:38px/1.8 "Home Plain Digits","KaiTi",serif;letter-spacing:9px;text-align:center;background:#e9e3c9;border:1px solid #bfc49a;padding:35px 15px;color:#68764b}
+.cipher-engraving{font:18px/1.9 "Home Plain Digits","KaiTi",serif;color:#6c784a;text-align:center;padding:17px 8px;border-block:1px solid #b3bd9180;margin:22px 0;letter-spacing:1px}
+.cipher-engraving p{font:15px/1.9 "Home Plain Digits","KaiTi",serif;margin:9px 0}
+.cipher-quiet-button{display:block;padding:11px 0;text-align:left;line-height:1.8;font-size:12px;color:#849765;margin-top:16px;border-bottom:1px solid #aeb99480}
+.cipher-witness blockquote{margin:20px 0;padding-left:14px;border-left:2px solid #73884c;font-size:13px;line-height:2.1;color:#c1cf9f}
+.cipher-witness>strong{font:20px "Home Plain Digits","KaiTi",serif;letter-spacing:4px;color:#aebd81}
+.cipher-memory-lamps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:25px 0}
+.memory-lamp{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;background:#e5e8d1;border:1px solid #bdc5a0;border-radius:60px 60px 5px 5px;padding:16px 9px 12px;color:#7f8d65;transition:background .7s,box-shadow .7s;min-width:0}
+.memory-lamp>img{width:54px;height:70px;object-fit:cover;object-position:center 25%;border-radius:4px;filter:saturate(.5) brightness(.8)}
+.memory-lamp>strong{font:18px/1.6 "Home Plain Digits","KaiTi",serif;letter-spacing:2px;margin-top:7px}
+.memory-lamp>span{font-size:9px;margin-top:6px;color:#9aa87f}
+.memory-lamp .ritual-flame{opacity:.15;background:#6f775a;box-shadow:none;animation:none;width:12px;height:22px;margin-top:12px}
+.memory-lamp.is-lit{background:#f4e5b6;border-color:#bfaa65;box-shadow:0 0 15px #e7c86d55}
+.memory-lamp.is-lit>img{filter:none}
+.memory-lamp.is-lit .ritual-flame{opacity:1;background:#efc874;box-shadow:0 0 10px #dbbc6280;animation:ritual-flame 2.8s ease-in-out infinite}
+.ritual-flame{display:inline-block;width:12px;height:24px;border-radius:80% 0 70% 55%;transform:rotate(-13deg);background:#e9c77b;box-shadow:0 0 11px #d3bd68aa;animation:ritual-flame 2.8s ease-in-out infinite}
+.cipher-compass{position:relative;width:100%;aspect-ratio:1;margin:28px auto;background:#d4d9b5;border:1px solid #a9b17e;border-radius:50%;max-width:290px;box-shadow:inset 0 0 23px #5563372b}
+.cipher-compass>span{position:absolute;font-size:11px;color:#7c895c;z-index:5}
+.cipher-compass .north{top:5px;left:calc(50% - 6px)}.cipher-compass .south{bottom:5px;left:calc(50% - 6px)}.cipher-compass .east{right:7px;top:calc(50% - 11px)}.cipher-compass .west{left:7px;top:calc(50% - 11px)}
+.seal-ring{position:absolute;left:50%;top:50%;border:2px double #879762;border-radius:50%;background:transparent;transform:translate(-50%,-50%) rotate(var(--ring-turn));transition:transform .45s ease;z-index:1}
+.seal-outer{width:81%;height:81%;background:#b7c3963b}.seal-middle{width:59%;height:59%;z-index:2;background:#c7cda96b}.seal-inner{width:37%;height:37%;z-index:3;background:#b0bd8a}
+.seal-ring>b{position:absolute;left:50%;top:4%;transform:translateX(-50%);font:13px/1.4 "Home Plain Digits","KaiTi",serif;color:#465930;background:#dce2bf;padding:2px 4px;white-space:nowrap}
+.seal-ring i{display:block;position:absolute;left:calc(50% - 2px);top:0;width:4px;height:8px;background:#526c35}
+.cipher-ring-controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.cipher-ring-controls>button{background:#e2e8ce;border:1px solid #b5c197;padding:11px 4px;font-size:12px;color:#6a7e4d}
+.cipher-ring-controls span{display:block;font-size:9px;color:#99a780;margin-top:4px}
+.cipher-fire-budget{display:flex;flex-wrap:wrap;align-items:center;gap:12px;border-block:1px solid #bac796;padding:18px 10px;margin:25px 0;color:#879d61}
+.cipher-fire-budget>strong{font:37px "Home Plain Digits","KaiTi",serif;color:#5c7840}.cipher-fire-budget>span{font-size:12px}.cipher-fire-budget>small{width:100%;font-size:11px;color:#947d59}
+.cipher-fire-altars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fire-altar{min-width:0;border:1px solid #b0bf88;background:#e3eacc;text-align:center;padding:16px 6px 10px;border-radius:24px 24px 3px 3px}
+.fire-altar h2{font:21px "Home Plain Digits","KaiTi",serif;color:#607844;margin:0}.fire-altar>p{font-size:9px;line-height:1.7;margin:9px 0 18px;color:#94a678;min-height:32px}
+.fire-candles{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:4px;min-height:53px;padding:8px 0}.fire-candles>span{font:22px "Home Plain Digits","KaiTi",serif;color:#b8c4a0}.fire-candles .ritual-flame{width:9px;height:21px}
+.fire-handles{display:flex;align-items:center;justify-content:space-between;gap:2px;margin-top:12px}.fire-handles button{padding:7px 3px;color:#6b844c;background:#cdd9ad;border:1px solid #b5c590;font-size:10px;min-width:0}.fire-handles b{font-size:11px;font-weight:400;color:#91a276}.fire-handles button:disabled{opacity:.35}
+.cipher-gate-actions{display:flex;flex-direction:column;gap:12px;margin:23px 0}.cipher-gate-actions>button:disabled{opacity:.38;cursor:default}
+@keyframes ritual-flame{0%,100%{transform:rotate(-13deg) scale(.95);opacity:.88}50%{transform:rotate(-7deg) scale(1.04);opacity:1}}
+.is-still .ritual-flame,.reduce-motion .ritual-flame{animation:none!important}.is-still .seal-ring{transition:none!important}
+@media(prefers-reduced-motion:reduce){.ritual-flame,.seal-ring{animation:none!important;transition:none!important}}
+@media(max-width:350px){.cipher-memory-lamps{gap:10px}.fire-altar{padding:14px 4px 9px}.fire-altar h2{font-size:19px}.fire-handles button{font-size:9px;padding:7px 2px}.cipher-fire-altars{gap:5px}.cipher-ring-controls>button{font-size:11px}.cipher-ring-controls span{font-size:8px}}
+.fire-handles{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.fire-handles>b{grid-column:1/-1;grid-row:1;font-size:14px;color:#72844f}
+.fire-handles>button{min-height:36px;padding:7px 2px;font-size:11px}
+
+.cipher-paper-seal{margin:22px 0;padding:22px 16px;border-block:1px solid #704257;background:linear-gradient(120deg,#211820,#171817);box-shadow:inset 0 0 28px #080b08}.cipher-paper-seal>span{display:block;color:#c0a185;letter-spacing:.16em;font-size:13px}.cipher-paper-seal p{font-size:15px;line-height:1.9}.cipher-paper-seal.is-open{border-top-style:dashed;box-shadow:inset 0 14px 18px -15px #ae4658}.cipher-paper-seal .cipher-dark-button{width:100%;min-height:46px}
+
+/* Original generated stone and fire rasters keep the mechanism tactile. */
+.cipher-compass{background:#27302a;border-color:#7d8973;box-shadow:inset 0 0 25px #040a06cc,0 4px 15px #16201538}
+.cipher-compass>span{color:#d2d8bb}
+.seal-ring,.seal-outer,.seal-middle,.seal-inner{border:0;background:transparent;box-shadow:none}
+.seal-ring::before{content:"";position:absolute;inset:0;pointer-events:none;background:url('assets/ritual-ring.png') center/contain no-repeat}
+.seal-middle{width:49%;height:49%}.seal-inner{width:29%;height:29%}
+.seal-ring>b{top:8%;font-size:12px;line-height:1.3;color:#faf0d7;background:#253028db;border-radius:2px;padding:1px 3px;text-shadow:0 1px 2px #000}
+.seal-ring i{top:4%;height:7px;background:#e3cf99}
+.ritual-flame,.memory-lamp .ritual-flame,.memory-lamp.is-lit .ritual-flame{width:20px;height:32px;border-radius:0;box-shadow:none;background:transparent url('assets/ritual-flame.png') center/contain no-repeat}
+.memory-lamp:not(.is-lit) .ritual-flame{filter:grayscale(1);opacity:.12}
+.fire-candles .ritual-flame{width:18px;height:31px}
