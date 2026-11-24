@@ -70,13 +70,22 @@
   const headers=new Headers(response.headers);headers.set('X-Home-Resource',e.hash);headers.set('Content-Length',String(e.bytes));
   await cache.put(cacheURL(e),new Response(bytes,{status:200,headers}));
  }
+ async function receiveWithRetry(e,signal){
+  for(let attempt=0;attempt<3;attempt++){
+   try{return await receive(e,signal)}catch(error){
+    if(signal.aborted||attempt===2||!(error instanceof TypeError||error.message==='network'))throw error;
+    transfers.delete(e.path);paint();
+    await new Promise(resolve=>setTimeout(resolve,600*(attempt+1)));
+   }
+  }
+ }
  async function run(){
   if(!available||working)return;working=true;failed=false;controller=new AbortController();const signal=controller.signal;let error=null;
   status.textContent='正在下载并保存资源…';paint(true);
   try{
    const estimate=await navigator.storage?.estimate?.();if(estimate?.quota&&estimate.quota-estimate.usage<total-completedBytes){throw Error('quota')}
    const oldNames=(await caches.keys()).filter(n=>n.startsWith(prefix)&&n!==manifest.cacheName),queue=entries.filter(e=>!completed.has(e.path));let cursor=0;
-   const worker=async()=>{while(cursor<queue.length&&!signal.aborted){const e=queue[cursor++];try{if(!await reuse(e,oldNames))await receive(e,signal);if(signal.aborted)return;completed.add(e.path);completedBytes+=e.bytes;transfers.delete(e.path);paint()}catch(err){if(!signal.aborted){error=err;failed=true;controller.abort()}return}}};
+   const worker=async()=>{while(cursor<queue.length&&!signal.aborted){const e=queue[cursor++];try{if(!await reuse(e,oldNames))await receiveWithRetry(e,signal);if(signal.aborted)return;completed.add(e.path);completedBytes+=e.bytes;transfers.delete(e.path);paint()}catch(err){if(!signal.aborted){error=err;failed=true;controller.abort()}return}}};
    await Promise.all([worker(),worker(),worker()]);
   }catch(err){error=err;failed=true;controller.abort()}
   finally{working=false;transfers.clear();await inspect();
