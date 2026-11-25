@@ -1,8 +1,23 @@
 # NPC联网服务部署
 
+## 当前云端服务（2026-11-25）
+
+NPC 接口：https://please-confirm-home-npc.creamolive22.chatgpt.site/api/npc
+
+健康检查：https://please-confirm-home-npc.creamolive22.chatgpt.site/api/health
+
+GitHub Pages 游戏通过 npc-service-config.js 连接云端服务。微信、信息、抖音私信、小红书评论/私信及其他智能回复共用该入口；已退出登录的女儿旧手机遵循原有离线规则。
+
+使用现有模型配置，NPC_API_KEY、NPC_BASE_URL、NPC_MODEL、NPC_ALLOWED_ORIGIN 保存在 Sites 秘密环境变量中。源码和浏览器只包含公开服务地址，不保存对话正文。角色门槛、来源限制及事实审读保留。
+
+后端为 Worker ESM：使用 Web API 读取有上限的响应体，并使用 manual 模式拒绝跟随上游重定向。每运行实例并发上限 2、每分钟 30 次，单 IP 每分钟 10 次；超限返回可重试的 BUSY 状态。实例间不共享计数，因此这不是账户级费用限额。
+
+本地维护源码在 work/npc-cloud，站点身份保存在其 .openai/hosting.json。更新时沿用该身份，通过 Sites source helper 推送源码、构建归档、保存版本后发布。不要把任何真实 .env 上传到 GitHub。
+
+
 ## 已准备的文件
 
-Dockerfile只复制服务端模块，不包含游戏图片、存档或本地配置。render.yaml可由Render Blueprint导入；也支持任何能运行Docker或Node.js 22的服务器。本文件描述准备好的部署方案，不表示云服务已开通。
+Dockerfile只复制服务端模块，不包含游戏图片、存档或本地配置。render.yaml可由Render Blueprint导入；也支持任何能运行Docker或Node.js 22的服务器。下方 Docker/Render 方案保留为迁移选项，当前服务由 Sites 托管。
 
 ## 方案一：Render
 
