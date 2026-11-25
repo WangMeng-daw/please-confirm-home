@@ -91,7 +91,8 @@ function familyConversation(id,text){
  if(/报警|报案|那天|丢了|走丢|失踪|没接到|接晚|怪我|都怪/.test(text)){
   replyMany(id,[S.flags.found?'那条路我们来回找了多少遍，六点多就报了警。她现在回来了，我还是老想起那天。':'我以为你接到了，你还问她是不是跟我在一起。那条路我们来回找了几遍，六点多就报了警。','别再说对不起了，我听着也难受。']);return true;
  }
- if(/手机|封存/.test(text)&&!S.flags.found){replyMany(id,['手机不是在学校门口附近捡到的吗，你认的壳子。后来就留在周警官那里了。','你想给她发就发吧。']);return true}
+ const lostPhoneTopic=/封存|^(?:手机|她的手机)[？?。]*$|(?:小禾|孩子|原来|之前|旧|那部|那台|丢|捡|学校|校门).{0,12}手机|她的手机|手机.{0,12}(?:在哪|哪里|怎么|坏|丢|捡|封存|警官|交给|谁拿)/.test(text);
+ if(lostPhoneTopic&&!S.flags.found){replyMany(id,['手机不是在学校门口附近捡到的吗，你认的壳子。后来就留在周警官那里了。','你想给她发就发吧。']);return true}
  if(!S.flags.found){
   const line=S.flags.matched?'我已经把证件拿出来了。等周警官核对完再出门。':S.flags.followup?'西郊那边还在核对记录，我也在等。':S.flags.leadReviewed?'不是北站那个，就再找。老赵那边也在问。':S.flags.verified?'照片我看了，先跟那天的衣服对一对。':S.flags.interviewed?'已经填完交了。那天的事记不清，你就翻翻跟刘老师的聊天。':S.flags.registered?'登记的消息我收到了。有新线索也发给周警官，别自己过去。':null;
   if(line){npcReply(id,text,[line]);return true}
